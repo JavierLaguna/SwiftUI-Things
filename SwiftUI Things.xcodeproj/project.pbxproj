@@ -7,18 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497E334229967C59008710B9 /* PinchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334129967C59008710B9 /* PinchMainView.swift */; };
+		497E334429967C8C008710B9 /* PinchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334329967C8C008710B9 /* PinchPage.swift */; };
+		497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334529967D5F008710B9 /* InfoPanelView.swift */; };
 		49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */; };
-		49A0CE34298BE0C900D54732 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE33298BE0C900D54732 /* ContentView.swift */; };
+		49A0CE34298BE0C900D54732 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE33298BE0C900D54732 /* MainView.swift */; };
 		49A0CE36298BE0CB00D54732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A0CE35298BE0CB00D54732 /* Assets.xcassets */; };
 		49A0CE39298BE0CB00D54732 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A0CE38298BE0CB00D54732 /* Preview Assets.xcassets */; };
+		49A0CE43298BE38500D54732 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE42298BE38500D54732 /* Thing.swift */; };
+		49A0CE45298BE98E00D54732 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE44298BE98E00D54732 /* DestinationView.swift */; };
+		49A0CE47298BEE0900D54732 /* SlideTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE46298BEE0900D54732 /* SlideTo.swift */; };
+		49A9F78529941FF600B367AE /* ThingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F78429941FF600B367AE /* ThingType.swift */; };
+		49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F7882995765900B367AE /* RestartHomeView.swift */; };
+		49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F7892995765900B367AE /* RestartOnboardingView.swift */; };
+		49A9F78D2995767800B367AE /* RestartMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F78C2995767800B367AE /* RestartMainView.swift */; };
+		49A9F78F299577AA00B367AE /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F78E299577AA00B367AE /* CircleGroupView.swift */; };
+		49A9F79329957AB400B367AE /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49A9F79129957AB400B367AE /* chimeup.mp3 */; };
+		49A9F79429957AB400B367AE /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 49A9F79229957AB400B367AE /* success.m4a */; };
+		49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F79629957AC900B367AE /* AudioPlayer.swift */; };
+		49A9F79929957B9A00B367AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F79829957B9A00B367AE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		497E334129967C59008710B9 /* PinchMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchMainView.swift; sourceTree = "<group>"; };
+		497E334329967C8C008710B9 /* PinchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchPage.swift; sourceTree = "<group>"; };
+		497E334529967D5F008710B9 /* InfoPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
 		49A0CE2E298BE0C900D54732 /* SwiftUI Things.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Things.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ThingsApp.swift; sourceTree = "<group>"; };
-		49A0CE33298BE0C900D54732 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49A0CE33298BE0C900D54732 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		49A0CE35298BE0CB00D54732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49A0CE38298BE0CB00D54732 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49A0CE42298BE38500D54732 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		49A0CE44298BE98E00D54732 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
+		49A0CE46298BEE0900D54732 /* SlideTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTo.swift; sourceTree = "<group>"; };
+		49A9F78429941FF600B367AE /* ThingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingType.swift; sourceTree = "<group>"; };
+		49A9F7882995765900B367AE /* RestartHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartHomeView.swift; sourceTree = "<group>"; };
+		49A9F7892995765900B367AE /* RestartOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartOnboardingView.swift; sourceTree = "<group>"; };
+		49A9F78C2995767800B367AE /* RestartMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartMainView.swift; sourceTree = "<group>"; };
+		49A9F78E299577AA00B367AE /* CircleGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
+		49A9F79129957AB400B367AE /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		49A9F79229957AB400B367AE /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		49A9F79629957AC900B367AE /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		49A9F79829957B9A00B367AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		497E334029967C4B008710B9 /* Pinch */ = {
+			isa = PBXGroup;
+			children = (
+				497E334129967C59008710B9 /* PinchMainView.swift */,
+			);
+			path = Pinch;
+			sourceTree = "<group>";
+		};
 		49A0CE25298BE0C900D54732 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +89,14 @@
 		49A0CE30298BE0C900D54732 /* SwiftUI Things */ = {
 			isa = PBXGroup;
 			children = (
-				49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */,
-				49A0CE33298BE0C900D54732 /* ContentView.swift */,
+				49A0CE41298BE37200D54732 /* Models */,
+				49A0CE40298BE2F300D54732 /* Components */,
+				49A0CE3F298BE2EA00D54732 /* Views */,
+				49A9F7862995763F00B367AE /* SampleApps */,
+				49A9F79529957AC900B367AE /* Utilities */,
 				49A0CE35298BE0CB00D54732 /* Assets.xcassets */,
+				49A9F79029957AB400B367AE /* Sounds */,
+				49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */,
 				49A0CE37298BE0CB00D54732 /* Preview Content */,
 			);
 			path = "SwiftUI Things";
@@ -65,6 +108,72 @@
 				49A0CE38298BE0CB00D54732 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49A0CE3F298BE2EA00D54732 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49A0CE33298BE0C900D54732 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49A0CE40298BE2F300D54732 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				49A9F78E299577AA00B367AE /* CircleGroupView.swift */,
+				497E334529967D5F008710B9 /* InfoPanelView.swift */,
+				49A0CE46298BEE0900D54732 /* SlideTo.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		49A0CE41298BE37200D54732 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				497E334329967C8C008710B9 /* PinchPage.swift */,
+				49A0CE44298BE98E00D54732 /* DestinationView.swift */,
+				49A0CE42298BE38500D54732 /* Thing.swift */,
+				49A9F78429941FF600B367AE /* ThingType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49A9F7862995763F00B367AE /* SampleApps */ = {
+			isa = PBXGroup;
+			children = (
+				497E334029967C4B008710B9 /* Pinch */,
+				49A9F7872995764A00B367AE /* Restart */,
+			);
+			path = SampleApps;
+			sourceTree = "<group>";
+		};
+		49A9F7872995764A00B367AE /* Restart */ = {
+			isa = PBXGroup;
+			children = (
+				49A9F7882995765900B367AE /* RestartHomeView.swift */,
+				49A9F78C2995767800B367AE /* RestartMainView.swift */,
+				49A9F7892995765900B367AE /* RestartOnboardingView.swift */,
+			);
+			path = Restart;
+			sourceTree = "<group>";
+		};
+		49A9F79029957AB400B367AE /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				49A9F79129957AB400B367AE /* chimeup.mp3 */,
+				49A9F79229957AB400B367AE /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		49A9F79529957AC900B367AE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				49A9F79629957AC900B367AE /* AudioPlayer.swift */,
+				49A9F79829957B9A00B367AE /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +234,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A9F79429957AB400B367AE /* success.m4a in Resources */,
+				49A9F79329957AB400B367AE /* chimeup.mp3 in Resources */,
 				49A0CE39298BE0CB00D54732 /* Preview Assets.xcassets in Resources */,
 				49A0CE36298BE0CB00D54732 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +248,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A0CE34298BE0C900D54732 /* ContentView.swift in Sources */,
+				49A9F78F299577AA00B367AE /* CircleGroupView.swift in Sources */,
+				49A9F78529941FF600B367AE /* ThingType.swift in Sources */,
+				49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */,
+				49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */,
+				49A0CE47298BEE0900D54732 /* SlideTo.swift in Sources */,
+				49A0CE34298BE0C900D54732 /* MainView.swift in Sources */,
+				49A0CE45298BE98E00D54732 /* DestinationView.swift in Sources */,
+				49A9F78D2995767800B367AE /* RestartMainView.swift in Sources */,
+				497E334429967C8C008710B9 /* PinchPage.swift in Sources */,
+				49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */,
+				49A0CE43298BE38500D54732 /* Thing.swift in Sources */,
+				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
 				49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */,
+				49A9F79929957B9A00B367AE /* Constants.swift in Sources */,
+				497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Things/Preview Content\"";
-				DEVELOPMENT_TEAM = F8FX9592B7;
+				DEVELOPMENT_TEAM = HDC4S2P5MK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -296,7 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Things/Preview Content\"";
-				DEVELOPMENT_TEAM = F8FX9592B7;
+				DEVELOPMENT_TEAM = HDC4S2P5MK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
