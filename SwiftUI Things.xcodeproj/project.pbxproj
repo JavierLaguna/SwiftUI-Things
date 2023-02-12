@@ -91,8 +91,8 @@
 			children = (
 				49A0CE41298BE37200D54732 /* Models */,
 				49A0CE40298BE2F300D54732 /* Components */,
-				49A0CE3F298BE2EA00D54732 /* Views */,
 				49A9F7862995763F00B367AE /* SampleApps */,
+				49A0CE3F298BE2EA00D54732 /* Scenes */,
 				49A9F79529957AC900B367AE /* Utilities */,
 				49A0CE35298BE0CB00D54732 /* Assets.xcassets */,
 				49A9F79029957AB400B367AE /* Sounds */,
@@ -110,12 +110,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		49A0CE3F298BE2EA00D54732 /* Views */ = {
+		49A0CE3F298BE2EA00D54732 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				49A0CE33298BE0C900D54732 /* MainView.swift */,
 			);
-			path = Views;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		49A0CE40298BE2F300D54732 /* Components */ = {
