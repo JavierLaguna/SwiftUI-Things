@@ -16,7 +16,7 @@ struct C4GameView: View {
         if sheetY >= sheetMaxY {
             let space = Double(UIScreen.main.bounds.width) / Double(viewModel.rowHoles)
             
-            var rowHole: Double = 0
+            var rowHole: Double = 0 // TODO: JLI Column ??
             for hole in 0...viewModel.rowHoles - 1 {
                 let position = Double(hole)
                 
@@ -29,7 +29,7 @@ struct C4GameView: View {
             
             let holeX = space / 2 + rowHole * space
             
-//            viewModel.fillHole
+            viewModel.fillHole(on: Int(rowHole))
             
             withAnimation(.linear(duration: 0.5)) {
                 sheetX = holeX
