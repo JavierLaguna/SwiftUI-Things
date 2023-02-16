@@ -41,7 +41,7 @@ struct C4GameView: View {
     var body: some View {
         ZStack {
             Circle()
-                .fill(.red)
+                .fill(viewModel.currentPlayer.color)
                 .frame(width: sheetSize, height: sheetSize)
                 .shadow(radius: 4)
                 .position(x: sheetX, y: sheetY)
