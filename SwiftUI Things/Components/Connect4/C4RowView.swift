@@ -3,9 +3,11 @@ import SwiftUI
 
 struct C4RowView: View {
     
+    private let row: [C4PlayerType?]
     private let numOfHoles: Int
     
-    init(numOfHoles: Int) {
+    init(row: [C4PlayerType?], numOfHoles: Int) {
+        self.row = row
         self.numOfHoles = numOfHoles
     }
     
@@ -15,8 +17,8 @@ struct C4RowView: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            ForEach(1...numOfHoles, id: \.self) { _ in
-                C4HoleView(size: holeSize)
+            ForEach(0..<numOfHoles, id: \.self) { holeIndex in
+                C4HoleView(size: holeSize, filledColor: row[holeIndex]?.color)
             }
         }
     }
@@ -25,7 +27,7 @@ struct C4RowView: View {
 struct C4RowView_Previews: PreviewProvider {
     
     static var previews: some View {
-        C4RowView(numOfHoles: 6)
+        C4RowView(row: [], numOfHoles: 6)
             .previewLayout(.sizeThatFits)
     }
 }

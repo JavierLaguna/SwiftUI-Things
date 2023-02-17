@@ -1,8 +1,9 @@
 
 import Foundation
-import Algorithms
 
 final class C4GameViewModel: ObservableObject {
+    
+    static let initialPlayer: C4PlayerType = .red
     
     private let player1: C4PlayerType = .red
     private let player2: C4PlayerType = .white
@@ -12,27 +13,46 @@ final class C4GameViewModel: ObservableObject {
     
     // [Column][Row]
     @Published var grid = [[C4PlayerType?]]()
-    @Published var currentPlayer: C4PlayerType = .red
+    @Published var currentPlayer: C4PlayerType = initialPlayer
     @Published var winner: C4PlayerType?
+    @Published var boardIsFull = false
     
     init() {
         initGrid()
-        
-        let _  = checkIfPlayerConnect4()
     }
     
-    func fillHole(on column: Int) {
-        guard let lastAvilableRowHole = grid[column].lastIndex(where: { $0 == nil }) else {
-            return
+    func canFillHole(on row: Int) -> Int? {
+        for (column, _) in grid.enumerated().reversed() {
+            if grid[column][row] == nil {
+                return column
+            }
         }
         
-        grid[column][lastAvilableRowHole] = currentPlayer
+        return nil
+    }
+    
+    func fillHole(column: Int, row: Int) {
+        for (column, _) in grid.enumerated().reversed() {
+            if grid[column][row] == nil {
+                grid[column][row] = currentPlayer
+                break
+            }
+        }
         
         if checkIfPlayerConnect4() {
             winner = currentPlayer
+        } else if checkIfBoardIsFull() {
+            boardIsFull = true
         } else {
             changePlayer()
         }
+    }
+    
+    func restartGame() {
+        initGrid()
+        currentPlayer = C4GameViewModel.initialPlayer
+        winner = nil
+        boardIsFull = false
     }
 }
 
@@ -57,8 +77,7 @@ private extension C4GameViewModel {
     }
     
     func checkIfBoardIsFull() -> Bool {
-        // TODO: Implement
-        return false
+        return Array(grid.joined()).first(where: { $0 == nil }) == nil
     }
     
     func checkIfPlayerConnect4() -> Bool {
@@ -67,19 +86,19 @@ private extension C4GameViewModel {
     
     func checkRows() -> Bool {
         for row in grid {
-            var count = 0
-            var lastValue: C4PlayerType? = nil
-            for currentValue in row {
-                if currentValue != nil && currentValue == lastValue {
+            var count = 1
+            var index = 0
+            while index < row.count - 1 {
+                if row[index] != nil && row[index] == row[index+1] {
                     count += 1
-                    if count == 3 {
-                        print("Hay cuatro valores \(currentValue) iguales consecutivos en una fila")
+                    if count == 4 {
+                        print("Hay cuatro valores \(row[index]) iguales consecutivos en una fila")
                         return true
                     }
                 } else {
                     count = 1
-                    lastValue = currentValue
                 }
+                index += 1
             }
         }
         
@@ -97,7 +116,7 @@ private extension C4GameViewModel {
                     count += 1
                     if count == 4 {
                         print("Hay cuatro valores \(currentValue) iguales consecutivos en una columna")
-                        break
+                        return true
                     }
                 } else {
                     count = 1
