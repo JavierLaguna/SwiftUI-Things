@@ -28,7 +28,8 @@ extension Thing {
             Thing(title: "CircleGroup", destination: .circleGroup, type: .component),
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
-            Thing(title: "Pinch", destination: .pinch, type: .sampleApp)
+            Thing(title: "Pinch", destination: .pinch, type: .sampleApp),
+            Thing(title: "Fructus", destination: .fructus, type: .sampleApp)
         ]
     }
 }

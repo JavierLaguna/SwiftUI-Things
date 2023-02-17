@@ -6,6 +6,7 @@ enum DestinationView {
     case circleGroup
     case restart
     case pinch
+    case fructus
 }
 
 extension DestinationView {
@@ -17,6 +18,7 @@ extension DestinationView {
         case .circleGroup: CircleGroupViewSandbox()
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
+        case .fructus: FructusApp()
         }
     }
 }
