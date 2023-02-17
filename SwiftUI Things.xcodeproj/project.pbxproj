@@ -110,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				494647CB299FB32A00E47D4E /* Data */,
-				494647DC299FB32B00E47D4E /* Model */,
-				494647D4299FB32B00E47D4E /* Views */,
+				494647DC299FB32B00E47D4E /* Models */,
+				494647D4299FB32B00E47D4E /* Components */,
 				494647CD299FB32A00E47D4E /* Scenes */,
 			);
 			path = Fructus;
@@ -137,7 +137,7 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		494647D4299FB32B00E47D4E /* Views */ = {
+		494647D4299FB32B00E47D4E /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				494647DA299FB32B00E47D4E /* FruitCardView.swift */,
@@ -149,40 +149,33 @@
 				494647D7299FB32B00E47D4E /* SourceLinkView.swift */,
 				494647D5299FB32B00E47D4E /* StartButtonView.swift */,
 			);
-			path = Views;
+			path = Components;
 			sourceTree = "<group>";
 		};
-		494647DC299FB32B00E47D4E /* Model */ = {
+		494647DC299FB32B00E47D4E /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				494647DD299FB32B00E47D4E /* FruitModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		497E334029967C4B008710B9 /* Pinch */ = {
 			isa = PBXGroup;
 			children = (
+				49A9DAA4299FDD160007632C /* Models */,
+				49A9DAA3299FDCF70007632C /* Components */,
 				497E334129967C59008710B9 /* PinchMainView.swift */,
 			);
 			path = Pinch;
 			sourceTree = "<group>";
 		};
-		497E334D2998FD13008710B9 /* Connect4 */ = {
-			isa = PBXGroup;
-			children = (
-				497E334B2998FCCA008710B9 /* C4BoardView.swift */,
-				497E33472998F3CD008710B9 /* C4HoleView.swift */,
-				497E33492998FB95008710B9 /* C4RowView.swift */,
-			);
-			path = Connect4;
-			sourceTree = "<group>";
-		};
 		497E334E2998FD23008710B9 /* Connect4 */ = {
 			isa = PBXGroup;
 			children = (
-				497E33502998FD3A008710B9 /* C4GameView.swift */,
-				497E3355299A8AC1008710B9 /* C4GameViewModel.swift */,
+				49A9DAA0299FDC900007632C /* Models */,
+				49A9DAA2299FDCC00007632C /* Components */,
+				49A9DAA1299FDC9A0007632C /* Scenes */,
 			);
 			path = Connect4;
 			sourceTree = "<group>";
@@ -212,8 +205,8 @@
 				49A0CE3F298BE2EA00D54732 /* Scenes */,
 				49A9DA9B299FD8620007632C /* Modifiers */,
 				49A9F79529957AC900B367AE /* Utilities */,
-				49A0CE35298BE0CB00D54732 /* Assets.xcassets */,
 				49A9F79029957AB400B367AE /* Sounds */,
+				49A0CE35298BE0CB00D54732 /* Assets.xcassets */,
 				49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */,
 				49A0CE37298BE0CB00D54732 /* Preview Content */,
 			);
@@ -239,9 +232,7 @@
 		49A0CE40298BE2F300D54732 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				497E334D2998FD13008710B9 /* Connect4 */,
 				49A9F78E299577AA00B367AE /* CircleGroupView.swift */,
-				497E334529967D5F008710B9 /* InfoPanelView.swift */,
 				49A0CE46298BEE0900D54732 /* SlideTo.swift */,
 			);
 			path = Components;
@@ -250,9 +241,7 @@
 		49A0CE41298BE37200D54732 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				497E3357299BFEB3008710B9 /* C4PlayerType.swift */,
 				49A0CE44298BE98E00D54732 /* DestinationView.swift */,
-				497E334329967C8C008710B9 /* PinchPage.swift */,
 				49A0CE42298BE38500D54732 /* Thing.swift */,
 				49A9F78429941FF600B367AE /* ThingType.swift */,
 			);
@@ -265,6 +254,49 @@
 				49A9DA9E299FD92C0007632C /* GetHeightModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		49A9DAA0299FDC900007632C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				497E3357299BFEB3008710B9 /* C4PlayerType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49A9DAA1299FDC9A0007632C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				497E33502998FD3A008710B9 /* C4GameView.swift */,
+				497E3355299A8AC1008710B9 /* C4GameViewModel.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		49A9DAA2299FDCC00007632C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				497E334B2998FCCA008710B9 /* C4BoardView.swift */,
+				497E33472998F3CD008710B9 /* C4HoleView.swift */,
+				497E33492998FB95008710B9 /* C4RowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		49A9DAA3299FDCF70007632C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				497E334529967D5F008710B9 /* InfoPanelView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		49A9DAA4299FDD160007632C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				497E334329967C8C008710B9 /* PinchPage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		49A9F7862995763F00B367AE /* SampleApps */ = {
@@ -553,8 +585,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,8 +614,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
