@@ -6,7 +6,7 @@ struct RestartMainView: View {
     @AppStorage(Constants.AppStorage.restartOnboarding) var isOnboardingViewActive: Bool = true
     
     var body: some View {
-        ZStack {
+        Group {
             if isOnboardingViewActive {
                 RestartOnboardingView()
             } else {
