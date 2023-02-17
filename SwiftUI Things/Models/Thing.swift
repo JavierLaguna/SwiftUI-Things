@@ -29,7 +29,8 @@ extension Thing {
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
             Thing(title: "Pinch", destination: .pinch, type: .sampleApp),
-            Thing(title: "Fructus", destination: .fructus, type: .sampleApp)
+            Thing(title: "Fructus", destination: .fructus, type: .sampleApp),
+            Thing(title: "Connect 4", destination: .connect4, type: .sampleApp)
         ]
     }
 }

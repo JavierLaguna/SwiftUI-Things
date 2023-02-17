@@ -25,6 +25,12 @@
 		497E334229967C59008710B9 /* PinchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334129967C59008710B9 /* PinchMainView.swift */; };
 		497E334429967C8C008710B9 /* PinchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334329967C8C008710B9 /* PinchPage.swift */; };
 		497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334529967D5F008710B9 /* InfoPanelView.swift */; };
+		497E33482998F3CD008710B9 /* C4HoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E33472998F3CD008710B9 /* C4HoleView.swift */; };
+		497E334A2998FB95008710B9 /* C4RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E33492998FB95008710B9 /* C4RowView.swift */; };
+		497E334C2998FCCA008710B9 /* C4BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334B2998FCCA008710B9 /* C4BoardView.swift */; };
+		497E33512998FD3A008710B9 /* C4GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E33502998FD3A008710B9 /* C4GameView.swift */; };
+		497E3356299A8AC1008710B9 /* C4GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E3355299A8AC1008710B9 /* C4GameViewModel.swift */; };
+		497E3358299BFEB3008710B9 /* C4PlayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E3357299BFEB3008710B9 /* C4PlayerType.swift */; };
 		49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */; };
 		49A0CE34298BE0C900D54732 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE33298BE0C900D54732 /* MainView.swift */; };
 		49A0CE36298BE0CB00D54732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A0CE35298BE0CB00D54732 /* Assets.xcassets */; };
@@ -32,6 +38,7 @@
 		49A0CE43298BE38500D54732 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE42298BE38500D54732 /* Thing.swift */; };
 		49A0CE45298BE98E00D54732 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE44298BE98E00D54732 /* DestinationView.swift */; };
 		49A0CE47298BEE0900D54732 /* SlideTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE46298BEE0900D54732 /* SlideTo.swift */; };
+		49A9DA9F299FD92C0007632C /* GetHeightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9DA9E299FD92C0007632C /* GetHeightModifier.swift */; };
 		49A9F78529941FF600B367AE /* ThingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F78429941FF600B367AE /* ThingType.swift */; };
 		49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F7882995765900B367AE /* RestartHomeView.swift */; };
 		49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F7892995765900B367AE /* RestartOnboardingView.swift */; };
@@ -62,6 +69,12 @@
 		497E334129967C59008710B9 /* PinchMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchMainView.swift; sourceTree = "<group>"; };
 		497E334329967C8C008710B9 /* PinchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchPage.swift; sourceTree = "<group>"; };
 		497E334529967D5F008710B9 /* InfoPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		497E33472998F3CD008710B9 /* C4HoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4HoleView.swift; sourceTree = "<group>"; };
+		497E33492998FB95008710B9 /* C4RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4RowView.swift; sourceTree = "<group>"; };
+		497E334B2998FCCA008710B9 /* C4BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4BoardView.swift; sourceTree = "<group>"; };
+		497E33502998FD3A008710B9 /* C4GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4GameView.swift; sourceTree = "<group>"; };
+		497E3355299A8AC1008710B9 /* C4GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4GameViewModel.swift; sourceTree = "<group>"; };
+		497E3357299BFEB3008710B9 /* C4PlayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4PlayerType.swift; sourceTree = "<group>"; };
 		49A0CE2E298BE0C900D54732 /* SwiftUI Things.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Things.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ThingsApp.swift; sourceTree = "<group>"; };
 		49A0CE33298BE0C900D54732 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -70,6 +83,7 @@
 		49A0CE42298BE38500D54732 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
 		49A0CE44298BE98E00D54732 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		49A0CE46298BEE0900D54732 /* SlideTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTo.swift; sourceTree = "<group>"; };
+		49A9DA9E299FD92C0007632C /* GetHeightModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHeightModifier.swift; sourceTree = "<group>"; };
 		49A9F78429941FF600B367AE /* ThingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingType.swift; sourceTree = "<group>"; };
 		49A9F7882995765900B367AE /* RestartHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartHomeView.swift; sourceTree = "<group>"; };
 		49A9F7892995765900B367AE /* RestartOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartOnboardingView.swift; sourceTree = "<group>"; };
@@ -154,6 +168,25 @@
 			path = Pinch;
 			sourceTree = "<group>";
 		};
+		497E334D2998FD13008710B9 /* Connect4 */ = {
+			isa = PBXGroup;
+			children = (
+				497E334B2998FCCA008710B9 /* C4BoardView.swift */,
+				497E33472998F3CD008710B9 /* C4HoleView.swift */,
+				497E33492998FB95008710B9 /* C4RowView.swift */,
+			);
+			path = Connect4;
+			sourceTree = "<group>";
+		};
+		497E334E2998FD23008710B9 /* Connect4 */ = {
+			isa = PBXGroup;
+			children = (
+				497E33502998FD3A008710B9 /* C4GameView.swift */,
+				497E3355299A8AC1008710B9 /* C4GameViewModel.swift */,
+			);
+			path = Connect4;
+			sourceTree = "<group>";
+		};
 		49A0CE25298BE0C900D54732 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +210,7 @@
 				49A0CE40298BE2F300D54732 /* Components */,
 				49A9F7862995763F00B367AE /* SampleApps */,
 				49A0CE3F298BE2EA00D54732 /* Scenes */,
+				49A9DA9B299FD8620007632C /* Modifiers */,
 				49A9F79529957AC900B367AE /* Utilities */,
 				49A0CE35298BE0CB00D54732 /* Assets.xcassets */,
 				49A9F79029957AB400B367AE /* Sounds */,
@@ -205,6 +239,7 @@
 		49A0CE40298BE2F300D54732 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				497E334D2998FD13008710B9 /* Connect4 */,
 				49A9F78E299577AA00B367AE /* CircleGroupView.swift */,
 				497E334529967D5F008710B9 /* InfoPanelView.swift */,
 				49A0CE46298BEE0900D54732 /* SlideTo.swift */,
@@ -215,18 +250,28 @@
 		49A0CE41298BE37200D54732 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				497E334329967C8C008710B9 /* PinchPage.swift */,
+				497E3357299BFEB3008710B9 /* C4PlayerType.swift */,
 				49A0CE44298BE98E00D54732 /* DestinationView.swift */,
+				497E334329967C8C008710B9 /* PinchPage.swift */,
 				49A0CE42298BE38500D54732 /* Thing.swift */,
 				49A9F78429941FF600B367AE /* ThingType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
+		49A9DA9B299FD8620007632C /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				49A9DA9E299FD92C0007632C /* GetHeightModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		49A9F7862995763F00B367AE /* SampleApps */ = {
 			isa = PBXGroup;
 			children = (
 				494647CA299FB31600E47D4E /* Fructus */,
+				497E334E2998FD23008710B9 /* Connect4 */,
 				497E334029967C4B008710B9 /* Pinch */,
 				49A9F7872995764A00B367AE /* Restart */,
 			);
@@ -277,6 +322,8 @@
 			dependencies = (
 			);
 			name = "SwiftUI Things";
+			packageProductDependencies = (
+			);
 			productName = "SwiftUI Things";
 			productReference = 49A0CE2E298BE0C900D54732 /* SwiftUI Things.app */;
 			productType = "com.apple.product-type.application";
@@ -305,6 +352,8 @@
 				Base,
 			);
 			mainGroup = 49A0CE25298BE0C900D54732;
+			packageReferences = (
+			);
 			productRefGroup = 49A0CE2F298BE0C900D54732 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,6 +389,8 @@
 				494647E0299FB32B00E47D4E /* FructusSettingsView.swift in Sources */,
 				494647DF299FB32B00E47D4E /* FruitDetailView.swift in Sources */,
 				49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */,
+				49A9DA9F299FD92C0007632C /* GetHeightModifier.swift in Sources */,
+				497E334C2998FCCA008710B9 /* C4BoardView.swift in Sources */,
 				49A0CE47298BEE0900D54732 /* SlideTo.swift in Sources */,
 				494647E5299FB32B00E47D4E /* StartButtonView.swift in Sources */,
 				494647EB299FB32B00E47D4E /* SettingsLabelView.swift in Sources */,
@@ -353,7 +404,11 @@
 				494647E8299FB32B00E47D4E /* FruitNutrientsView.swift in Sources */,
 				494647E2299FB32B00E47D4E /* FructusOnboardingView.swift in Sources */,
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
+				497E33512998FD3A008710B9 /* C4GameView.swift in Sources */,
+				497E334A2998FB95008710B9 /* C4RowView.swift in Sources */,
+				497E33482998F3CD008710B9 /* C4HoleView.swift in Sources */,
 				49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */,
+				497E3356299A8AC1008710B9 /* C4GameViewModel.swift in Sources */,
 				49A9F79929957B9A00B367AE /* Constants.swift in Sources */,
 				494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */,
 				494647E1299FB32B00E47D4E /* SettingsRowView.swift in Sources */,
@@ -361,6 +416,7 @@
 				494647E9299FB32B00E47D4E /* FruitHeaderView.swift in Sources */,
 				494647DE299FB32B00E47D4E /* FruitData.swift in Sources */,
 				494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */,
+				497E3358299BFEB3008710B9 /* C4PlayerType.swift in Sources */,
 				497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */,
 				494647E3299FB32B00E47D4E /* FructusApp.swift in Sources */,
 			);

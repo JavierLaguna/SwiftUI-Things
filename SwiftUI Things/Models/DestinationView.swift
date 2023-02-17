@@ -7,6 +7,7 @@ enum DestinationView {
     case restart
     case pinch
     case fructus
+    case connect4
 }
 
 extension DestinationView {
@@ -19,6 +20,7 @@ extension DestinationView {
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
         case .fructus: FructusApp()
+        case .connect4: C4GameView()
         }
     }
 }
