@@ -26,6 +26,7 @@ extension Thing {
             // MARK: Component
             Thing(title: "Slide To", destination: .slideTo, type: .component),
             Thing(title: "CircleGroup", destination: .circleGroup, type: .component),
+            Thing(title: "BackgroundMotionAnimation", destination: .backgroundMotionAnimation, type: .component),
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
             Thing(title: "Pinch", destination: .pinch, type: .sampleApp),

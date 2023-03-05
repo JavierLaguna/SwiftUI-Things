@@ -4,6 +4,7 @@ import SwiftUI
 enum DestinationView {
     case slideTo
     case circleGroup
+    case backgroundMotionAnimation
     case restart
     case pinch
     case fructus
@@ -17,6 +18,7 @@ extension DestinationView {
         switch self {
         case .slideTo: SlideToSandbox()
         case .circleGroup: CircleGroupViewSandbox()
+        case .backgroundMotionAnimation: BackgroundMotionAnimationView()
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
         case .fructus: FructusApp()
