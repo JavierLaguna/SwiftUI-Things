@@ -10,6 +10,7 @@ enum DestinationView {
     case longPressGestureExample
     case animationModifierAndTimingExample
     case transformAnimationsExample
+    case tapAnimationExample
     // MARK: SampleApp
     case restart
     case pinch
@@ -30,6 +31,7 @@ extension DestinationView {
         case .longPressGestureExample: LongPressGestureExample()
         case .animationModifierAndTimingExample: AnimationModifierAndTimingExample()
         case .transformAnimationsExample: TransformAnimationsExample()
+        case .tapAnimationExample: TapAnimationExample()
             // MARK: SampleApp
         case .restart: RestartMainView()
         case .pinch: PinchMainView()

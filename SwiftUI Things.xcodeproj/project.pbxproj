@@ -26,6 +26,7 @@
 		49665AA429B4AC1F007D55D8 /* LongPressGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */; };
 		49665AA729B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */; };
 		49665AA929B50118007D55D8 /* TransformAnimationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */; };
+		49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AAA29B50247007D55D8 /* TapAnimationExample.swift */; };
 		497E334229967C59008710B9 /* PinchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334129967C59008710B9 /* PinchMainView.swift */; };
 		497E334429967C8C008710B9 /* PinchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334329967C8C008710B9 /* PinchPage.swift */; };
 		497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334529967D5F008710B9 /* InfoPanelView.swift */; };
@@ -74,6 +75,7 @@
 		49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureExample.swift; sourceTree = "<group>"; };
 		49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifierAndTimingExample.swift; sourceTree = "<group>"; };
 		49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformAnimationsExample.swift; sourceTree = "<group>"; };
+		49665AAA29B50247007D55D8 /* TapAnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAnimationExample.swift; sourceTree = "<group>"; };
 		497E334129967C59008710B9 /* PinchMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchMainView.swift; sourceTree = "<group>"; };
 		497E334329967C8C008710B9 /* PinchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchPage.swift; sourceTree = "<group>"; };
 		497E334529967D5F008710B9 /* InfoPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */,
 				49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */,
 				49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */,
+				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				49A9F78529941FF600B367AE /* ThingType.swift in Sources */,
 				494647E6299FB32B00E47D4E /* FruitRowView.swift in Sources */,
 				49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */,
+				49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */,
 				494647E0299FB32B00E47D4E /* FructusSettingsView.swift in Sources */,
 				494647DF299FB32B00E47D4E /* FruitDetailView.swift in Sources */,
 				49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */,
