@@ -29,6 +29,7 @@ extension Thing {
             Thing(title: "Background Motion Animation", destination: .backgroundMotionAnimation, type: .component),
             // MARK: Container
             Thing(title: "Long Press Gesture", destination: .longPressGestureExample, type: .container),
+            Thing(title: "Animation Modifier and Timing", destination: .animationModifierAndTimingExample, type: .container),
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
             Thing(title: "Pinch", destination: .pinch, type: .sampleApp),

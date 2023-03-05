@@ -8,6 +8,7 @@ enum DestinationView {
     case backgroundMotionAnimation
     // MARK: Container
     case longPressGestureExample
+    case animationModifierAndTimingExample
     // MARK: SampleApp
     case restart
     case pinch
@@ -26,6 +27,7 @@ extension DestinationView {
         case .backgroundMotionAnimation: BackgroundMotionAnimationView()
             // MARK: Container
         case .longPressGestureExample: LongPressGestureExample()
+        case .animationModifierAndTimingExample: AnimationModifierAndTimingExample()
             // MARK: SampleApp
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
