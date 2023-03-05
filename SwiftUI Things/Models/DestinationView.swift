@@ -9,6 +9,7 @@ enum DestinationView {
     // MARK: Container
     case longPressGestureExample
     case animationModifierAndTimingExample
+    case transformAnimationsExample
     // MARK: SampleApp
     case restart
     case pinch
@@ -28,6 +29,7 @@ extension DestinationView {
             // MARK: Container
         case .longPressGestureExample: LongPressGestureExample()
         case .animationModifierAndTimingExample: AnimationModifierAndTimingExample()
+        case .transformAnimationsExample: TransformAnimationsExample()
             // MARK: SampleApp
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
