@@ -11,6 +11,7 @@ enum DestinationView {
     case animationModifierAndTimingExample
     case transformAnimationsExample
     case tapAnimationExample
+    case matchedGeometryEffectExample
     // MARK: SampleApp
     case restart
     case pinch
@@ -32,6 +33,7 @@ extension DestinationView {
         case .animationModifierAndTimingExample: AnimationModifierAndTimingExample()
         case .transformAnimationsExample: TransformAnimationsExample()
         case .tapAnimationExample: TapAnimationExample()
+        case .matchedGeometryEffectExample: MatchedGeometryEffectExample()
             // MARK: SampleApp
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
