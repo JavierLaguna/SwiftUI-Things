@@ -25,8 +25,10 @@ extension Thing {
         return [
             // MARK: Component
             Thing(title: "Slide To", destination: .slideTo, type: .component),
-            Thing(title: "CircleGroup", destination: .circleGroup, type: .component),
-            Thing(title: "BackgroundMotionAnimation", destination: .backgroundMotionAnimation, type: .component),
+            Thing(title: "Circle Group", destination: .circleGroup, type: .component),
+            Thing(title: "Background Motion Animation", destination: .backgroundMotionAnimation, type: .component),
+            // MARK: Container
+            Thing(title: "Long Press Gesture", destination: .longPressGestureExample, type: .container),
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
             Thing(title: "Pinch", destination: .pinch, type: .sampleApp),
