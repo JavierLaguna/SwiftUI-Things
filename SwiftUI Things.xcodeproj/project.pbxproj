@@ -24,6 +24,7 @@
 		494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DD299FB32B00E47D4E /* FruitModel.swift */; };
 		49665AA229B4A673007D55D8 /* BackgroundMotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */; };
 		49665AA429B4AC1F007D55D8 /* LongPressGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */; };
+		49665AA729B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */; };
 		497E334229967C59008710B9 /* PinchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334129967C59008710B9 /* PinchMainView.swift */; };
 		497E334429967C8C008710B9 /* PinchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334329967C8C008710B9 /* PinchPage.swift */; };
 		497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334529967D5F008710B9 /* InfoPanelView.swift */; };
@@ -70,6 +71,7 @@
 		494647DD299FB32B00E47D4E /* FruitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 		49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMotionAnimationView.swift; sourceTree = "<group>"; };
 		49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureExample.swift; sourceTree = "<group>"; };
+		49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifierAndTimingExample.swift; sourceTree = "<group>"; };
 		497E334129967C59008710B9 /* PinchMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchMainView.swift; sourceTree = "<group>"; };
 		497E334329967C8C008710B9 /* PinchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchPage.swift; sourceTree = "<group>"; };
 		497E334529967D5F008710B9 /* InfoPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		49665AA529B4B59C007D55D8 /* Containers */ = {
 			isa = PBXGroup;
 			children = (
+				49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */,
 				49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */,
 			);
 			path = Containers;
@@ -467,6 +470,7 @@
 				497E3358299BFEB3008710B9 /* C4PlayerType.swift in Sources */,
 				497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */,
 				494647E3299FB32B00E47D4E /* FructusApp.swift in Sources */,
+				49665AA729B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

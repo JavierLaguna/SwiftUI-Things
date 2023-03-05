@@ -3,7 +3,7 @@ import SwiftUI
 
 struct MainView: View {
     
-    let things = Thing.allThings()
+    private let things = Thing.allThings()
     
     var body: some View {
         NavigationView {
@@ -30,6 +30,7 @@ struct MainView: View {
 }
 
 struct MainView_Previews: PreviewProvider {
+    
     static var previews: some View {
         MainView()
     }
