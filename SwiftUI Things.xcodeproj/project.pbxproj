@@ -29,6 +29,7 @@
 		49665AA929B50118007D55D8 /* TransformAnimationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */; };
 		49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AAA29B50247007D55D8 /* TapAnimationExample.swift */; };
 		49665AAD29B502FF007D55D8 /* MatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */; };
+		4971C95829B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */; };
 		497E334229967C59008710B9 /* PinchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334129967C59008710B9 /* PinchMainView.swift */; };
 		497E334429967C8C008710B9 /* PinchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334329967C8C008710B9 /* PinchPage.swift */; };
 		497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334529967D5F008710B9 /* InfoPanelView.swift */; };
@@ -80,6 +81,7 @@
 		49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformAnimationsExample.swift; sourceTree = "<group>"; };
 		49665AAA29B50247007D55D8 /* TapAnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAnimationExample.swift; sourceTree = "<group>"; };
 		49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
+		4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
 		497E334129967C59008710B9 /* PinchMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchMainView.swift; sourceTree = "<group>"; };
 		497E334329967C8C008710B9 /* PinchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchPage.swift; sourceTree = "<group>"; };
 		497E334529967D5F008710B9 /* InfoPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		49665AA529B4B59C007D55D8 /* Containers */ = {
 			isa = PBXGroup;
 			children = (
+				4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */,
 				49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */,
 				49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */,
 				49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */,
@@ -443,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4971C95829B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift in Sources */,
 				49665AA929B50118007D55D8 /* TransformAnimationsExample.swift in Sources */,
 				49A9F78F299577AA00B367AE /* CircleGroupView.swift in Sources */,
 				49A9F78529941FF600B367AE /* ThingType.swift in Sources */,
