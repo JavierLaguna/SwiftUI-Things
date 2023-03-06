@@ -35,6 +35,7 @@
 		4971C95F29B6639B0078CF0B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95E29B6639B0078CF0B /* LoadingView.swift */; };
 		4971C96129B6653E0078CF0B /* View+hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */; };
 		4971C96329B665A10078CF0B /* ShareSheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C96229B665A10078CF0B /* ShareSheetExample.swift */; };
+		4971C96529B666900078CF0B /* ActionSheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C96429B666900078CF0B /* ActionSheetExample.swift */; };
 		497E334229967C59008710B9 /* PinchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334129967C59008710B9 /* PinchMainView.swift */; };
 		497E334429967C8C008710B9 /* PinchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334329967C8C008710B9 /* PinchPage.swift */; };
 		497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334529967D5F008710B9 /* InfoPanelView.swift */; };
@@ -92,6 +93,7 @@
 		4971C95E29B6639B0078CF0B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+hideKeyboard.swift"; sourceTree = "<group>"; };
 		4971C96229B665A10078CF0B /* ShareSheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetExample.swift; sourceTree = "<group>"; };
+		4971C96429B666900078CF0B /* ActionSheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetExample.swift; sourceTree = "<group>"; };
 		497E334129967C59008710B9 /* PinchMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchMainView.swift; sourceTree = "<group>"; };
 		497E334329967C8C008710B9 /* PinchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchPage.swift; sourceTree = "<group>"; };
 		497E334529967D5F008710B9 /* InfoPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		49665AA529B4B59C007D55D8 /* Containers */ = {
 			isa = PBXGroup;
 			children = (
+				4971C96429B666900078CF0B /* ActionSheetExample.swift */,
 				4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */,
 				49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */,
 				4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */,
@@ -481,6 +484,7 @@
 				49A0CE34298BE0C900D54732 /* MainView.swift in Sources */,
 				49A0CE45298BE98E00D54732 /* DestinationView.swift in Sources */,
 				49A9F78D2995767800B367AE /* RestartMainView.swift in Sources */,
+				4971C96529B666900078CF0B /* ActionSheetExample.swift in Sources */,
 				497E334429967C8C008710B9 /* PinchPage.swift in Sources */,
 				4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */,
 				49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */,
