@@ -13,6 +13,7 @@ enum DestinationView {
     case tapAnimationExample
     case matchedGeometryEffectExample
     case popoverExample
+    case advancedMatchedGeometryEffectExample
     // MARK: SampleApp
     case restart
     case pinch
@@ -36,6 +37,7 @@ extension DestinationView {
         case .tapAnimationExample: TapAnimationExample()
         case .matchedGeometryEffectExample: MatchedGeometryEffectExample()
         case .popoverExample: PopoverExample()
+        case .advancedMatchedGeometryEffectExample: AdvancedMatchedGeometryEffectExample()
             // MARK: SampleApp
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
