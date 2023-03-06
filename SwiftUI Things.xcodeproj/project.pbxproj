@@ -30,6 +30,8 @@
 		49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AAA29B50247007D55D8 /* TapAnimationExample.swift */; };
 		49665AAD29B502FF007D55D8 /* MatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */; };
 		4971C95829B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */; };
+		4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */; };
+		4971C95C29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */; };
 		497E334229967C59008710B9 /* PinchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334129967C59008710B9 /* PinchMainView.swift */; };
 		497E334429967C8C008710B9 /* PinchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334329967C8C008710B9 /* PinchPage.swift */; };
 		497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334529967D5F008710B9 /* InfoPanelView.swift */; };
@@ -82,6 +84,8 @@
 		49665AAA29B50247007D55D8 /* TapAnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAnimationExample.swift; sourceTree = "<group>"; };
 		49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
 		4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
+		4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedPlaceholderExample.swift; sourceTree = "<group>"; };
+		4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollWithRotate3DEffectExample.swift; sourceTree = "<group>"; };
 		497E334129967C59008710B9 /* PinchMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchMainView.swift; sourceTree = "<group>"; };
 		497E334329967C8C008710B9 /* PinchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchPage.swift; sourceTree = "<group>"; };
 		497E334529967D5F008710B9 /* InfoPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
@@ -181,9 +185,11 @@
 			children = (
 				4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */,
 				49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */,
+				4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */,
 				49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */,
 				49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */,
 				493D11A129B60D01000C701C /* PopoverExample.swift */,
+				4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */,
 				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
 				49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */,
 			);
@@ -466,6 +472,7 @@
 				49A0CE45298BE98E00D54732 /* DestinationView.swift in Sources */,
 				49A9F78D2995767800B367AE /* RestartMainView.swift in Sources */,
 				497E334429967C8C008710B9 /* PinchPage.swift in Sources */,
+				4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */,
 				49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */,
 				494647E4299FB32B00E47D4E /* FructusContentView.swift in Sources */,
 				49665AA429B4AC1F007D55D8 /* LongPressGestureExample.swift in Sources */,
@@ -478,6 +485,7 @@
 				497E33482998F3CD008710B9 /* C4HoleView.swift in Sources */,
 				49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */,
 				497E3356299A8AC1008710B9 /* C4GameViewModel.swift in Sources */,
+				4971C95C29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift in Sources */,
 				49A9F79929957B9A00B367AE /* Constants.swift in Sources */,
 				494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */,
 				494647E1299FB32B00E47D4E /* SettingsRowView.swift in Sources */,
