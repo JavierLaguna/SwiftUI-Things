@@ -34,6 +34,7 @@
 		4971C95C29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */; };
 		4971C95F29B6639B0078CF0B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95E29B6639B0078CF0B /* LoadingView.swift */; };
 		4971C96129B6653E0078CF0B /* View+hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */; };
+		4971C96329B665A10078CF0B /* ShareSheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C96229B665A10078CF0B /* ShareSheetExample.swift */; };
 		497E334229967C59008710B9 /* PinchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334129967C59008710B9 /* PinchMainView.swift */; };
 		497E334429967C8C008710B9 /* PinchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334329967C8C008710B9 /* PinchPage.swift */; };
 		497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334529967D5F008710B9 /* InfoPanelView.swift */; };
@@ -90,6 +91,7 @@
 		4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollWithRotate3DEffectExample.swift; sourceTree = "<group>"; };
 		4971C95E29B6639B0078CF0B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+hideKeyboard.swift"; sourceTree = "<group>"; };
+		4971C96229B665A10078CF0B /* ShareSheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetExample.swift; sourceTree = "<group>"; };
 		497E334129967C59008710B9 /* PinchMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchMainView.swift; sourceTree = "<group>"; };
 		497E334329967C8C008710B9 /* PinchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchPage.swift; sourceTree = "<group>"; };
 		497E334529967D5F008710B9 /* InfoPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */,
 				493D11A129B60D01000C701C /* PopoverExample.swift */,
 				4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */,
+				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
 				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
 				49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */,
 			);
@@ -484,6 +487,7 @@
 				494647E4299FB32B00E47D4E /* FructusContentView.swift in Sources */,
 				49665AA429B4AC1F007D55D8 /* LongPressGestureExample.swift in Sources */,
 				49A0CE43298BE38500D54732 /* Thing.swift in Sources */,
+				4971C96329B665A10078CF0B /* ShareSheetExample.swift in Sources */,
 				494647E8299FB32B00E47D4E /* FruitNutrientsView.swift in Sources */,
 				494647E2299FB32B00E47D4E /* FructusOnboardingView.swift in Sources */,
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,

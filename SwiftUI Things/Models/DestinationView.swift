@@ -17,6 +17,7 @@ enum DestinationView {
     case advancedMatchedGeometryEffectExample
     case redactedPlaceholderExample
     case horizontalScrollWithRotate3DEffectExample
+    case shareSheetExample
     // MARK: SampleApp
     case restart
     case pinch
@@ -44,6 +45,7 @@ extension DestinationView {
         case .advancedMatchedGeometryEffectExample: AdvancedMatchedGeometryEffectExample()
         case .redactedPlaceholderExample: RedactedPlaceholderExample()
         case .horizontalScrollWithRotate3DEffectExample: HorizontalScrollWithRotate3DEffectExample()
+        case .shareSheetExample: ShareSheetExample()
             // MARK: SampleApp
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
