@@ -6,6 +6,7 @@ enum DestinationView {
     case slideTo
     case circleGroup
     case backgroundMotionAnimation
+    case loading
     // MARK: Container
     case longPressGestureExample
     case animationModifierAndTimingExample
@@ -32,6 +33,7 @@ extension DestinationView {
         case .slideTo: SlideToSandbox()
         case .circleGroup: CircleGroupViewSandbox()
         case .backgroundMotionAnimation: BackgroundMotionAnimationView()
+        case .loading: LoadingView()
             // MARK: Container
         case .longPressGestureExample: LongPressGestureExample()
         case .animationModifierAndTimingExample: AnimationModifierAndTimingExample()
