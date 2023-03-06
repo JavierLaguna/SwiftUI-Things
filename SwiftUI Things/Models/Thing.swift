@@ -27,6 +27,7 @@ extension Thing {
             Thing(title: "Slide To", destination: .slideTo, type: .component),
             Thing(title: "Circle Group", destination: .circleGroup, type: .component),
             Thing(title: "Background Motion Animation", destination: .backgroundMotionAnimation, type: .component),
+            Thing(title: "Loading", destination: .loading, type: .component),
             // MARK: Container
             Thing(title: "Long Press Gesture", destination: .longPressGestureExample, type: .container),
             Thing(title: "Animation Modifier and Timing", destination: .animationModifierAndTimingExample, type: .container),
