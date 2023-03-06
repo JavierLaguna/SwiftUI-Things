@@ -39,6 +39,7 @@ extension Thing {
             Thing(title: "Redacted Placeholder", destination: .redactedPlaceholderExample, type: .container),
             Thing(title: "Horizontal Scroll Rotate 3D Effect", destination: .horizontalScrollWithRotate3DEffectExample, type: .container),
             Thing(title: "Share Sheet", destination: .shareSheetExample, type: .container),
+            Thing(title: "Action Sheet", destination: .actionSheetExample, type: .container),
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
             Thing(title: "Pinch", destination: .pinch, type: .sampleApp),
