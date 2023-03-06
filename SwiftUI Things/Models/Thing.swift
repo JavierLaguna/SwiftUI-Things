@@ -33,6 +33,7 @@ extension Thing {
             Thing(title: "Transform Animations", destination: .transformAnimationsExample, type: .container),
             Thing(title: "Tap Animation", destination: .tapAnimationExample, type: .container),
             Thing(title: "Matched Geometry Effect", destination: .matchedGeometryEffectExample, type: .container),
+            Thing(title: "Popover", destination: .popoverExample, type: .container),
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
             Thing(title: "Pinch", destination: .pinch, type: .sampleApp),
