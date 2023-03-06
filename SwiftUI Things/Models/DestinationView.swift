@@ -14,6 +14,8 @@ enum DestinationView {
     case matchedGeometryEffectExample
     case popoverExample
     case advancedMatchedGeometryEffectExample
+    case redactedPlaceholderExample
+    case horizontalScrollWithRotate3DEffectExample
     // MARK: SampleApp
     case restart
     case pinch
@@ -38,6 +40,8 @@ extension DestinationView {
         case .matchedGeometryEffectExample: MatchedGeometryEffectExample()
         case .popoverExample: PopoverExample()
         case .advancedMatchedGeometryEffectExample: AdvancedMatchedGeometryEffectExample()
+        case .redactedPlaceholderExample: RedactedPlaceholderExample()
+        case .horizontalScrollWithRotate3DEffectExample: HorizontalScrollWithRotate3DEffectExample()
             // MARK: SampleApp
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
