@@ -33,6 +33,7 @@
 		4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */; };
 		4971C95C29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */; };
 		4971C95F29B6639B0078CF0B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95E29B6639B0078CF0B /* LoadingView.swift */; };
+		4971C96129B6653E0078CF0B /* View+hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */; };
 		497E334229967C59008710B9 /* PinchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334129967C59008710B9 /* PinchMainView.swift */; };
 		497E334429967C8C008710B9 /* PinchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334329967C8C008710B9 /* PinchPage.swift */; };
 		497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E334529967D5F008710B9 /* InfoPanelView.swift */; };
@@ -88,6 +89,7 @@
 		4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedPlaceholderExample.swift; sourceTree = "<group>"; };
 		4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollWithRotate3DEffectExample.swift; sourceTree = "<group>"; };
 		4971C95E29B6639B0078CF0B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+hideKeyboard.swift"; sourceTree = "<group>"; };
 		497E334129967C59008710B9 /* PinchMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchMainView.swift; sourceTree = "<group>"; };
 		497E334329967C8C008710B9 /* PinchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchPage.swift; sourceTree = "<group>"; };
 		497E334529967D5F008710B9 /* InfoPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 			children = (
 				49A9F79629957AC900B367AE /* AudioPlayer.swift */,
 				49A9F79829957B9A00B367AE /* Constants.swift */,
+				4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				4971C95C29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift in Sources */,
 				49A9F79929957B9A00B367AE /* Constants.swift in Sources */,
 				494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */,
+				4971C96129B6653E0078CF0B /* View+hideKeyboard.swift in Sources */,
 				494647E1299FB32B00E47D4E /* SettingsRowView.swift in Sources */,
 				493D11A229B60D01000C701C /* PopoverExample.swift in Sources */,
 				494647E7299FB32B00E47D4E /* SourceLinkView.swift in Sources */,
