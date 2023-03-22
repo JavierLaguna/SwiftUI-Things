@@ -23,6 +23,7 @@
 		494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DA299FB32B00E47D4E /* FruitCardView.swift */; };
 		494647EB299FB32B00E47D4E /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DB299FB32B00E47D4E /* SettingsLabelView.swift */; };
 		494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DD299FB32B00E47D4E /* FruitModel.swift */; };
+		4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571929CB733C00192C54 /* WalletMainView.swift */; };
 		49665AA229B4A673007D55D8 /* BackgroundMotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */; };
 		49665AA429B4AC1F007D55D8 /* LongPressGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */; };
 		49665AA729B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */; };
@@ -83,6 +84,7 @@
 		494647DA299FB32B00E47D4E /* FruitCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		494647DB299FB32B00E47D4E /* SettingsLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		494647DD299FB32B00E47D4E /* FruitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
+		4964571929CB733C00192C54 /* WalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMainView.swift; sourceTree = "<group>"; };
 		49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMotionAnimationView.swift; sourceTree = "<group>"; };
 		49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureExample.swift; sourceTree = "<group>"; };
 		49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifierAndTimingExample.swift; sourceTree = "<group>"; };
@@ -190,6 +192,30 @@
 				494647DD299FB32B00E47D4E /* FruitModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4964571829CB731400192C54 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				4964571C29CB738900192C54 /* Components */,
+				4964571B29CB737E00192C54 /* Scenes */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		4964571B29CB737E00192C54 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4964571929CB733C00192C54 /* WalletMainView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4964571C29CB738900192C54 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		49665AA529B4B59C007D55D8 /* Containers */ = {
@@ -357,10 +383,11 @@
 		49A9F7862995763F00B367AE /* SampleApps */ = {
 			isa = PBXGroup;
 			children = (
-				494647CA299FB31600E47D4E /* Fructus */,
 				497E334E2998FD23008710B9 /* Connect4 */,
+				494647CA299FB31600E47D4E /* Fructus */,
 				497E334029967C4B008710B9 /* Pinch */,
 				49A9F7872995764A00B367AE /* Restart */,
+				4964571829CB731400192C54 /* Wallet */,
 			);
 			path = SampleApps;
 			sourceTree = "<group>";
@@ -500,6 +527,7 @@
 				49A0CE43298BE38500D54732 /* Thing.swift in Sources */,
 				4971C96329B665A10078CF0B /* ShareSheetExample.swift in Sources */,
 				494647E8299FB32B00E47D4E /* FruitNutrientsView.swift in Sources */,
+				4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */,
 				494647E2299FB32B00E47D4E /* FructusOnboardingView.swift in Sources */,
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
 				497E33512998FD3A008710B9 /* C4GameView.swift in Sources */,

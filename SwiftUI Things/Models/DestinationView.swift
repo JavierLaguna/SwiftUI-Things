@@ -26,6 +26,7 @@ enum DestinationView {
     case pinch
     case fructus
     case connect4
+    case wallet
 }
 
 extension DestinationView {
@@ -57,6 +58,7 @@ extension DestinationView {
         case .pinch: PinchMainView()
         case .fructus: FructusApp()
         case .connect4: C4GameView()
+        case .wallet: WalletMainView()
         }
     }
 }
