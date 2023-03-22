@@ -13,7 +13,7 @@ struct ShareSheetExample: View {
     var body: some View {
         Button(action: shareButton) {
             Image(systemName: "square.and.arrow.up")
-                .foregroundColor(.black)
+                .foregroundColor(.blue)
         }
     }
 }

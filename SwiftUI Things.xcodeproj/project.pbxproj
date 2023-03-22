@@ -62,6 +62,8 @@
 		49A9F79429957AB400B367AE /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 49A9F79229957AB400B367AE /* success.m4a */; };
 		49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F79629957AC900B367AE /* AudioPlayer.swift */; };
 		49A9F79929957B9A00B367AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F79829957B9A00B367AE /* Constants.swift */; };
+		49B3BE7429B6705B00B06E18 /* ViewThatFitsScrollExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */; };
+		49B3BE7629B72E1600B06E18 /* ViewThatFitsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +123,8 @@
 		49A9F79229957AB400B367AE /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		49A9F79629957AC900B367AE /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		49A9F79829957B9A00B367AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsScrollExample.swift; sourceTree = "<group>"; };
+		49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,8 @@
 				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
 				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
 				49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */,
+				49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */,
+				49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -473,6 +479,7 @@
 				49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */,
 				49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */,
 				494647E0299FB32B00E47D4E /* FructusSettingsView.swift in Sources */,
+				49B3BE7629B72E1600B06E18 /* ViewThatFitsExample.swift in Sources */,
 				494647DF299FB32B00E47D4E /* FruitDetailView.swift in Sources */,
 				49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */,
 				49A9DA9F299FD92C0007632C /* GetHeightModifier.swift in Sources */,
@@ -499,6 +506,7 @@
 				497E334A2998FB95008710B9 /* C4RowView.swift in Sources */,
 				497E33482998F3CD008710B9 /* C4HoleView.swift in Sources */,
 				49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */,
+				49B3BE7429B6705B00B06E18 /* ViewThatFitsScrollExample.swift in Sources */,
 				497E3356299A8AC1008710B9 /* C4GameViewModel.swift in Sources */,
 				4971C95C29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift in Sources */,
 				49A9F79929957B9A00B367AE /* Constants.swift in Sources */,
