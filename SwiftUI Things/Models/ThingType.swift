@@ -9,7 +9,7 @@ enum ThingType {
         case .component:
             return "Component"
         case .container:
-            return "Conatiner"
+            return "Container"
         case .sampleApp:
             return "Sample App"
         }

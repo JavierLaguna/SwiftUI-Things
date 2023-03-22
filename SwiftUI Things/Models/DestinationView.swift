@@ -19,6 +19,8 @@ enum DestinationView {
     case horizontalScrollWithRotate3DEffectExample
     case shareSheetExample
     case actionSheetExample
+    case viewThatFitsExample
+    case viewThatFitsScrollExample
     // MARK: SampleApp
     case restart
     case pinch
@@ -48,6 +50,8 @@ extension DestinationView {
         case .horizontalScrollWithRotate3DEffectExample: HorizontalScrollWithRotate3DEffectExample()
         case .shareSheetExample: ShareSheetExample()
         case .actionSheetExample: ActionSheetExample()
+        case .viewThatFitsExample: ViewThatFitsExample()
+        case .viewThatFitsScrollExample: ViewThatFitsScrollExample(count: 220)
             // MARK: SampleApp
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
