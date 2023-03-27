@@ -23,7 +23,13 @@
 		494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DA299FB32B00E47D4E /* FruitCardView.swift */; };
 		494647EB299FB32B00E47D4E /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DB299FB32B00E47D4E /* SettingsLabelView.swift */; };
 		494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DD299FB32B00E47D4E /* FruitModel.swift */; };
+		4956009729D1BA84001DE321 /* CardMovementCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009629D1BA84001DE321 /* CardMovementCellView.swift */; };
+		4956009929D1D2CF001DE321 /* WalletCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009829D1D2CF001DE321 /* WalletCardDetailView.swift */; };
+		4956009C29D1D358001DE321 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009B29D1D358001DE321 /* CreditCard.swift */; };
+		4956009E29D1D533001DE321 /* WalletConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009D29D1D533001DE321 /* WalletConstants.swift */; };
+		495600A029D1DE7F001DE321 /* CreditCardMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009F29D1DE7F001DE321 /* CreditCardMovement.swift */; };
 		4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571929CB733C00192C54 /* WalletMainView.swift */; };
+		4964571E29CC3E0E00192C54 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571D29CC3E0E00192C54 /* CreditCardView.swift */; };
 		49665AA229B4A673007D55D8 /* BackgroundMotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */; };
 		49665AA429B4AC1F007D55D8 /* LongPressGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */; };
 		49665AA729B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */; };
@@ -84,7 +90,13 @@
 		494647DA299FB32B00E47D4E /* FruitCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		494647DB299FB32B00E47D4E /* SettingsLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		494647DD299FB32B00E47D4E /* FruitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
+		4956009629D1BA84001DE321 /* CardMovementCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMovementCellView.swift; sourceTree = "<group>"; };
+		4956009829D1D2CF001DE321 /* WalletCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardDetailView.swift; sourceTree = "<group>"; };
+		4956009B29D1D358001DE321 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		4956009D29D1D533001DE321 /* WalletConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConstants.swift; sourceTree = "<group>"; };
+		4956009F29D1DE7F001DE321 /* CreditCardMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardMovement.swift; sourceTree = "<group>"; };
 		4964571929CB733C00192C54 /* WalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMainView.swift; sourceTree = "<group>"; };
+		4964571D29CC3E0E00192C54 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
 		49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMotionAnimationView.swift; sourceTree = "<group>"; };
 		49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureExample.swift; sourceTree = "<group>"; };
 		49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifierAndTimingExample.swift; sourceTree = "<group>"; };
@@ -194,11 +206,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4956009A29D1D343001DE321 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4956009B29D1D358001DE321 /* CreditCard.swift */,
+				4956009F29D1DE7F001DE321 /* CreditCardMovement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4964571829CB731400192C54 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				4956009A29D1D343001DE321 /* Models */,
 				4964571C29CB738900192C54 /* Components */,
 				4964571B29CB737E00192C54 /* Scenes */,
+				4956009D29D1D533001DE321 /* WalletConstants.swift */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -206,6 +229,7 @@
 		4964571B29CB737E00192C54 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4956009829D1D2CF001DE321 /* WalletCardDetailView.swift */,
 				4964571929CB733C00192C54 /* WalletMainView.swift */,
 			);
 			path = Scenes;
@@ -214,6 +238,8 @@
 		4964571C29CB738900192C54 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4956009629D1BA84001DE321 /* CardMovementCellView.swift */,
+				4964571D29CC3E0E00192C54 /* CreditCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -501,6 +527,7 @@
 				49665AA929B50118007D55D8 /* TransformAnimationsExample.swift in Sources */,
 				49A9F78F299577AA00B367AE /* CircleGroupView.swift in Sources */,
 				49A9F78529941FF600B367AE /* ThingType.swift in Sources */,
+				4956009C29D1D358001DE321 /* CreditCard.swift in Sources */,
 				494647E6299FB32B00E47D4E /* FruitRowView.swift in Sources */,
 				4971C95F29B6639B0078CF0B /* LoadingView.swift in Sources */,
 				49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */,
@@ -509,7 +536,9 @@
 				49B3BE7629B72E1600B06E18 /* ViewThatFitsExample.swift in Sources */,
 				494647DF299FB32B00E47D4E /* FruitDetailView.swift in Sources */,
 				49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */,
+				4956009929D1D2CF001DE321 /* WalletCardDetailView.swift in Sources */,
 				49A9DA9F299FD92C0007632C /* GetHeightModifier.swift in Sources */,
+				4956009729D1BA84001DE321 /* CardMovementCellView.swift in Sources */,
 				497E334C2998FCCA008710B9 /* C4BoardView.swift in Sources */,
 				49665AA229B4A673007D55D8 /* BackgroundMotionAnimationView.swift in Sources */,
 				49A0CE47298BEE0900D54732 /* SlideTo.swift in Sources */,
@@ -543,13 +572,16 @@
 				494647E1299FB32B00E47D4E /* SettingsRowView.swift in Sources */,
 				493D11A229B60D01000C701C /* PopoverExample.swift in Sources */,
 				494647E7299FB32B00E47D4E /* SourceLinkView.swift in Sources */,
+				4956009E29D1D533001DE321 /* WalletConstants.swift in Sources */,
 				494647E9299FB32B00E47D4E /* FruitHeaderView.swift in Sources */,
 				494647DE299FB32B00E47D4E /* FruitData.swift in Sources */,
 				494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */,
 				497E3358299BFEB3008710B9 /* C4PlayerType.swift in Sources */,
 				497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */,
+				495600A029D1DE7F001DE321 /* CreditCardMovement.swift in Sources */,
 				494647E3299FB32B00E47D4E /* FructusApp.swift in Sources */,
 				49665AAD29B502FF007D55D8 /* MatchedGeometryEffectExample.swift in Sources */,
+				4964571E29CC3E0E00192C54 /* CreditCardView.swift in Sources */,
 				49665AA729B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
