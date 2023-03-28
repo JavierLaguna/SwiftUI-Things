@@ -16,6 +16,10 @@ Little iOS app for learn and test SwiftUI things.
 ![Fructus](/.readme_resources/fructus.png)
 ![Connect4](/.readme_resources/connect4.png)
 
+![WalletMain](/.readme_resources/wallet1.png)
+![WalletDetail](/.readme_resources/wallet2.png)
+![WalletDetail2](/.readme_resources/wallet3.png)
+
 ## 💻 Author
 
 > Javier Laguna

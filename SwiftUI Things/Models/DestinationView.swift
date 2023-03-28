@@ -7,6 +7,7 @@ enum DestinationView {
     case circleGroup
     case backgroundMotionAnimation
     case loading
+    
     // MARK: Container
     case longPressGestureExample
     case animationModifierAndTimingExample
@@ -21,11 +22,13 @@ enum DestinationView {
     case actionSheetExample
     case viewThatFitsExample
     case viewThatFitsScrollExample
+    
     // MARK: SampleApp
     case restart
     case pinch
     case fructus
     case connect4
+    case wallet
 }
 
 extension DestinationView {
@@ -38,6 +41,7 @@ extension DestinationView {
         case .circleGroup: CircleGroupViewSandbox()
         case .backgroundMotionAnimation: BackgroundMotionAnimationView()
         case .loading: LoadingView()
+            
             // MARK: Container
         case .longPressGestureExample: LongPressGestureExample()
         case .animationModifierAndTimingExample: AnimationModifierAndTimingExample()
@@ -52,11 +56,13 @@ extension DestinationView {
         case .actionSheetExample: ActionSheetExample()
         case .viewThatFitsExample: ViewThatFitsExample()
         case .viewThatFitsScrollExample: ViewThatFitsScrollExample(count: 220)
+            
             // MARK: SampleApp
         case .restart: RestartMainView()
         case .pinch: PinchMainView()
         case .fructus: FructusApp()
         case .connect4: C4GameView()
+        case .wallet: WalletSandbox()
         }
     }
 }
