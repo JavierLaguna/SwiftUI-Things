@@ -41,6 +41,85 @@ struct WalletCardDetailView: View {
         }
     }
     
+    @ViewBuilder
+    private var navigationBar: some View {
+        HStack {
+            Button {
+                unselectCard()
+            } label: {
+                Text("OK")
+                    .matchedGeometryEffect(id: WalletConstants.NamespaceId.navTitleNameSpaceId, in: namespace, properties: .position)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black)
+            }
+            
+            Spacer()
+            
+            CreditCardView(cardName: card.image)
+                .frame(height: 24)
+                .opacity(showSmallCard ? 1 : 0)
+                .offset(y: showSmallCard ? 0 : 14)
+            
+            Spacer()
+            
+            Button {
+                
+            } label: {
+                Image(systemName: "ellipsis.circle")
+                    .matchedGeometryEffect(id: WalletConstants.NamespaceId.navIconNameSpaceId, in: namespace)
+                    .font(.title3)
+                    .foregroundColor(.black)
+            }
+        }
+        .padding(.horizontal)
+        .padding(.bottom, 8)
+        .background(.ultraThinMaterial.opacity(showNavBackgroundColor ? 1 : 0))
+        .overlay(alignment: .bottom) {
+            if showNavBackgroundColor {
+                Divider()
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private var movementsList: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text("Last movements")
+                .font(.title2)
+                .fontWeight(.semibold)
+            
+            VStack {
+                ForEach(card.movements) { movement in
+                    CardMovementCellView(movement: movement)
+                    
+                    if movement != card.movements.last {
+                        Divider()
+                            .padding(.leading, 14)
+                    }
+                }
+            }
+            .background(.white)
+            .cornerRadius(12)
+            .padding(.top, 4)
+            .padding(.bottom, 20)
+        }
+        .padding(.top, 16)
+        .padding(.horizontal)
+        .opacity(showDetailContent ? 1 : 0)
+        .background(GeometryReader {
+            let position = $0.frame(in: .global).midY
+            
+            Color.clear.preference(key: ViewOffsetKey.self, value: position)
+                .onAppear {
+                    initScrollPosition = position
+                }
+        })
+        .onPreferenceChange(ViewOffsetKey.self) {
+            onChangeScrollPosition(position: $0)
+        }
+    }
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             CreditCardView(cardName: card.image)
@@ -50,75 +129,15 @@ struct WalletCardDetailView: View {
                 }
                 .padding(.top, 44)
                 .padding(.horizontal)
+                .shadow(radius: 12)
             
-            VStack(alignment: .leading, spacing: 2) {
-                Text("Last movements")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                
-                VStack {
-                    ForEach(card.movements) { movement in
-                        CardMovementCellView(movement: movement)
-                        
-                        // Line() // TODO: JLI
-                    }
-                }
-                .background(.white)
-                .cornerRadius(12)
-                .padding(.top, 4)
-                .padding(.bottom, 20)
-            }
-            .padding(.top, 16)
-            .padding(.horizontal)
-            .opacity(showDetailContent ? 1 : 0)
-            .background(GeometryReader {
-                let position = $0.frame(in: .global).midY
-                
-                Color.clear.preference(key: ViewOffsetKey.self, value: position)
-                .onAppear {
-                    initScrollPosition = position
-                }
-            })
-            .onPreferenceChange(ViewOffsetKey.self) {
-                onChangeScrollPosition(position: $0)
-            }
+            movementsList
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color("ColorAppleWallet").opacity(showDetailContent ? 1 : 0))
         .transition(.opacity)
         .overlay(alignment: .top) {
-            HStack {
-                Button {
-                    unselectCard()
-                } label: {
-                    Text("OK")
-                        .matchedGeometryEffect(id: WalletConstants.NamespaceId.navTitleNameSpaceId, in: namespace, properties: .position)
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.black)
-                }
-                
-                Spacer()
-                
-                CreditCardView(cardName: card.image)
-                    .frame(height: 24)
-                    .opacity(showSmallCard ? 1 : 0)
-                    .offset(y: showSmallCard ? 0 : 14)
-                
-                Spacer()
-                
-                Button {
-                    
-                } label: {
-                    Image(systemName: "ellipsis.circle")
-                        .matchedGeometryEffect(id: WalletConstants.NamespaceId.navIconNameSpaceId, in: namespace)
-                        .font(.title3)
-                        .foregroundColor(.black)
-                }
-            }
-            .padding(.horizontal)
-            .padding(.bottom, 8)
-            .background(.ultraThinMaterial.opacity(showNavBackgroundColor ? 1 : 0))
+            navigationBar
         }
     }
 }
