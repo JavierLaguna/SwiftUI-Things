@@ -74,6 +74,7 @@
 		49A9F79929957B9A00B367AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F79829957B9A00B367AE /* Constants.swift */; };
 		49B3BE7429B6705B00B06E18 /* ViewThatFitsScrollExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */; };
 		49B3BE7629B72E1600B06E18 /* ViewThatFitsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */; };
+		49CEC8B729D598B700408530 /* UIKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEC8B629D598B700408530 /* UIKitUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +146,7 @@
 		49A9F79829957B9A00B367AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsScrollExample.swift; sourceTree = "<group>"; };
 		49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsExample.swift; sourceTree = "<group>"; };
+		49CEC8B629D598B700408530 /* UIKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,11 +451,20 @@
 		49A9F79529957AC900B367AE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				49CEC8B529D598A800408530 /* Extensions */,
 				49A9F79629957AC900B367AE /* AudioPlayer.swift */,
 				49A9F79829957B9A00B367AE /* Constants.swift */,
-				4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */,
+				49CEC8B629D598B700408530 /* UIKitUtils.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		49CEC8B529D598A800408530 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -562,6 +573,7 @@
 				497E334429967C8C008710B9 /* PinchPage.swift in Sources */,
 				4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */,
 				49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */,
+				49CEC8B729D598B700408530 /* UIKitUtils.swift in Sources */,
 				494647E4299FB32B00E47D4E /* FructusContentView.swift in Sources */,
 				49665AA429B4AC1F007D55D8 /* LongPressGestureExample.swift in Sources */,
 				49A0CE43298BE38500D54732 /* Thing.swift in Sources */,

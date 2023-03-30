@@ -14,7 +14,10 @@ struct TapAnimationExample: View {
         .mask(RoundedRectangle(cornerRadius: 30))
         .shadow(color: Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)).opacity(tap ? 0.6 : 0.3), radius: tap ? 20 : 10, x: 0, y: tap ? 10 : 20)
         .scaleEffect(tap ? 1.2 : 1)
-        .animation(.spring(response: 0.4, dampingFraction: 0.6))
+        .animation(
+            .spring(response: 0.4, dampingFraction: 0.6),
+            value: tap
+        )
         .onTapGesture {
             tap = true
             

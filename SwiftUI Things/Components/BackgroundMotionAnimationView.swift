@@ -47,7 +47,8 @@ struct BackgroundMotionAnimationView: View {
                         Animation.interpolatingSpring(stiffness: 0.5, damping: 0.5)
                             .repeatForever()
                             .speed(randomSpeed())
-                            .delay(randomDelay())
+                            .delay(randomDelay()),
+                        value: isAnimating
                     )
                     .onAppear(perform: {
                         isAnimating = true
