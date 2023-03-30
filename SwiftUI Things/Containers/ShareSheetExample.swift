@@ -7,7 +7,7 @@ struct ShareSheetExample: View {
         let url = URL(string: "https://developer.apple.com/xcode/swiftui/")
         let activityController = UIActivityViewController(activityItems: [url!], applicationActivities: nil)
         
-        UIApplication.shared.windows.first?.rootViewController!.present(activityController, animated: true, completion: nil)
+        UIKitUtils.rootViewController?.present(activityController, animated: true, completion: nil)
     }
     
     var body: some View {
