@@ -28,6 +28,7 @@ extension Thing {
             Thing(title: "Circle Group", destination: .circleGroup, type: .component),
             Thing(title: "Background Motion Animation", destination: .backgroundMotionAnimation, type: .component),
             Thing(title: "Loading", destination: .loading, type: .component),
+            Thing(title: "Link", destination: .link, type: .component),
             // MARK: Container
             Thing(title: "Long Press Gesture", destination: .longPressGestureExample, type: .container),
             Thing(title: "Animation Modifier and Timing", destination: .animationModifierAndTimingExample, type: .container),

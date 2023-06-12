@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		493D11A229B60D01000C701C /* PopoverExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D11A129B60D01000C701C /* PopoverExample.swift */; };
+		494277932A37596E007049B8 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494277922A37596E007049B8 /* LinkView.swift */; };
 		494647DE299FB32B00E47D4E /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647CC299FB32A00E47D4E /* FruitData.swift */; };
 		494647DF299FB32B00E47D4E /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647CE299FB32A00E47D4E /* FruitDetailView.swift */; };
 		494647E0299FB32B00E47D4E /* FructusSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647CF299FB32A00E47D4E /* FructusSettingsView.swift */; };
@@ -76,6 +77,7 @@
 
 /* Begin PBXFileReference section */
 		493D11A129B60D01000C701C /* PopoverExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverExample.swift; sourceTree = "<group>"; };
+		494277922A37596E007049B8 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		494647CC299FB32A00E47D4E /* FruitData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 		494647CE299FB32A00E47D4E /* FruitDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
 		494647CF299FB32A00E47D4E /* FructusSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FructusSettingsView.swift; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 			children = (
 				49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */,
 				49A9F78E299577AA00B367AE /* CircleGroupView.swift */,
+				494277922A37596E007049B8 /* LinkView.swift */,
 				4971C95E29B6639B0078CF0B /* LoadingView.swift */,
 				49A0CE46298BEE0900D54732 /* SlideTo.swift */,
 			);
@@ -536,6 +539,7 @@
 				49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */,
 				49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */,
 				494647E0299FB32B00E47D4E /* FructusSettingsView.swift in Sources */,
+				494277932A37596E007049B8 /* LinkView.swift in Sources */,
 				49B3BE7629B72E1600B06E18 /* ViewThatFitsExample.swift in Sources */,
 				494647DF299FB32B00E47D4E /* FruitDetailView.swift in Sources */,
 				49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */,
