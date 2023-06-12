@@ -8,6 +8,7 @@ enum DestinationView {
     case backgroundMotionAnimation
     case loading
     case link
+    case gradientText
     
     // MARK: Container
     case longPressGestureExample
@@ -43,6 +44,7 @@ extension DestinationView {
         case .backgroundMotionAnimation: BackgroundMotionAnimationView()
         case .loading: LoadingView()
         case .link: LinkView()
+        case .gradientText: GradientText()
             
             // MARK: Container
         case .longPressGestureExample: LongPressGestureExample()
