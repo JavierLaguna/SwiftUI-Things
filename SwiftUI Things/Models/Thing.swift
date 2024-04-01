@@ -44,6 +44,7 @@ extension Thing {
             Thing(title: "Action Sheet", destination: .actionSheetExample, type: .container),
             Thing(title: "ViewThatFits", destination: .viewThatFitsExample, type: .container),
             Thing(title: "ViewThatFits Scroll", destination: .viewThatFitsScrollExample, type: .container),
+            Thing(title: "Adapted Text Color", destination: .adaptedTextColor, type: .container),
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
             Thing(title: "Pinch", destination: .pinch, type: .sampleApp),
