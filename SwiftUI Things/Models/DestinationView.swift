@@ -24,6 +24,7 @@ enum DestinationView {
     case actionSheetExample
     case viewThatFitsExample
     case viewThatFitsScrollExample
+    case adaptedTextColor
     
     // MARK: SampleApp
     case restart
@@ -60,6 +61,7 @@ extension DestinationView {
         case .actionSheetExample: ActionSheetExample()
         case .viewThatFitsExample: ViewThatFitsExample()
         case .viewThatFitsScrollExample: ViewThatFitsScrollExample(count: 220)
+        case .adaptedTextColor: AdaptedTextColorExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
