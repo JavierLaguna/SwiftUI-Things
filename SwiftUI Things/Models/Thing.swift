@@ -30,6 +30,7 @@ extension Thing {
             Thing(title: "Loading", destination: .loading, type: .component),
             Thing(title: "Link", destination: .link, type: .component),
             Thing(title: "Gradient Text", destination: .gradientText, type: .component),
+            
             // MARK: Container
             Thing(title: "Long Press Gesture", destination: .longPressGestureExample, type: .container),
             Thing(title: "Animation Modifier and Timing", destination: .animationModifierAndTimingExample, type: .container),
@@ -45,6 +46,17 @@ extension Thing {
             Thing(title: "ViewThatFits", destination: .viewThatFitsExample, type: .container),
             Thing(title: "ViewThatFits Scroll", destination: .viewThatFitsScrollExample, type: .container),
             Thing(title: "Adapted Text Color", destination: .adaptedTextColor, type: .container),
+            Thing(title: "Masking", destination: .masking, type: .container),
+            Thing(title: "Inverted Masking", destination: .invertedMasking, type: .container),
+            Thing(title: "List Section Spacing", destination: .listSectionSpacing, type: .container),
+            Thing(title: "Badges", destination: .badge, type: .container),
+            Thing(title: "UnevenRoundedRectangle", destination: .unevenRoundedRectangle, type: .container),
+            Thing(title: "Map", destination: .map, type: .container),
+            Thing(title: "Display array user friendly", destination: .displayArrayUserFriendly, type: .container),
+            Thing(title: "Date Format", destination: .dateFormat, type: .container),
+            Thing(title: "Mix Colors", destination: .mixColors, type: .container),
+            Thing(title: "Mesh Gradient", destination: .meshGradient, type: .container),
+            
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
             Thing(title: "Pinch", destination: .pinch, type: .sampleApp),

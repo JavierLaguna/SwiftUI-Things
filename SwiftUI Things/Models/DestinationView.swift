@@ -25,6 +25,16 @@ enum DestinationView {
     case viewThatFitsExample
     case viewThatFitsScrollExample
     case adaptedTextColor
+    case masking
+    case invertedMasking
+    case listSectionSpacing
+    case badge
+    case unevenRoundedRectangle
+    case map
+    case displayArrayUserFriendly
+    case dateFormat
+    case mixColors
+    case meshGradient
     
     // MARK: SampleApp
     case restart
@@ -62,6 +72,16 @@ extension DestinationView {
         case .viewThatFitsExample: ViewThatFitsExample()
         case .viewThatFitsScrollExample: ViewThatFitsScrollExample(count: 220)
         case .adaptedTextColor: AdaptedTextColorExample()
+        case .masking: MaskingExample()
+        case .invertedMasking: InvertedMaskingExample()
+        case .listSectionSpacing: ListSectionSpacingExample()
+        case .badge: BadgeExample()
+        case .unevenRoundedRectangle: UnevenRoundedRectangleExample()
+        case .map: MapExample()
+        case .displayArrayUserFriendly: DisplayArrayUserFriendlyExample()
+        case .dateFormat: DateFormatExample()
+        case .mixColors: MixColorsExample()
+        case .meshGradient: MeshGradientExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
