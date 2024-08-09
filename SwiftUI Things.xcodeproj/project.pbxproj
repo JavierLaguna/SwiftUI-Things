@@ -283,6 +283,7 @@
 				4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */,
 				49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */,
 				49851C692C661ADF0011E254 /* BadgeExample.swift */,
+				49851C712C6629920011E254 /* DateFormatExample.swift */,
 				49851C6F2C6628340011E254 /* DisplayArrayUserFriendlyExample.swift */,
 				4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */,
 				49851C652C6614090011E254 /* InvertedMaskingExample.swift */,
@@ -291,6 +292,8 @@
 				49851C6D2C661FA00011E254 /* MapExample.swift */,
 				49851C632C6612080011E254 /* MaskingExample.swift */,
 				49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */,
+				49851C752C6635A40011E254 /* MeshGradientExample.swift */,
+				49851C732C6632470011E254 /* MixColorsExample.swift */,
 				493D11A129B60D01000C701C /* PopoverExample.swift */,
 				4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */,
 				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
@@ -299,9 +302,6 @@
 				49851C6B2C661CED0011E254 /* UnevenRoundedRectangleExample.swift */,
 				49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */,
 				49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */,
-				49851C712C6629920011E254 /* DateFormatExample.swift */,
-				49851C732C6632470011E254 /* MixColorsExample.swift */,
-				49851C752C6635A40011E254 /* MeshGradientExample.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
