@@ -56,13 +56,16 @@ extension Thing {
             Thing(title: "Date Format", destination: .dateFormat, type: .container),
             Thing(title: "Mix Colors", destination: .mixColors, type: .container),
             Thing(title: "Mesh Gradient", destination: .meshGradient, type: .container),
+            Thing(title: "Compositional Grid Layout", destination: .compositionalGridLayout, type: .container),
+            Thing(title: "Floating Bottom Sheet", destination: .floatingBottomSheet, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),
             Thing(title: "Pinch", destination: .pinch, type: .sampleApp),
             Thing(title: "Fructus", destination: .fructus, type: .sampleApp),
             Thing(title: "Connect 4", destination: .connect4, type: .sampleApp),
-            Thing(title: "Wallet", destination: .wallet, type: .sampleApp)
+            Thing(title: "Wallet", destination: .wallet, type: .sampleApp),
+            Thing(title: "PS Intro", destination: .psIntro, type: .sampleApp),
         ]
     }
 }

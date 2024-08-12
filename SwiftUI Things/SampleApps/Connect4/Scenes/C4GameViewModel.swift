@@ -92,7 +92,7 @@ private extension C4GameViewModel {
                 if row[index] != nil && row[index] == row[index+1] {
                     count += 1
                     if count == 4 {
-                        print("Hay cuatro valores \(row[index]) iguales consecutivos en una fila")
+                        print("Hay cuatro valores \(String(describing: row[index])) iguales consecutivos en una fila")
                         return true
                     }
                 } else {
@@ -115,7 +115,7 @@ private extension C4GameViewModel {
                 if currentValue != nil && currentValue == nextValue {
                     count += 1
                     if count == 4 {
-                        print("Hay cuatro valores \(currentValue) iguales consecutivos en una columna")
+                        print("Hay cuatro valores \(String(describing: currentValue)) iguales consecutivos en una columna")
                         return true
                     }
                 } else {

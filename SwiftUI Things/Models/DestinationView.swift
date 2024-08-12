@@ -35,6 +35,8 @@ enum DestinationView {
     case dateFormat
     case mixColors
     case meshGradient
+    case compositionalGridLayout
+    case floatingBottomSheet
     
     // MARK: SampleApp
     case restart
@@ -42,6 +44,7 @@ enum DestinationView {
     case fructus
     case connect4
     case wallet
+    case psIntro
 }
 
 extension DestinationView {
@@ -82,6 +85,8 @@ extension DestinationView {
         case .dateFormat: DateFormatExample()
         case .mixColors: MixColorsExample()
         case .meshGradient: MeshGradientExample()
+        case .compositionalGridLayout: CompositionalGridLayoutExample()
+        case .floatingBottomSheet: FloatingBottomSheetExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
@@ -89,6 +94,7 @@ extension DestinationView {
         case .fructus: FructusApp()
         case .connect4: C4GameView()
         case .wallet: WalletSandbox()
+        case .psIntro: PSIntroView()
         }
     }
 }
