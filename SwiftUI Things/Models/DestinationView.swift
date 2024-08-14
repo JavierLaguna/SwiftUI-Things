@@ -37,6 +37,9 @@ enum DestinationView {
     case meshGradient
     case compositionalGridLayout
     case floatingBottomSheet
+    case reserveTextSpace
+    case buttonBorderShapes
+    case markdown
     
     // MARK: SampleApp
     case restart
@@ -87,6 +90,9 @@ extension DestinationView {
         case .meshGradient: MeshGradientExample()
         case .compositionalGridLayout: CompositionalGridLayoutExample()
         case .floatingBottomSheet: FloatingBottomSheetExample()
+        case .reserveTextSpace: ReserveTextSpaceExample()
+        case .buttonBorderShapes: ButtonBorderShapesExample()
+        case .markdown: MarkdownExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()

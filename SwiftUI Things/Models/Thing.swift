@@ -58,6 +58,9 @@ extension Thing {
             Thing(title: "Mesh Gradient", destination: .meshGradient, type: .container),
             Thing(title: "Compositional Grid Layout", destination: .compositionalGridLayout, type: .container),
             Thing(title: "Floating Bottom Sheet", destination: .floatingBottomSheet, type: .container),
+            Thing(title: "Reserve Text Space", destination: .reserveTextSpace, type: .container),
+            Thing(title: "Button Border Shapes", destination: .buttonBorderShapes, type: .container),
+            Thing(title: "Markdown text", destination: .markdown, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

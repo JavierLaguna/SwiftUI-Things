@@ -123,20 +123,17 @@ struct FloatingBottomSheetExample: View {
             Button("Question") {
                 updateSheet(.question)
             }
-            .background(.blue)
-            .foregroundStyle(.white)
+            .tint(.blue)
             
             Button("Alert") {
                 updateSheet(.alert)
             }
-            .background(.red)
-            .foregroundStyle(.white)
+            .tint(.red)
             
             Button("Request") {
                 updateSheet(.request)
             }
-            .background(.green)
-            .foregroundStyle(.white)
+            .tint(.green)
             
             Spacer()
         }

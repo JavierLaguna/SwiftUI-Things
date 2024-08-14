@@ -70,6 +70,8 @@
 		49851C782C66384C0011E254 /* CompositionalGridLayoutExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49851C772C66384C0011E254 /* CompositionalGridLayoutExample.swift */; };
 		49851C7A2C6644BE0011E254 /* CompositionalGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49851C792C6644BC0011E254 /* CompositionalGridLayout.swift */; };
 		49851C7C2C6647FE0011E254 /* FloatingBottomSheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49851C7B2C6647FE0011E254 /* FloatingBottomSheetExample.swift */; };
+		498652CC2C6C98B400AB1691 /* ReserveTextSpaceExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498652CB2C6C98B400AB1691 /* ReserveTextSpaceExample.swift */; };
+		498652CE2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498652CD2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift */; };
 		49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */; };
 		49A0CE34298BE0C900D54732 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE33298BE0C900D54732 /* MainView.swift */; };
 		49A0CE36298BE0CB00D54732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A0CE35298BE0CB00D54732 /* Assets.xcassets */; };
@@ -92,6 +94,7 @@
 		49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66B2C6A0C2600B77478 /* PsPage.swift */; };
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
+		49DF619D2C6CC48900EF3DC9 /* MarkdownExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +161,8 @@
 		49851C772C66384C0011E254 /* CompositionalGridLayoutExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalGridLayoutExample.swift; sourceTree = "<group>"; };
 		49851C792C6644BC0011E254 /* CompositionalGridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalGridLayout.swift; sourceTree = "<group>"; };
 		49851C7B2C6647FE0011E254 /* FloatingBottomSheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingBottomSheetExample.swift; sourceTree = "<group>"; };
+		498652CB2C6C98B400AB1691 /* ReserveTextSpaceExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveTextSpaceExample.swift; sourceTree = "<group>"; };
+		498652CD2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBorderShapesExample.swift; sourceTree = "<group>"; };
 		49A0CE2E298BE0C900D54732 /* SwiftUI Things.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Things.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ThingsApp.swift; sourceTree = "<group>"; };
 		49A0CE33298BE0C900D54732 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -181,6 +186,7 @@
 		49D2D66B2C6A0C2600B77478 /* PsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsPage.swift; sourceTree = "<group>"; };
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
+		49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +301,7 @@
 				4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */,
 				49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */,
 				49851C692C661ADF0011E254 /* BadgeExample.swift */,
+				498652CD2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift */,
 				49851C772C66384C0011E254 /* CompositionalGridLayoutExample.swift */,
 				49851C712C6629920011E254 /* DateFormatExample.swift */,
 				49851C6F2C6628340011E254 /* DisplayArrayUserFriendlyExample.swift */,
@@ -310,12 +317,14 @@
 				49851C732C6632470011E254 /* MixColorsExample.swift */,
 				493D11A129B60D01000C701C /* PopoverExample.swift */,
 				4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */,
+				498652CB2C6C98B400AB1691 /* ReserveTextSpaceExample.swift */,
 				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
 				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
 				49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */,
 				49851C6B2C661CED0011E254 /* UnevenRoundedRectangleExample.swift */,
 				49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */,
 				49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */,
+				49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -641,6 +650,7 @@
 				494277952A376BB5007049B8 /* GradientText.swift in Sources */,
 				49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */,
 				494647E0299FB32B00E47D4E /* FructusSettingsView.swift in Sources */,
+				498652CC2C6C98B400AB1691 /* ReserveTextSpaceExample.swift in Sources */,
 				494277932A37596E007049B8 /* LinkView.swift in Sources */,
 				49B3BE7629B72E1600B06E18 /* ViewThatFitsExample.swift in Sources */,
 				494647DF299FB32B00E47D4E /* FruitDetailView.swift in Sources */,
@@ -668,6 +678,7 @@
 				49A0CE43298BE38500D54732 /* Thing.swift in Sources */,
 				4971C96329B665A10078CF0B /* ShareSheetExample.swift in Sources */,
 				494647E8299FB32B00E47D4E /* FruitNutrientsView.swift in Sources */,
+				49DF619D2C6CC48900EF3DC9 /* MarkdownExample.swift in Sources */,
 				495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */,
 				49851C7A2C6644BE0011E254 /* CompositionalGridLayout.swift in Sources */,
 				496AA4D92BBAE67800CC3D05 /* AdaptedTextColorExample.swift in Sources */,
@@ -676,6 +687,7 @@
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
 				497E33512998FD3A008710B9 /* C4GameView.swift in Sources */,
 				497E334A2998FB95008710B9 /* C4RowView.swift in Sources */,
+				498652CE2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift in Sources */,
 				497E33482998F3CD008710B9 /* C4HoleView.swift in Sources */,
 				49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */,
 				49B3BE7429B6705B00B06E18 /* ViewThatFitsScrollExample.swift in Sources */,
