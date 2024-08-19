@@ -39,6 +39,8 @@
 		49665AA929B50118007D55D8 /* TransformAnimationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */; };
 		49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AAA29B50247007D55D8 /* TapAnimationExample.swift */; };
 		49665AAD29B502FF007D55D8 /* MatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */; };
+		496A60602C736058006BC371 /* FloatingTabBarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A605F2C736058006BC371 /* FloatingTabBarExample.swift */; };
+		496A60622C737E1B006BC371 /* MorphingSymbolViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A60612C737E1B006BC371 /* MorphingSymbolViewExample.swift */; };
 		496AA4D72BBAE66200CC3D05 /* Color+Luminance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496AA4D62BBAE66200CC3D05 /* Color+Luminance.swift */; };
 		496AA4D92BBAE67800CC3D05 /* AdaptedTextColorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496AA4D82BBAE67800CC3D05 /* AdaptedTextColorExample.swift */; };
 		4971C95829B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */; };
@@ -95,6 +97,9 @@
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
 		49DF619D2C6CC48900EF3DC9 /* MarkdownExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */; };
+		49DF619F2C7326D200EF3DC9 /* PrivacySensitiveExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */; };
+		49DF61A12C732A9D00EF3DC9 /* ImageAndTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */; };
+		49DF61A32C732DC100EF3DC9 /* PhotosPickerStylesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF61A22C732DC100EF3DC9 /* PhotosPickerStylesExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +135,8 @@
 		49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformAnimationsExample.swift; sourceTree = "<group>"; };
 		49665AAA29B50247007D55D8 /* TapAnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAnimationExample.swift; sourceTree = "<group>"; };
 		49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
+		496A605F2C736058006BC371 /* FloatingTabBarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBarExample.swift; sourceTree = "<group>"; };
+		496A60612C737E1B006BC371 /* MorphingSymbolViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolViewExample.swift; sourceTree = "<group>"; };
 		496AA4D62BBAE66200CC3D05 /* Color+Luminance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Luminance.swift"; sourceTree = "<group>"; };
 		496AA4D82BBAE67800CC3D05 /* AdaptedTextColorExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptedTextColorExample.swift; sourceTree = "<group>"; };
 		4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
@@ -187,6 +194,9 @@
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
 		49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownExample.swift; sourceTree = "<group>"; };
+		49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySensitiveExample.swift; sourceTree = "<group>"; };
+		49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTextExample.swift; sourceTree = "<group>"; };
+		49DF61A22C732DC100EF3DC9 /* PhotosPickerStylesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerStylesExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,16 +316,21 @@
 				49851C712C6629920011E254 /* DateFormatExample.swift */,
 				49851C6F2C6628340011E254 /* DisplayArrayUserFriendlyExample.swift */,
 				49851C7B2C6647FE0011E254 /* FloatingBottomSheetExample.swift */,
+				496A605F2C736058006BC371 /* FloatingTabBarExample.swift */,
 				4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */,
+				49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */,
 				49851C652C6614090011E254 /* InvertedMaskingExample.swift */,
 				49851C672C6616F00011E254 /* ListSectionSpacingExample.swift */,
 				49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */,
 				49851C6D2C661FA00011E254 /* MapExample.swift */,
+				49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */,
 				49851C632C6612080011E254 /* MaskingExample.swift */,
 				49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */,
 				49851C752C6635A40011E254 /* MeshGradientExample.swift */,
 				49851C732C6632470011E254 /* MixColorsExample.swift */,
+				49DF61A22C732DC100EF3DC9 /* PhotosPickerStylesExample.swift */,
 				493D11A129B60D01000C701C /* PopoverExample.swift */,
+				49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */,
 				4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */,
 				498652CB2C6C98B400AB1691 /* ReserveTextSpaceExample.swift */,
 				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
@@ -324,7 +339,6 @@
 				49851C6B2C661CED0011E254 /* UnevenRoundedRectangleExample.swift */,
 				49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */,
 				49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */,
-				49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -417,6 +431,8 @@
 				494277942A376BB5007049B8 /* GradientText.swift */,
 				494277922A37596E007049B8 /* LinkView.swift */,
 				4971C95E29B6639B0078CF0B /* LoadingView.swift */,
+				49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */,
+				496A60612C737E1B006BC371 /* MorphingSymbolViewExample.swift */,
 				49A0CE46298BEE0900D54732 /* SlideTo.swift */,
 			);
 			path = Components;
@@ -528,7 +544,6 @@
 		49D2D6682C6A0BA100B77478 /* PSIntro */ = {
 			isa = PBXGroup;
 			children = (
-				49D2D66D2C6A0F3C00B77478 /* Components */,
 				49D2D6692C6A0BE300B77478 /* Models */,
 				49D2D66A2C6A0BEA00B77478 /* Scenes */,
 			);
@@ -549,14 +564,6 @@
 				49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		49D2D66D2C6A0F3C00B77478 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -661,6 +668,7 @@
 				49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */,
 				497E334C2998FCCA008710B9 /* C4BoardView.swift in Sources */,
 				49665AA229B4A673007D55D8 /* BackgroundMotionAnimationView.swift in Sources */,
+				496A60602C736058006BC371 /* FloatingTabBarExample.swift in Sources */,
 				49A0CE47298BEE0900D54732 /* SlideTo.swift in Sources */,
 				494647E5299FB32B00E47D4E /* StartButtonView.swift in Sources */,
 				494647EB299FB32B00E47D4E /* SettingsLabelView.swift in Sources */,
@@ -679,14 +687,18 @@
 				4971C96329B665A10078CF0B /* ShareSheetExample.swift in Sources */,
 				494647E8299FB32B00E47D4E /* FruitNutrientsView.swift in Sources */,
 				49DF619D2C6CC48900EF3DC9 /* MarkdownExample.swift in Sources */,
+				496A60622C737E1B006BC371 /* MorphingSymbolViewExample.swift in Sources */,
 				495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */,
 				49851C7A2C6644BE0011E254 /* CompositionalGridLayout.swift in Sources */,
 				496AA4D92BBAE67800CC3D05 /* AdaptedTextColorExample.swift in Sources */,
+				49DF61A12C732A9D00EF3DC9 /* ImageAndTextExample.swift in Sources */,
 				4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */,
 				494647E2299FB32B00E47D4E /* FructusOnboardingView.swift in Sources */,
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
 				497E33512998FD3A008710B9 /* C4GameView.swift in Sources */,
+				49DF61A32C732DC100EF3DC9 /* PhotosPickerStylesExample.swift in Sources */,
 				497E334A2998FB95008710B9 /* C4RowView.swift in Sources */,
+				49DF619F2C7326D200EF3DC9 /* PrivacySensitiveExample.swift in Sources */,
 				498652CE2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift in Sources */,
 				497E33482998F3CD008710B9 /* C4HoleView.swift in Sources */,
 				49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */,

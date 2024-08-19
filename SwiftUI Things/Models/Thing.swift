@@ -30,6 +30,7 @@ extension Thing {
             Thing(title: "Loading", destination: .loading, type: .component),
             Thing(title: "Link", destination: .link, type: .component),
             Thing(title: "Gradient Text", destination: .gradientText, type: .component),
+            Thing(title: "Morphing Symbol", destination: .morphingSymbol, type: .component),
             
             // MARK: Container
             Thing(title: "Long Press Gesture", destination: .longPressGestureExample, type: .container),
@@ -61,6 +62,10 @@ extension Thing {
             Thing(title: "Reserve Text Space", destination: .reserveTextSpace, type: .container),
             Thing(title: "Button Border Shapes", destination: .buttonBorderShapes, type: .container),
             Thing(title: "Markdown text", destination: .markdown, type: .container),
+            Thing(title: "Privacy sensitive text", destination: .privacySensitive, type: .container),
+            Thing(title: "Image and Text", destination: .imageAndText, type: .container),
+            Thing(title: "Photos Picker Styles", destination: .photosPickerStyles, type: .container),
+            Thing(title: "Floating Tab Bar", destination: .floatingTabBar, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

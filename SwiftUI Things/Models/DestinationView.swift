@@ -9,6 +9,7 @@ enum DestinationView {
     case loading
     case link
     case gradientText
+    case morphingSymbol
     
     // MARK: Container
     case longPressGestureExample
@@ -40,6 +41,10 @@ enum DestinationView {
     case reserveTextSpace
     case buttonBorderShapes
     case markdown
+    case privacySensitive
+    case imageAndText
+    case photosPickerStyles
+    case floatingTabBar
     
     // MARK: SampleApp
     case restart
@@ -62,6 +67,7 @@ extension DestinationView {
         case .loading: LoadingView()
         case .link: LinkView()
         case .gradientText: GradientText()
+        case .morphingSymbol: MorphingSymbolViewExample()
             
             // MARK: Container
         case .longPressGestureExample: LongPressGestureExample()
@@ -93,6 +99,10 @@ extension DestinationView {
         case .reserveTextSpace: ReserveTextSpaceExample()
         case .buttonBorderShapes: ButtonBorderShapesExample()
         case .markdown: MarkdownExample()
+        case .privacySensitive: PrivacySensitiveExample()
+        case .imageAndText: ImageAndTextExample()
+        case .photosPickerStyles: PhotosPickerStylesExample()
+        case .floatingTabBar: FloatingTabBarExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
