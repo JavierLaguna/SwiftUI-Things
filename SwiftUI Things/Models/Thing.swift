@@ -66,6 +66,7 @@ extension Thing {
             Thing(title: "Image and Text", destination: .imageAndText, type: .container),
             Thing(title: "Photos Picker Styles", destination: .photosPickerStyles, type: .container),
             Thing(title: "Floating Tab Bar", destination: .floatingTabBar, type: .container),
+            Thing(title: "Dropdown", destination: .dropdownView, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

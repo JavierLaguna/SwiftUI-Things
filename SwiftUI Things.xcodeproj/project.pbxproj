@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49344FFE2C74A71B00E84810 /* DropdownViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */; };
 		493D11A229B60D01000C701C /* PopoverExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D11A129B60D01000C701C /* PopoverExample.swift */; };
 		494277932A37596E007049B8 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494277922A37596E007049B8 /* LinkView.swift */; };
 		494277952A376BB5007049B8 /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494277942A376BB5007049B8 /* GradientText.swift */; };
@@ -103,6 +104,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownViewExample.swift; sourceTree = "<group>"; };
 		493D11A129B60D01000C701C /* PopoverExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverExample.swift; sourceTree = "<group>"; };
 		494277922A37596E007049B8 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		494277942A376BB5007049B8 /* GradientText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				49851C772C66384C0011E254 /* CompositionalGridLayoutExample.swift */,
 				49851C712C6629920011E254 /* DateFormatExample.swift */,
 				49851C6F2C6628340011E254 /* DisplayArrayUserFriendlyExample.swift */,
+				49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */,
 				49851C7B2C6647FE0011E254 /* FloatingBottomSheetExample.swift */,
 				496A605F2C736058006BC371 /* FloatingTabBarExample.swift */,
 				4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */,
@@ -688,6 +691,7 @@
 				494647E8299FB32B00E47D4E /* FruitNutrientsView.swift in Sources */,
 				49DF619D2C6CC48900EF3DC9 /* MarkdownExample.swift in Sources */,
 				496A60622C737E1B006BC371 /* MorphingSymbolViewExample.swift in Sources */,
+				49344FFE2C74A71B00E84810 /* DropdownViewExample.swift in Sources */,
 				495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */,
 				49851C7A2C6644BE0011E254 /* CompositionalGridLayout.swift in Sources */,
 				496AA4D92BBAE67800CC3D05 /* AdaptedTextColorExample.swift in Sources */,
