@@ -96,6 +96,9 @@
 		49B3BE7629B72E1600B06E18 /* ViewThatFitsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */; };
 		49B8E2A72C74F46C00C8F0BE /* NestedMenusExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2A62C74F46C00C8F0BE /* NestedMenusExample.swift */; };
 		49B8E2A92C74F9CF00C8F0BE /* InspectorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2A82C74F9CF00C8F0BE /* InspectorExample.swift */; };
+		49B8E2AB2C74FCBB00C8F0BE /* DetectTapLocationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2AA2C74FCBB00C8F0BE /* DetectTapLocationExample.swift */; };
+		49B8E2AD2C7500EE00C8F0BE /* RenameButtonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2AC2C7500EE00C8F0BE /* RenameButtonExample.swift */; };
+		49B8E2AF2C7509D500C8F0BE /* MenuWithSectionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2AE2C7509D500C8F0BE /* MenuWithSectionsExample.swift */; };
 		49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66B2C6A0C2600B77478 /* PsPage.swift */; };
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
@@ -196,6 +199,9 @@
 		49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsExample.swift; sourceTree = "<group>"; };
 		49B8E2A62C74F46C00C8F0BE /* NestedMenusExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedMenusExample.swift; sourceTree = "<group>"; };
 		49B8E2A82C74F9CF00C8F0BE /* InspectorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorExample.swift; sourceTree = "<group>"; };
+		49B8E2AA2C74FCBB00C8F0BE /* DetectTapLocationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectTapLocationExample.swift; sourceTree = "<group>"; };
+		49B8E2AC2C7500EE00C8F0BE /* RenameButtonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameButtonExample.swift; sourceTree = "<group>"; };
+		49B8E2AE2C7509D500C8F0BE /* MenuWithSectionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWithSectionsExample.swift; sourceTree = "<group>"; };
 		49D2D66B2C6A0C2600B77478 /* PsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsPage.swift; sourceTree = "<group>"; };
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
@@ -320,6 +326,7 @@
 				498652CD2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift */,
 				49851C772C66384C0011E254 /* CompositionalGridLayoutExample.swift */,
 				49851C712C6629920011E254 /* DateFormatExample.swift */,
+				49B8E2AA2C74FCBB00C8F0BE /* DetectTapLocationExample.swift */,
 				49851C6F2C6628340011E254 /* DisplayArrayUserFriendlyExample.swift */,
 				49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */,
 				49851C7B2C6647FE0011E254 /* FloatingBottomSheetExample.swift */,
@@ -334,6 +341,7 @@
 				49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */,
 				49851C632C6612080011E254 /* MaskingExample.swift */,
 				49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */,
+				49B8E2AE2C7509D500C8F0BE /* MenuWithSectionsExample.swift */,
 				49851C752C6635A40011E254 /* MeshGradientExample.swift */,
 				49851C732C6632470011E254 /* MixColorsExample.swift */,
 				49B8E2A62C74F46C00C8F0BE /* NestedMenusExample.swift */,
@@ -341,6 +349,7 @@
 				493D11A129B60D01000C701C /* PopoverExample.swift */,
 				49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */,
 				4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */,
+				49B8E2AC2C7500EE00C8F0BE /* RenameButtonExample.swift */,
 				498652CB2C6C98B400AB1691 /* ReserveTextSpaceExample.swift */,
 				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
 				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
@@ -701,8 +710,10 @@
 				49344FFE2C74A71B00E84810 /* DropdownViewExample.swift in Sources */,
 				495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */,
 				49851C7A2C6644BE0011E254 /* CompositionalGridLayout.swift in Sources */,
+				49B8E2AD2C7500EE00C8F0BE /* RenameButtonExample.swift in Sources */,
 				496AA4D92BBAE67800CC3D05 /* AdaptedTextColorExample.swift in Sources */,
 				49DF61A12C732A9D00EF3DC9 /* ImageAndTextExample.swift in Sources */,
+				49B8E2AF2C7509D500C8F0BE /* MenuWithSectionsExample.swift in Sources */,
 				4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */,
 				494647E2299FB32B00E47D4E /* FructusOnboardingView.swift in Sources */,
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
@@ -733,6 +744,7 @@
 				494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */,
 				49B8E2A92C74F9CF00C8F0BE /* InspectorExample.swift in Sources */,
 				49851C6E2C661FA00011E254 /* MapExample.swift in Sources */,
+				49B8E2AB2C74FCBB00C8F0BE /* DetectTapLocationExample.swift in Sources */,
 				497E3358299BFEB3008710B9 /* C4PlayerType.swift in Sources */,
 				497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */,
 				495600A029D1DE7F001DE321 /* CreditCardMovement.swift in Sources */,
