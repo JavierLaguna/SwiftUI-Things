@@ -55,6 +55,8 @@ enum DestinationView {
     case rotateGesture
     case deviceInformation
     case gauge
+    case textSelection
+    case coverCarousel
     
     // MARK: SampleApp
     case restart
@@ -123,6 +125,8 @@ extension DestinationView {
         case .rotateGesture: RotateGestureExample()
         case .deviceInformation: DeviceInformationExample()
         case .gauge: GaugeExample()
+        case .textSelection: TextSelectionExample()
+        case .coverCarousel: CoverCarouselExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()

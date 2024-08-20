@@ -103,6 +103,8 @@
 		49B8E2B52C7516C600C8F0BE /* DeviceInformationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B42C7516C600C8F0BE /* DeviceInformationExample.swift */; };
 		49B8E2B72C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B62C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift */; };
 		49B8E2B92C75288600C8F0BE /* GaugeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B82C75288600C8F0BE /* GaugeExample.swift */; };
+		49B8E2BB2C752B4D00C8F0BE /* TextSelectionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2BA2C752B4D00C8F0BE /* TextSelectionExample.swift */; };
+		49B8E2BD2C752EDA00C8F0BE /* CoverCarouselExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2BC2C752EDA00C8F0BE /* CoverCarouselExample.swift */; };
 		49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66B2C6A0C2600B77478 /* PsPage.swift */; };
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
@@ -210,6 +212,8 @@
 		49B8E2B42C7516C600C8F0BE /* DeviceInformationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInformationExample.swift; sourceTree = "<group>"; };
 		49B8E2B62C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBorderAnimatedExample.swift; sourceTree = "<group>"; };
 		49B8E2B82C75288600C8F0BE /* GaugeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeExample.swift; sourceTree = "<group>"; };
+		49B8E2BA2C752B4D00C8F0BE /* TextSelectionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSelectionExample.swift; sourceTree = "<group>"; };
+		49B8E2BC2C752EDA00C8F0BE /* CoverCarouselExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverCarouselExample.swift; sourceTree = "<group>"; };
 		49D2D66B2C6A0C2600B77478 /* PsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsPage.swift; sourceTree = "<group>"; };
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
@@ -334,6 +338,7 @@
 				49B8E2B62C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift */,
 				498652CD2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift */,
 				49851C772C66384C0011E254 /* CompositionalGridLayoutExample.swift */,
+				49B8E2BC2C752EDA00C8F0BE /* CoverCarouselExample.swift */,
 				49851C712C6629920011E254 /* DateFormatExample.swift */,
 				49B8E2AA2C74FCBB00C8F0BE /* DetectTapLocationExample.swift */,
 				49B8E2B42C7516C600C8F0BE /* DeviceInformationExample.swift */,
@@ -365,6 +370,7 @@
 				49B8E2B02C75156900C8F0BE /* RotateGestureExample.swift */,
 				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
 				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
+				49B8E2BA2C752B4D00C8F0BE /* TextSelectionExample.swift */,
 				49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */,
 				49851C6B2C661CED0011E254 /* UnevenRoundedRectangleExample.swift */,
 				49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */,
@@ -684,6 +690,7 @@
 				49851C782C66384C0011E254 /* CompositionalGridLayoutExample.swift in Sources */,
 				4971C95F29B6639B0078CF0B /* LoadingView.swift in Sources */,
 				49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */,
+				49B8E2BB2C752B4D00C8F0BE /* TextSelectionExample.swift in Sources */,
 				494277952A376BB5007049B8 /* GradientText.swift in Sources */,
 				49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */,
 				494647E0299FB32B00E47D4E /* FructusSettingsView.swift in Sources */,
@@ -700,6 +707,7 @@
 				497E334C2998FCCA008710B9 /* C4BoardView.swift in Sources */,
 				49665AA229B4A673007D55D8 /* BackgroundMotionAnimationView.swift in Sources */,
 				496A60602C736058006BC371 /* FloatingTabBarExample.swift in Sources */,
+				49B8E2BD2C752EDA00C8F0BE /* CoverCarouselExample.swift in Sources */,
 				49A0CE47298BEE0900D54732 /* SlideTo.swift in Sources */,
 				494647E5299FB32B00E47D4E /* StartButtonView.swift in Sources */,
 				494647EB299FB32B00E47D4E /* SettingsLabelView.swift in Sources */,
