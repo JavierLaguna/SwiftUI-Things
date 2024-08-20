@@ -75,6 +75,7 @@ extension Thing {
             Thing(title: "RenameButton", destination: .renameButton, type: .container),
             Thing(title: "Rotate Gesture", destination: .rotateGesture, type: .container),
             Thing(title: "Device Information", destination: .deviceInformation, type: .container),
+            Thing(title: "Gauge", destination: .gauge, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

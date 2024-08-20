@@ -54,6 +54,7 @@ enum DestinationView {
     case renameButton
     case rotateGesture
     case deviceInformation
+    case gauge
     
     // MARK: SampleApp
     case restart
@@ -121,6 +122,7 @@ extension DestinationView {
         case .renameButton: RenameButtonExample()
         case .rotateGesture: RotateGestureExample()
         case .deviceInformation: DeviceInformationExample()
+        case .gauge: GaugeExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()

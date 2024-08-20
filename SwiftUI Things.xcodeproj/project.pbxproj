@@ -102,6 +102,7 @@
 		49B8E2B12C75156900C8F0BE /* RotateGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B02C75156900C8F0BE /* RotateGestureExample.swift */; };
 		49B8E2B52C7516C600C8F0BE /* DeviceInformationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B42C7516C600C8F0BE /* DeviceInformationExample.swift */; };
 		49B8E2B72C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B62C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift */; };
+		49B8E2B92C75288600C8F0BE /* GaugeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B82C75288600C8F0BE /* GaugeExample.swift */; };
 		49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66B2C6A0C2600B77478 /* PsPage.swift */; };
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
@@ -208,6 +209,7 @@
 		49B8E2B02C75156900C8F0BE /* RotateGestureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateGestureExample.swift; sourceTree = "<group>"; };
 		49B8E2B42C7516C600C8F0BE /* DeviceInformationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInformationExample.swift; sourceTree = "<group>"; };
 		49B8E2B62C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBorderAnimatedExample.swift; sourceTree = "<group>"; };
+		49B8E2B82C75288600C8F0BE /* GaugeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeExample.swift; sourceTree = "<group>"; };
 		49D2D66B2C6A0C2600B77478 /* PsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsPage.swift; sourceTree = "<group>"; };
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */,
 				49851C7B2C6647FE0011E254 /* FloatingBottomSheetExample.swift */,
 				496A605F2C736058006BC371 /* FloatingTabBarExample.swift */,
+				49B8E2B82C75288600C8F0BE /* GaugeExample.swift */,
 				4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */,
 				49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */,
 				49B8E2A82C74F9CF00C8F0BE /* InspectorExample.swift */,
@@ -725,6 +728,7 @@
 				496AA4D92BBAE67800CC3D05 /* AdaptedTextColorExample.swift in Sources */,
 				49DF61A12C732A9D00EF3DC9 /* ImageAndTextExample.swift in Sources */,
 				49B8E2AF2C7509D500C8F0BE /* MenuWithSectionsExample.swift in Sources */,
+				49B8E2B92C75288600C8F0BE /* GaugeExample.swift in Sources */,
 				4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */,
 				494647E2299FB32B00E47D4E /* FructusOnboardingView.swift in Sources */,
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
