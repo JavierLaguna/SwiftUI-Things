@@ -46,6 +46,8 @@ enum DestinationView {
     case photosPickerStyles
     case floatingTabBar
     case dropdownView
+    case nestedMenus
+    case inspector
     
     // MARK: SampleApp
     case restart
@@ -105,6 +107,8 @@ extension DestinationView {
         case .photosPickerStyles: PhotosPickerStylesExample()
         case .floatingTabBar: FloatingTabBarExample()
         case .dropdownView: DropdownViewExample()
+        case .nestedMenus: NestedMenusExample()
+        case .inspector: InspectorExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()

@@ -94,6 +94,8 @@
 		49A9F79929957B9A00B367AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F79829957B9A00B367AE /* Constants.swift */; };
 		49B3BE7429B6705B00B06E18 /* ViewThatFitsScrollExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */; };
 		49B3BE7629B72E1600B06E18 /* ViewThatFitsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */; };
+		49B8E2A72C74F46C00C8F0BE /* NestedMenusExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2A62C74F46C00C8F0BE /* NestedMenusExample.swift */; };
+		49B8E2A92C74F9CF00C8F0BE /* InspectorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2A82C74F9CF00C8F0BE /* InspectorExample.swift */; };
 		49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66B2C6A0C2600B77478 /* PsPage.swift */; };
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
@@ -192,6 +194,8 @@
 		49A9F79829957B9A00B367AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsScrollExample.swift; sourceTree = "<group>"; };
 		49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsExample.swift; sourceTree = "<group>"; };
+		49B8E2A62C74F46C00C8F0BE /* NestedMenusExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedMenusExample.swift; sourceTree = "<group>"; };
+		49B8E2A82C74F9CF00C8F0BE /* InspectorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorExample.swift; sourceTree = "<group>"; };
 		49D2D66B2C6A0C2600B77478 /* PsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsPage.swift; sourceTree = "<group>"; };
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
@@ -322,6 +326,7 @@
 				496A605F2C736058006BC371 /* FloatingTabBarExample.swift */,
 				4971C95B29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift */,
 				49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */,
+				49B8E2A82C74F9CF00C8F0BE /* InspectorExample.swift */,
 				49851C652C6614090011E254 /* InvertedMaskingExample.swift */,
 				49851C672C6616F00011E254 /* ListSectionSpacingExample.swift */,
 				49665AA329B4AC1F007D55D8 /* LongPressGestureExample.swift */,
@@ -331,6 +336,7 @@
 				49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */,
 				49851C752C6635A40011E254 /* MeshGradientExample.swift */,
 				49851C732C6632470011E254 /* MixColorsExample.swift */,
+				49B8E2A62C74F46C00C8F0BE /* NestedMenusExample.swift */,
 				49DF61A22C732DC100EF3DC9 /* PhotosPickerStylesExample.swift */,
 				493D11A129B60D01000C701C /* PopoverExample.swift */,
 				49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */,
@@ -677,6 +683,7 @@
 				494647EB299FB32B00E47D4E /* SettingsLabelView.swift in Sources */,
 				49A0CE34298BE0C900D54732 /* MainView.swift in Sources */,
 				49851C722C6629920011E254 /* DateFormatExample.swift in Sources */,
+				49B8E2A72C74F46C00C8F0BE /* NestedMenusExample.swift in Sources */,
 				49A0CE45298BE98E00D54732 /* DestinationView.swift in Sources */,
 				49A9F78D2995767800B367AE /* RestartMainView.swift in Sources */,
 				4971C96529B666900078CF0B /* ActionSheetExample.swift in Sources */,
@@ -724,6 +731,7 @@
 				496AA4D72BBAE66200CC3D05 /* Color+Luminance.swift in Sources */,
 				494647DE299FB32B00E47D4E /* FruitData.swift in Sources */,
 				494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */,
+				49B8E2A92C74F9CF00C8F0BE /* InspectorExample.swift in Sources */,
 				49851C6E2C661FA00011E254 /* MapExample.swift in Sources */,
 				497E3358299BFEB3008710B9 /* C4PlayerType.swift in Sources */,
 				497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */,
