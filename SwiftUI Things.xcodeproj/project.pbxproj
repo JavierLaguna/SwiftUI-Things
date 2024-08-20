@@ -99,6 +99,7 @@
 		49B8E2AB2C74FCBB00C8F0BE /* DetectTapLocationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2AA2C74FCBB00C8F0BE /* DetectTapLocationExample.swift */; };
 		49B8E2AD2C7500EE00C8F0BE /* RenameButtonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2AC2C7500EE00C8F0BE /* RenameButtonExample.swift */; };
 		49B8E2AF2C7509D500C8F0BE /* MenuWithSectionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2AE2C7509D500C8F0BE /* MenuWithSectionsExample.swift */; };
+		49B8E2B12C75156900C8F0BE /* RotateGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B02C75156900C8F0BE /* RotateGestureExample.swift */; };
 		49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66B2C6A0C2600B77478 /* PsPage.swift */; };
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
@@ -202,6 +203,7 @@
 		49B8E2AA2C74FCBB00C8F0BE /* DetectTapLocationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectTapLocationExample.swift; sourceTree = "<group>"; };
 		49B8E2AC2C7500EE00C8F0BE /* RenameButtonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameButtonExample.swift; sourceTree = "<group>"; };
 		49B8E2AE2C7509D500C8F0BE /* MenuWithSectionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWithSectionsExample.swift; sourceTree = "<group>"; };
+		49B8E2B02C75156900C8F0BE /* RotateGestureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateGestureExample.swift; sourceTree = "<group>"; };
 		49D2D66B2C6A0C2600B77478 /* PsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsPage.swift; sourceTree = "<group>"; };
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 				4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */,
 				49B8E2AC2C7500EE00C8F0BE /* RenameButtonExample.swift */,
 				498652CB2C6C98B400AB1691 /* ReserveTextSpaceExample.swift */,
+				49B8E2B02C75156900C8F0BE /* RotateGestureExample.swift */,
 				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
 				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
 				49665AA829B50118007D55D8 /* TransformAnimationsExample.swift */,
@@ -707,6 +710,7 @@
 				494647E8299FB32B00E47D4E /* FruitNutrientsView.swift in Sources */,
 				49DF619D2C6CC48900EF3DC9 /* MarkdownExample.swift in Sources */,
 				496A60622C737E1B006BC371 /* MorphingSymbolViewExample.swift in Sources */,
+				49B8E2B12C75156900C8F0BE /* RotateGestureExample.swift in Sources */,
 				49344FFE2C74A71B00E84810 /* DropdownViewExample.swift in Sources */,
 				495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */,
 				49851C7A2C6644BE0011E254 /* CompositionalGridLayout.swift in Sources */,

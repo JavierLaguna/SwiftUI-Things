@@ -72,6 +72,7 @@ extension Thing {
             Thing(title: "Inspector", destination: .inspector, type: .container),
             Thing(title: "Detect Tap Location", destination: .detectTapLocation, type: .container),
             Thing(title: "RenameButton", destination: .renameButton, type: .container),
+            Thing(title: "Rotate Gesture", destination: .rotateGesture, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

@@ -51,6 +51,7 @@ enum DestinationView {
     case inspector
     case detectTapLocation
     case renameButton
+    case rotateGesture
     
     // MARK: SampleApp
     case restart
@@ -115,6 +116,7 @@ extension DestinationView {
         case .inspector: InspectorExample()
         case .detectTapLocation: DetectTapLocationExample()
         case .renameButton: RenameButtonExample()
+        case .rotateGesture: RotateGestureExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
