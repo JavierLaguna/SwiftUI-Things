@@ -100,6 +100,8 @@
 		49B8E2AD2C7500EE00C8F0BE /* RenameButtonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2AC2C7500EE00C8F0BE /* RenameButtonExample.swift */; };
 		49B8E2AF2C7509D500C8F0BE /* MenuWithSectionsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2AE2C7509D500C8F0BE /* MenuWithSectionsExample.swift */; };
 		49B8E2B12C75156900C8F0BE /* RotateGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B02C75156900C8F0BE /* RotateGestureExample.swift */; };
+		49B8E2B52C7516C600C8F0BE /* DeviceInformationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B42C7516C600C8F0BE /* DeviceInformationExample.swift */; };
+		49B8E2B72C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B62C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift */; };
 		49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66B2C6A0C2600B77478 /* PsPage.swift */; };
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
@@ -204,6 +206,8 @@
 		49B8E2AC2C7500EE00C8F0BE /* RenameButtonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameButtonExample.swift; sourceTree = "<group>"; };
 		49B8E2AE2C7509D500C8F0BE /* MenuWithSectionsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWithSectionsExample.swift; sourceTree = "<group>"; };
 		49B8E2B02C75156900C8F0BE /* RotateGestureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateGestureExample.swift; sourceTree = "<group>"; };
+		49B8E2B42C7516C600C8F0BE /* DeviceInformationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInformationExample.swift; sourceTree = "<group>"; };
+		49B8E2B62C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBorderAnimatedExample.swift; sourceTree = "<group>"; };
 		49D2D66B2C6A0C2600B77478 /* PsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsPage.swift; sourceTree = "<group>"; };
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
@@ -325,10 +329,12 @@
 				4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */,
 				49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */,
 				49851C692C661ADF0011E254 /* BadgeExample.swift */,
+				49B8E2B62C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift */,
 				498652CD2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift */,
 				49851C772C66384C0011E254 /* CompositionalGridLayoutExample.swift */,
 				49851C712C6629920011E254 /* DateFormatExample.swift */,
 				49B8E2AA2C74FCBB00C8F0BE /* DetectTapLocationExample.swift */,
+				49B8E2B42C7516C600C8F0BE /* DeviceInformationExample.swift */,
 				49851C6F2C6628340011E254 /* DisplayArrayUserFriendlyExample.swift */,
 				49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */,
 				49851C7B2C6647FE0011E254 /* FloatingBottomSheetExample.swift */,
@@ -686,6 +692,7 @@
 				4956009929D1D2CF001DE321 /* WalletCardDetailView.swift in Sources */,
 				49A9DA9F299FD92C0007632C /* GetHeightModifier.swift in Sources */,
 				4956009729D1BA84001DE321 /* CardMovementCellView.swift in Sources */,
+				49B8E2B72C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift in Sources */,
 				49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */,
 				497E334C2998FCCA008710B9 /* C4BoardView.swift in Sources */,
 				49665AA229B4A673007D55D8 /* BackgroundMotionAnimationView.swift in Sources */,
@@ -728,6 +735,7 @@
 				498652CE2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift in Sources */,
 				497E33482998F3CD008710B9 /* C4HoleView.swift in Sources */,
 				49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */,
+				49B8E2B52C7516C600C8F0BE /* DeviceInformationExample.swift in Sources */,
 				49B3BE7429B6705B00B06E18 /* ViewThatFitsScrollExample.swift in Sources */,
 				497E3356299A8AC1008710B9 /* C4GameViewModel.swift in Sources */,
 				4971C95C29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift in Sources */,

@@ -61,6 +61,7 @@ extension Thing {
             Thing(title: "Floating Bottom Sheet", destination: .floatingBottomSheet, type: .container),
             Thing(title: "Reserve Text Space", destination: .reserveTextSpace, type: .container),
             Thing(title: "Button Border Shapes", destination: .buttonBorderShapes, type: .container),
+            Thing(title: "Button Border Animated", destination: .buttonBorderAnimated, type: .container),
             Thing(title: "Markdown text", destination: .markdown, type: .container),
             Thing(title: "Privacy sensitive text", destination: .privacySensitive, type: .container),
             Thing(title: "Image and Text", destination: .imageAndText, type: .container),
@@ -73,6 +74,7 @@ extension Thing {
             Thing(title: "Detect Tap Location", destination: .detectTapLocation, type: .container),
             Thing(title: "RenameButton", destination: .renameButton, type: .container),
             Thing(title: "Rotate Gesture", destination: .rotateGesture, type: .container),
+            Thing(title: "Device Information", destination: .deviceInformation, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

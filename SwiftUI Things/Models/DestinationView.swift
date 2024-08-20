@@ -40,6 +40,7 @@ enum DestinationView {
     case floatingBottomSheet
     case reserveTextSpace
     case buttonBorderShapes
+    case buttonBorderAnimated
     case markdown
     case privacySensitive
     case imageAndText
@@ -52,6 +53,7 @@ enum DestinationView {
     case detectTapLocation
     case renameButton
     case rotateGesture
+    case deviceInformation
     
     // MARK: SampleApp
     case restart
@@ -105,6 +107,7 @@ extension DestinationView {
         case .floatingBottomSheet: FloatingBottomSheetExample()
         case .reserveTextSpace: ReserveTextSpaceExample()
         case .buttonBorderShapes: ButtonBorderShapesExample()
+        case .buttonBorderAnimated: ButtonBorderAnimatedExample()
         case .markdown: MarkdownExample()
         case .privacySensitive: PrivacySensitiveExample()
         case .imageAndText: ImageAndTextExample()
@@ -117,6 +120,7 @@ extension DestinationView {
         case .detectTapLocation: DetectTapLocationExample()
         case .renameButton: RenameButtonExample()
         case .rotateGesture: RotateGestureExample()
+        case .deviceInformation: DeviceInformationExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
