@@ -2,18 +2,54 @@ import SwiftUI
 
 struct CoverCarouselExample: View {
     
+    enum Config {
+        case complete
+        case opacity
+        case scale
+        case both
+        
+        fileprivate var config: CustomCarouselConfig {
+            switch self {
+            case .complete:
+                CustomCarouselConfig(
+                    hasOpacity: false,
+                    hasScale: false,
+                    cardWidth: 200,
+                    minimunCardWidth: 40
+                )
+            case .opacity:
+                CustomCarouselConfig(
+                    hasOpacity: true,
+                    hasScale: false,
+                    cardWidth: 200,
+                    minimunCardWidth: 40
+                )
+            case .scale:
+                CustomCarouselConfig(
+                    hasOpacity: false,
+                    hasScale: true,
+                    cardWidth: 200,
+                    minimunCardWidth: 40
+                )
+            case .both:
+                CustomCarouselConfig(
+                    hasOpacity: true,
+                    hasScale: true,
+                    cardWidth: 200,
+                    minimunCardWidth: 40
+                )
+            }
+        }
+    }
+    
     @State private var activeId: UUID?
+    @State private var config: Config = .complete
     
     var body: some View {
         NavigationStack {
             VStack {
                 CustomCarousel(
-                    config: .init(
-                        hasOpacity: false,
-                        hasScale: true,
-                        cardWidth: 200,
-                        minimunCardWidth: 30
-                    ),
+                    config: config.config,
                     selection: $activeId,
                     data: ImageModel.images
                 ) { item in
@@ -23,39 +59,48 @@ struct CoverCarouselExample: View {
                 }
                 .frame(height: 180)
                 
-                Picker("", selection: .constant("")) {
-                    Text("Complete")
-                    Text("Opacity")
-                    Text("Scale")
-                    Text("Both")
+                VStack(alignment: .leading) {
+                    Text("Config")
+                        .font(.caption)
+                        .fontWeight(.light)
+                    
+                    Picker("", selection: $config) {
+                        Text("Complete").tag(Config.complete)
+                        Text("Opacity").tag(Config.opacity)
+                        Text("Scale").tag(Config.scale)
+                        Text("Both").tag(Config.both)
+                    }
+                    .pickerStyle(.segmented)
                 }
-                .pickerStyle(.segmented)
-                .padding(.top, 32)
+                .padding(.top, 60)
                 .padding(.horizontal, 24)
+                
+                Spacer()
             }
+            .padding(.top, 32)
             .navigationTitle("Cover Carousel")
         }
     }
 }
 
+private struct CustomCarouselConfig {
+    var hasOpacity = false
+    var opacityValue: CGFloat = 0.4
+    var hasScale = false
+    var scaleValue: CGFloat = 0.2
+    
+    var cardWidth: CGFloat = 150
+    var spacing: CGFloat = 10
+    var cornerRadius: CGFloat = 15
+    var minimunCardWidth: CGFloat = 40
+}
+
 private struct CustomCarousel<Content: View, Data: RandomAccessCollection>: View where Data.Element: Identifiable {
     
-    var config: Config
+    var config: CustomCarouselConfig
     @Binding var selection: Data.Element.ID?
     var data: Data
     @ViewBuilder var content: (Data.Element) -> Content
-    
-    struct Config {
-        var hasOpacity = false
-        var opacityValue: CGFloat = 0.4
-        var hasScale = false
-        var scaleValue: CGFloat = 0.2
-        
-        var cardWidth: CGFloat = 150
-        var spacing: CGFloat = 10
-        var cornerRadius: CGFloat = 15
-        var minimunCardWidth: CGFloat = 40
-    }
     
     @ViewBuilder
     private func itemView(_ item: Data.Element) -> some View {
