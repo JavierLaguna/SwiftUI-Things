@@ -57,6 +57,7 @@ enum DestinationView {
     case gauge
     case textSelection
     case coverCarousel
+    case expandableSearchBar
     
     // MARK: SampleApp
     case restart
@@ -127,6 +128,7 @@ extension DestinationView {
         case .gauge: GaugeExample()
         case .textSelection: TextSelectionExample()
         case .coverCarousel: CoverCarouselExample()
+        case .expandableSearchBar: ExpandableSearchBarExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()

@@ -82,6 +82,7 @@
 		49A0CE43298BE38500D54732 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE42298BE38500D54732 /* Thing.swift */; };
 		49A0CE45298BE98E00D54732 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE44298BE98E00D54732 /* DestinationView.swift */; };
 		49A0CE47298BEE0900D54732 /* SlideTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE46298BEE0900D54732 /* SlideTo.swift */; };
+		49A7305A2C7F25D60075953A /* ExpandableSearchBarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A730592C7F25D60075953A /* ExpandableSearchBarExample.swift */; };
 		49A9DA9F299FD92C0007632C /* GetHeightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9DA9E299FD92C0007632C /* GetHeightModifier.swift */; };
 		49A9F78529941FF600B367AE /* ThingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F78429941FF600B367AE /* ThingType.swift */; };
 		49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F7882995765900B367AE /* RestartHomeView.swift */; };
@@ -191,6 +192,7 @@
 		49A0CE42298BE38500D54732 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
 		49A0CE44298BE98E00D54732 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		49A0CE46298BEE0900D54732 /* SlideTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTo.swift; sourceTree = "<group>"; };
+		49A730592C7F25D60075953A /* ExpandableSearchBarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableSearchBarExample.swift; sourceTree = "<group>"; };
 		49A9DA9E299FD92C0007632C /* GetHeightModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHeightModifier.swift; sourceTree = "<group>"; };
 		49A9F78429941FF600B367AE /* ThingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingType.swift; sourceTree = "<group>"; };
 		49A9F7882995765900B367AE /* RestartHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartHomeView.swift; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 				49B8E2B42C7516C600C8F0BE /* DeviceInformationExample.swift */,
 				49851C6F2C6628340011E254 /* DisplayArrayUserFriendlyExample.swift */,
 				49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */,
+				49A730592C7F25D60075953A /* ExpandableSearchBarExample.swift */,
 				49851C7B2C6647FE0011E254 /* FloatingBottomSheetExample.swift */,
 				496A605F2C736058006BC371 /* FloatingTabBarExample.swift */,
 				49B8E2B82C75288600C8F0BE /* GaugeExample.swift */,
@@ -738,6 +741,7 @@
 				49B8E2AF2C7509D500C8F0BE /* MenuWithSectionsExample.swift in Sources */,
 				49B8E2B92C75288600C8F0BE /* GaugeExample.swift in Sources */,
 				4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */,
+				49A7305A2C7F25D60075953A /* ExpandableSearchBarExample.swift in Sources */,
 				494647E2299FB32B00E47D4E /* FructusOnboardingView.swift in Sources */,
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
 				497E33512998FD3A008710B9 /* C4GameView.swift in Sources */,
