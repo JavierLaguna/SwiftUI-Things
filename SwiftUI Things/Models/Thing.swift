@@ -79,6 +79,8 @@ extension Thing {
             Thing(title: "TextSelection", destination: .textSelection, type: .container),
             Thing(title: "Cover Carousel", destination: .coverCarousel, type: .container),
             Thing(title: "Expandable Search Bar", destination: .expandableSearchBar, type: .container),
+            Thing(title: "GroupBox Example", destination: .groupBox, type: .container),
+            Thing(title: "Drag & Drop with scroll", destination: .dragNDropWithScroll, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

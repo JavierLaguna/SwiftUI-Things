@@ -58,6 +58,8 @@ enum DestinationView {
     case textSelection
     case coverCarousel
     case expandableSearchBar
+    case groupBox
+    case dragNDropWithScroll
     
     // MARK: SampleApp
     case restart
@@ -129,6 +131,8 @@ extension DestinationView {
         case .textSelection: TextSelectionExample()
         case .coverCarousel: CoverCarouselExample()
         case .expandableSearchBar: ExpandableSearchBarExample()
+        case .groupBox: GroupBoxExample()
+        case .dragNDropWithScroll: DragNDropWithScrollExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
