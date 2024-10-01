@@ -1,5 +1,7 @@
 # 📱 SwiftUI Things
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=JavierLaguna_SwiftUI-Things)](https://sonarcloud.io/summary/new_code?id=JavierLaguna_SwiftUI-Things)
+
 ## 📝 Description
 
 Little iOS app for learn and test SwiftUI things.
