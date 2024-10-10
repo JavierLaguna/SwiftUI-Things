@@ -60,6 +60,7 @@ enum DestinationView {
     case expandableSearchBar
     case groupBox
     case dragNDropWithScroll
+    case timer
     
     // MARK: SampleApp
     case restart
@@ -133,6 +134,7 @@ extension DestinationView {
         case .expandableSearchBar: ExpandableSearchBarExample()
         case .groupBox: GroupBoxExample()
         case .dragNDropWithScroll: DragNDropWithScrollExample()
+        case .timer: TimerExample()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
