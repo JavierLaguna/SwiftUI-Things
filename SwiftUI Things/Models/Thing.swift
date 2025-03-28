@@ -85,6 +85,7 @@ extension Thing {
             Thing(title: "Timer", destination: .timer, type: .container),
             Thing(title: "ScrollView Animation Effect", destination: .scrollViewAnimationEffect, type: .container),
             Thing(title: "App Wide Overlays", destination: .appWideOverlays, type: .container),
+            Thing(title: "Glowing Gradient Border", destination: .glowingGradientBorder, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

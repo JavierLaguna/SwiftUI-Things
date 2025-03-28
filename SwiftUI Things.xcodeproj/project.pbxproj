@@ -37,6 +37,7 @@
 		495A93E42D97090E00DC1F31 /* AppWideOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93E32D97090E00DC1F31 /* AppWideOverlays.swift */; };
 		495A93E82D971BD100DC1F31 /* battery.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 495A93E72D971BD100DC1F31 /* battery.mp4 */; };
 		495A93EA2D971EC100DC1F31 /* ExpandableCustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93E92D971EC100DC1F31 /* ExpandableCustomSlider.swift */; };
+		495A93EC2D97264400DC1F31 /* GlowingGradientBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93EB2D97264400DC1F31 /* GlowingGradientBorder.swift */; };
 		495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495CA98229D2F7D500417D73 /* WalletSandbox.swift */; };
 		4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571929CB733C00192C54 /* WalletMainView.swift */; };
 		4964571E29CC3E0E00192C54 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571D29CC3E0E00192C54 /* CreditCardView.swift */; };
@@ -153,6 +154,7 @@
 		495A93E32D97090E00DC1F31 /* AppWideOverlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWideOverlays.swift; sourceTree = "<group>"; };
 		495A93E72D971BD100DC1F31 /* battery.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = battery.mp4; sourceTree = "<group>"; };
 		495A93E92D971EC100DC1F31 /* ExpandableCustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCustomSlider.swift; sourceTree = "<group>"; };
+		495A93EB2D97264400DC1F31 /* GlowingGradientBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingGradientBorder.swift; sourceTree = "<group>"; };
 		495CA98229D2F7D500417D73 /* WalletSandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSandbox.swift; sourceTree = "<group>"; };
 		4964571929CB733C00192C54 /* WalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMainView.swift; sourceTree = "<group>"; };
 		4964571D29CC3E0E00192C54 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 				49851C6B2C661CED0011E254 /* UnevenRoundedRectangleExample.swift */,
 				49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */,
 				49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */,
+				495A93EB2D97264400DC1F31 /* GlowingGradientBorder.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -800,6 +803,7 @@
 				4971C95C29B662130078CF0B /* HorizontalScrollWithRotate3DEffectExample.swift in Sources */,
 				49851C682C6616F00011E254 /* ListSectionSpacingExample.swift in Sources */,
 				49A9F79929957B9A00B367AE /* Constants.swift in Sources */,
+				495A93EC2D97264400DC1F31 /* GlowingGradientBorder.swift in Sources */,
 				494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */,
 				4971C96129B6653E0078CF0B /* View+hideKeyboard.swift in Sources */,
 				494647E1299FB32B00E47D4E /* SettingsRowView.swift in Sources */,
