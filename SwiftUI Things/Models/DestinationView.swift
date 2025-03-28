@@ -61,6 +61,7 @@ enum DestinationView {
     case groupBox
     case dragNDropWithScroll
     case timer
+    case scrollViewAnimationEffect
     
     // MARK: SampleApp
     case restart
@@ -135,6 +136,7 @@ extension DestinationView {
         case .groupBox: GroupBoxExample()
         case .dragNDropWithScroll: DragNDropWithScrollExample()
         case .timer: TimerExample()
+        case .scrollViewAnimationEffect: ScrollViewAnimationEffect()
             
             // MARK: SampleApp
         case .restart: RestartMainView()

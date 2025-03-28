@@ -82,6 +82,7 @@ extension Thing {
             Thing(title: "GroupBox Example", destination: .groupBox, type: .container),
             Thing(title: "Drag & Drop with scroll", destination: .dragNDropWithScroll, type: .container),
             Thing(title: "Timer", destination: .timer, type: .container),
+            Thing(title: "ScrollView Animation Effect", destination: .scrollViewAnimationEffect, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

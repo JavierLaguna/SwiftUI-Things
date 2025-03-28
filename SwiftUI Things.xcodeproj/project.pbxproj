@@ -33,6 +33,7 @@
 		4956009C29D1D358001DE321 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009B29D1D358001DE321 /* CreditCard.swift */; };
 		4956009E29D1D533001DE321 /* WalletConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009D29D1D533001DE321 /* WalletConstants.swift */; };
 		495600A029D1DE7F001DE321 /* CreditCardMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009F29D1DE7F001DE321 /* CreditCardMovement.swift */; };
+		495A93E22D97069F00DC1F31 /* ScrollViewAnimationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */; };
 		495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495CA98229D2F7D500417D73 /* WalletSandbox.swift */; };
 		4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571929CB733C00192C54 /* WalletMainView.swift */; };
 		4964571E29CC3E0E00192C54 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571D29CC3E0E00192C54 /* CreditCardView.swift */; };
@@ -145,6 +146,7 @@
 		4956009B29D1D358001DE321 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		4956009D29D1D533001DE321 /* WalletConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConstants.swift; sourceTree = "<group>"; };
 		4956009F29D1DE7F001DE321 /* CreditCardMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardMovement.swift; sourceTree = "<group>"; };
+		495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewAnimationEffect.swift; sourceTree = "<group>"; };
 		495CA98229D2F7D500417D73 /* WalletSandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSandbox.swift; sourceTree = "<group>"; };
 		4964571929CB733C00192C54 /* WalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMainView.swift; sourceTree = "<group>"; };
 		4964571D29CC3E0E00192C54 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				49851C6B2C661CED0011E254 /* UnevenRoundedRectangleExample.swift */,
 				49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */,
 				49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */,
+				495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -733,6 +736,7 @@
 				4971C96529B666900078CF0B /* ActionSheetExample.swift in Sources */,
 				497E334429967C8C008710B9 /* PinchPage.swift in Sources */,
 				49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */,
+				495A93E22D97069F00DC1F31 /* ScrollViewAnimationEffect.swift in Sources */,
 				4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */,
 				49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */,
 				494647E4299FB32B00E47D4E /* FructusContentView.swift in Sources */,
@@ -927,7 +931,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Things/Preview Content\"";
-				DEVELOPMENT_TEAM = HDC4S2P5MK;
+				DEVELOPMENT_TEAM = F8FX9592B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -957,7 +961,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Things/Preview Content\"";
-				DEVELOPMENT_TEAM = HDC4S2P5MK;
+				DEVELOPMENT_TEAM = F8FX9592B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
