@@ -34,6 +34,8 @@
 		4956009E29D1D533001DE321 /* WalletConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009D29D1D533001DE321 /* WalletConstants.swift */; };
 		495600A029D1DE7F001DE321 /* CreditCardMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009F29D1DE7F001DE321 /* CreditCardMovement.swift */; };
 		495A93E22D97069F00DC1F31 /* ScrollViewAnimationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */; };
+		495A93E42D97090E00DC1F31 /* AppWideOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93E32D97090E00DC1F31 /* AppWideOverlays.swift */; };
+		495A93E82D971BD100DC1F31 /* battery.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 495A93E72D971BD100DC1F31 /* battery.mp4 */; };
 		495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495CA98229D2F7D500417D73 /* WalletSandbox.swift */; };
 		4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571929CB733C00192C54 /* WalletMainView.swift */; };
 		4964571E29CC3E0E00192C54 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571D29CC3E0E00192C54 /* CreditCardView.swift */; };
@@ -147,6 +149,8 @@
 		4956009D29D1D533001DE321 /* WalletConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConstants.swift; sourceTree = "<group>"; };
 		4956009F29D1DE7F001DE321 /* CreditCardMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardMovement.swift; sourceTree = "<group>"; };
 		495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewAnimationEffect.swift; sourceTree = "<group>"; };
+		495A93E32D97090E00DC1F31 /* AppWideOverlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWideOverlays.swift; sourceTree = "<group>"; };
+		495A93E72D971BD100DC1F31 /* battery.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = battery.mp4; sourceTree = "<group>"; };
 		495CA98229D2F7D500417D73 /* WalletSandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSandbox.swift; sourceTree = "<group>"; };
 		4964571929CB733C00192C54 /* WalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMainView.swift; sourceTree = "<group>"; };
 		4964571D29CC3E0E00192C54 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
@@ -307,6 +311,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		495A93E52D971BA600DC1F31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				495A93E62D971BB600DC1F31 /* Videos */,
+				49A0CE35298BE0CB00D54732 /* Assets.xcassets */,
+				49A9F79029957AB400B367AE /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		495A93E62D971BB600DC1F31 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				495A93E72D971BD100DC1F31 /* battery.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		4964571829CB731400192C54 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +412,7 @@
 				49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */,
 				49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */,
 				495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */,
+				495A93E32D97090E00DC1F31 /* AppWideOverlays.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -449,8 +472,7 @@
 				49A0CE3F298BE2EA00D54732 /* Scenes */,
 				49A9DA9B299FD8620007632C /* Modifiers */,
 				49A9F79529957AC900B367AE /* Utilities */,
-				49A9F79029957AB400B367AE /* Sounds */,
-				49A0CE35298BE0CB00D54732 /* Assets.xcassets */,
+				495A93E52D971BA600DC1F31 /* Resources */,
 				49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */,
 				49A0CE37298BE0CB00D54732 /* Preview Content */,
 			);
@@ -679,6 +701,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495A93E82D971BD100DC1F31 /* battery.mp4 in Resources */,
 				49A9F79429957AB400B367AE /* success.m4a in Resources */,
 				49A9F79329957AB400B367AE /* chimeup.mp3 in Resources */,
 				49A0CE39298BE0CB00D54732 /* Preview Assets.xcassets in Resources */,
@@ -694,6 +717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49851C642C6612320011E254 /* MaskingExample.swift in Sources */,
+				495A93E42D97090E00DC1F31 /* AppWideOverlays.swift in Sources */,
 				4971C95829B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift in Sources */,
 				49851C7C2C6647FE0011E254 /* FloatingBottomSheetExample.swift in Sources */,
 				49665AA929B50118007D55D8 /* TransformAnimationsExample.swift in Sources */,

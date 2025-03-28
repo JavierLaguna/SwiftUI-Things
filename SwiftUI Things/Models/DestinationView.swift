@@ -62,6 +62,7 @@ enum DestinationView {
     case dragNDropWithScroll
     case timer
     case scrollViewAnimationEffect
+    case appWideOverlays
     
     // MARK: SampleApp
     case restart
@@ -137,6 +138,7 @@ extension DestinationView {
         case .dragNDropWithScroll: DragNDropWithScrollExample()
         case .timer: TimerExample()
         case .scrollViewAnimationEffect: ScrollViewAnimationEffect()
+        case .appWideOverlays: AppWideOverlays()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
