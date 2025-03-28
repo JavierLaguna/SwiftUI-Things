@@ -10,6 +10,7 @@ enum DestinationView {
     case link
     case gradientText
     case morphingSymbol
+    case expandableCustomSlider
     
     // MARK: Container
     case longPressGestureExample
@@ -86,6 +87,7 @@ extension DestinationView {
         case .link: LinkView()
         case .gradientText: GradientText()
         case .morphingSymbol: MorphingSymbolViewExample()
+        case .expandableCustomSlider: ExpandableCustomSliderExample()
             
             // MARK: Container
         case .longPressGestureExample: LongPressGestureExample()

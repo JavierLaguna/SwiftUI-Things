@@ -36,6 +36,7 @@
 		495A93E22D97069F00DC1F31 /* ScrollViewAnimationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */; };
 		495A93E42D97090E00DC1F31 /* AppWideOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93E32D97090E00DC1F31 /* AppWideOverlays.swift */; };
 		495A93E82D971BD100DC1F31 /* battery.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 495A93E72D971BD100DC1F31 /* battery.mp4 */; };
+		495A93EA2D971EC100DC1F31 /* ExpandableCustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93E92D971EC100DC1F31 /* ExpandableCustomSlider.swift */; };
 		495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495CA98229D2F7D500417D73 /* WalletSandbox.swift */; };
 		4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571929CB733C00192C54 /* WalletMainView.swift */; };
 		4964571E29CC3E0E00192C54 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571D29CC3E0E00192C54 /* CreditCardView.swift */; };
@@ -151,6 +152,7 @@
 		495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewAnimationEffect.swift; sourceTree = "<group>"; };
 		495A93E32D97090E00DC1F31 /* AppWideOverlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWideOverlays.swift; sourceTree = "<group>"; };
 		495A93E72D971BD100DC1F31 /* battery.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = battery.mp4; sourceTree = "<group>"; };
+		495A93E92D971EC100DC1F31 /* ExpandableCustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCustomSlider.swift; sourceTree = "<group>"; };
 		495CA98229D2F7D500417D73 /* WalletSandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSandbox.swift; sourceTree = "<group>"; };
 		4964571929CB733C00192C54 /* WalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMainView.swift; sourceTree = "<group>"; };
 		4964571D29CC3E0E00192C54 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				496AA4D82BBAE67800CC3D05 /* AdaptedTextColorExample.swift */,
 				4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */,
 				49665AA629B4B71B007D55D8 /* AnimationModifierAndTimingExample.swift */,
+				495A93E32D97090E00DC1F31 /* AppWideOverlays.swift */,
 				49851C692C661ADF0011E254 /* BadgeExample.swift */,
 				49B8E2B62C7525AE00C8F0BE /* ButtonBorderAnimatedExample.swift */,
 				498652CD2C6C9C9900AB1691 /* ButtonBorderShapesExample.swift */,
@@ -403,6 +406,7 @@
 				49B8E2AC2C7500EE00C8F0BE /* RenameButtonExample.swift */,
 				498652CB2C6C98B400AB1691 /* ReserveTextSpaceExample.swift */,
 				49B8E2B02C75156900C8F0BE /* RotateGestureExample.swift */,
+				495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */,
 				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
 				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
 				49B8E2BA2C752B4D00C8F0BE /* TextSelectionExample.swift */,
@@ -411,8 +415,6 @@
 				49851C6B2C661CED0011E254 /* UnevenRoundedRectangleExample.swift */,
 				49B3BE7529B72E1600B06E18 /* ViewThatFitsExample.swift */,
 				49B3BE7329B6705B00B06E18 /* ViewThatFitsScrollExample.swift */,
-				495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */,
-				495A93E32D97090E00DC1F31 /* AppWideOverlays.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -501,6 +503,7 @@
 				49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */,
 				49A9F78E299577AA00B367AE /* CircleGroupView.swift */,
 				49851C792C6644BC0011E254 /* CompositionalGridLayout.swift */,
+				495A93E92D971EC100DC1F31 /* ExpandableCustomSlider.swift */,
 				494277942A376BB5007049B8 /* GradientText.swift */,
 				494277922A37596E007049B8 /* LinkView.swift */,
 				4971C95E29B6639B0078CF0B /* LoadingView.swift */,
@@ -761,6 +764,7 @@
 				497E334429967C8C008710B9 /* PinchPage.swift in Sources */,
 				49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */,
 				495A93E22D97069F00DC1F31 /* ScrollViewAnimationEffect.swift in Sources */,
+				495A93EA2D971EC100DC1F31 /* ExpandableCustomSlider.swift in Sources */,
 				4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */,
 				49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */,
 				494647E4299FB32B00E47D4E /* FructusContentView.swift in Sources */,
