@@ -65,6 +65,7 @@ enum DestinationView {
     case scrollViewAnimationEffect
     case appWideOverlays
     case glowingGradientBorder
+    case animatedDialogs
     
     // MARK: SampleApp
     case restart
@@ -143,6 +144,7 @@ extension DestinationView {
         case .scrollViewAnimationEffect: ScrollViewAnimationEffect()
         case .appWideOverlays: AppWideOverlays()
         case .glowingGradientBorder: GlowingGradientBorder()
+        case .animatedDialogs: AnimatedDialogs()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
