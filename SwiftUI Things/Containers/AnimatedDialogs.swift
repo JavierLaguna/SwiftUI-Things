@@ -3,11 +3,17 @@ import SwiftUI
 struct AnimatedDialogs: View {
     
     @State private var config = DrawerConfig()
+    @State private var onCenter = false
 
     var body: some View {
         NavigationStack {
             VStack {
-                Spacer()
+                if !onCenter {
+                    Spacer()
+                }
+                
+                Toggle("Move to center", isOn: $onCenter)
+                    .padding(.bottom, 32)
                 
                 DrawerButton(title: "Continue", config: $config)
             }
