@@ -151,24 +151,6 @@ extension View {
     }
 }
 
-struct SafeAreaInsetsKey: EnvironmentKey {
-    static var defaultValue: EdgeInsets {
-        UIApplication.shared.windows.first?.safeAreaInsets.edgeInsets ?? EdgeInsets()
-    }
-}
-
-extension EnvironmentValues {
-    var safeAreaInsets: EdgeInsets {
-        self[SafeAreaInsetsKey.self]
-    }
-}
-
-extension UIEdgeInsets {
-    var edgeInsets: EdgeInsets {
-        EdgeInsets(top: top, leading: left, bottom: bottom, trailing: right)
-    }
-}
-
 fileprivate struct AlertDrawerContent<Content: View>: View {
     
     var proxy: GeometryProxy
@@ -178,7 +160,6 @@ fileprivate struct AlertDrawerContent<Content: View>: View {
     var onSecondaryClick: () -> Bool
     @Binding var config: DrawerConfig
     @ViewBuilder var content: Content
-    @Environment(\.safeAreaInsets) private var safeAreaInsets
     
     private func fixedLocation(_ proxy: GeometryProxy) -> CGSize {
         let isPresented = config.isPresented
@@ -202,7 +183,7 @@ fileprivate struct AlertDrawerContent<Content: View>: View {
         let isPresented = config.isPresented
         let sourceRect = config.sourceRect
         let maxY = proxy.frame(in: .global).maxY
-        let bottomPadding: CGFloat = 10 + safeAreaInsets.bottom
+        let bottomPadding: CGFloat = 10 + safeAreaInset.bottom
 
         VStack(spacing: 15) {
             content
