@@ -32,6 +32,7 @@ extension Thing {
             Thing(title: "Gradient Text", destination: .gradientText, type: .component),
             Thing(title: "Morphing Symbol", destination: .morphingSymbol, type: .component),
             Thing(title: "Expandable Custom Slider", destination: .expandableCustomSlider, type: .component),
+            Thing(title: "Stretchy VisualEffect", destination: .stretchyVisualEffect, type: .component),
             
             // MARK: Container
             Thing(title: "Long Press Gesture", destination: .longPressGestureExample, type: .container),

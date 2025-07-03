@@ -123,6 +123,7 @@
 		49DF619F2C7326D200EF3DC9 /* PrivacySensitiveExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */; };
 		49DF61A12C732A9D00EF3DC9 /* ImageAndTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */; };
 		49DF61A32C732DC100EF3DC9 /* PhotosPickerStylesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF61A22C732DC100EF3DC9 /* PhotosPickerStylesExample.swift */; };
+		49F82D832E16C57700FDD69A /* StretchyVisualEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F82D822E16C57700FDD69A /* StretchyVisualEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -243,6 +244,7 @@
 		49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySensitiveExample.swift; sourceTree = "<group>"; };
 		49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTextExample.swift; sourceTree = "<group>"; };
 		49DF61A22C732DC100EF3DC9 /* PhotosPickerStylesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerStylesExample.swift; sourceTree = "<group>"; };
+		49F82D822E16C57700FDD69A /* StretchyVisualEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyVisualEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -519,6 +521,7 @@
 				49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */,
 				496A60612C737E1B006BC371 /* MorphingSymbolViewExample.swift */,
 				49A0CE46298BEE0900D54732 /* SlideTo.swift */,
+				49F82D822E16C57700FDD69A /* StretchyVisualEffect.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -772,6 +775,7 @@
 				4971C96529B666900078CF0B /* ActionSheetExample.swift in Sources */,
 				497E334429967C8C008710B9 /* PinchPage.swift in Sources */,
 				49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */,
+				49F82D832E16C57700FDD69A /* StretchyVisualEffect.swift in Sources */,
 				495A93E22D97069F00DC1F31 /* ScrollViewAnimationEffect.swift in Sources */,
 				495A93EA2D971EC100DC1F31 /* ExpandableCustomSlider.swift in Sources */,
 				4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */,
