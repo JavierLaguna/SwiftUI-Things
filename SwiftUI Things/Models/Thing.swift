@@ -12,6 +12,7 @@ extension Array where Element == Thing {
     
     func getByType() -> [(ThingType, [Thing])] {
         return [
+            (.iOS26, self.filter { $0.type == .iOS26 }),
             (.component, self.filter { $0.type == .component }),
             (.container, self.filter { $0.type == .container }),
             (.sampleApp, self.filter { $0.type == .sampleApp })
@@ -22,7 +23,10 @@ extension Array where Element == Thing {
 extension Thing {
     
     static func allThings() -> [Thing] {
-        return [
+        [
+            // MARK: iOS 26
+            Thing(title: "Custom Animated ToolBar", destination: .customAnimatedToolBariOS26, type: .iOS26),
+            
             // MARK: Component
             Thing(title: "Slide To", destination: .slideTo, type: .component),
             Thing(title: "Circle Group", destination: .circleGroup, type: .component),

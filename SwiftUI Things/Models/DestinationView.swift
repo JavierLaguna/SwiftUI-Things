@@ -2,6 +2,9 @@
 import SwiftUI
 
 enum DestinationView {
+    // MARK: iOS 26
+    case customAnimatedToolBariOS26
+    
     // MARK: Component
     case slideTo
     case circleGroup
@@ -82,6 +85,9 @@ extension DestinationView {
     @ViewBuilder
     func getView() -> some View {
         switch self {
+            // MARK: Component
+        case .customAnimatedToolBariOS26: CustomAnimatedToolBariOS26()
+            
             // MARK: Component
         case .slideTo: SlideToSandbox()
         case .circleGroup: CircleGroupViewSandbox()
