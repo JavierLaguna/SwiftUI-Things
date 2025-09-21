@@ -6,6 +6,7 @@ enum DestinationView {
     case customAnimatedToolBariOS26
     case glassEffectModifieriOS26
     case toolbariOS26
+    case glassEffectContainerExampleiOS26
     
     // MARK: Component
     case slideTo
@@ -91,6 +92,7 @@ extension DestinationView {
         case .customAnimatedToolBariOS26: CustomAnimatedToolBariOS26()
         case .glassEffectModifieriOS26: GlassEffectModifieriOS26()
         case .toolbariOS26: ToolbariOS26()
+        case .glassEffectContainerExampleiOS26: GlassEffectContainerExampleiOS26()
             
             // MARK: Component
         case .slideTo: SlideToSandbox()

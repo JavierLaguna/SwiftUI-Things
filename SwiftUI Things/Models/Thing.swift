@@ -27,6 +27,7 @@ extension Thing {
             // MARK: iOS 26
             Thing(title: "GlassEffect Modifier", destination: .glassEffectModifieriOS26, type: .iOS26),
             Thing(title: "Toolbar examples", destination: .toolbariOS26, type: .iOS26),
+            Thing(title: "GlassEffectContainer example", destination: .glassEffectContainerExampleiOS26, type: .iOS26),
             Thing(title: "Custom Animated ToolBar", destination: .customAnimatedToolBariOS26, type: .iOS26),
             
             // MARK: Component

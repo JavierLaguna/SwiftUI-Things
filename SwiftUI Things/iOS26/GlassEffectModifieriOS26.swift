@@ -86,7 +86,7 @@ struct GlassEffectModifieriOS26: View {
             }
             .navigationTitle("glassEffect Examples")
             .background {
-                Image(.sonoma)
+                Image(.tahoeLight)
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
