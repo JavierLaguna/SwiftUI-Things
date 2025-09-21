@@ -12,6 +12,7 @@
 		492959752D9D94B9009FA8D2 /* View+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492959742D9D94B3009FA8D2 /* View+SafeArea.swift */; };
 		492C16442E7DB6C9006342FC /* CustomAnimatedToolBariOS26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C16432E7DB6C9006342FC /* CustomAnimatedToolBariOS26.swift */; };
 		492C16462E7FD8C8006342FC /* GlassEffectModifieriOS26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C16452E7FD8C8006342FC /* GlassEffectModifieriOS26.swift */; };
+		492C16482E7FE962006342FC /* ToolbariOS26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C16472E7FE962006342FC /* ToolbariOS26.swift */; };
 		49344FFE2C74A71B00E84810 /* DropdownViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */; };
 		493D11A229B60D01000C701C /* PopoverExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D11A129B60D01000C701C /* PopoverExample.swift */; };
 		494277932A37596E007049B8 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494277922A37596E007049B8 /* LinkView.swift */; };
@@ -134,6 +135,7 @@
 		492959742D9D94B3009FA8D2 /* View+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SafeArea.swift"; sourceTree = "<group>"; };
 		492C16432E7DB6C9006342FC /* CustomAnimatedToolBariOS26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatedToolBariOS26.swift; sourceTree = "<group>"; };
 		492C16452E7FD8C8006342FC /* GlassEffectModifieriOS26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassEffectModifieriOS26.swift; sourceTree = "<group>"; };
+		492C16472E7FE962006342FC /* ToolbariOS26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbariOS26.swift; sourceTree = "<group>"; };
 		49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownViewExample.swift; sourceTree = "<group>"; };
 		493D11A129B60D01000C701C /* PopoverExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverExample.swift; sourceTree = "<group>"; };
 		494277922A37596E007049B8 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			children = (
 				492C16432E7DB6C9006342FC /* CustomAnimatedToolBariOS26.swift */,
 				492C16452E7FD8C8006342FC /* GlassEffectModifieriOS26.swift */,
+				492C16472E7FE962006342FC /* ToolbariOS26.swift */,
 			);
 			path = iOS26;
 			sourceTree = "<group>";
@@ -758,6 +761,7 @@
 				49851C782C66384C0011E254 /* CompositionalGridLayoutExample.swift in Sources */,
 				4971C95F29B6639B0078CF0B /* LoadingView.swift in Sources */,
 				49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */,
+				492C16482E7FE962006342FC /* ToolbariOS26.swift in Sources */,
 				49B8E2BB2C752B4D00C8F0BE /* TextSelectionExample.swift in Sources */,
 				494277952A376BB5007049B8 /* GradientText.swift in Sources */,
 				49665AAB29B50247007D55D8 /* TapAnimationExample.swift in Sources */,
