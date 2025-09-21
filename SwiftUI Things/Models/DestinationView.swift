@@ -4,6 +4,7 @@ import SwiftUI
 enum DestinationView {
     // MARK: iOS 26
     case customAnimatedToolBariOS26
+    case glassEffectModifieriOS26
     
     // MARK: Component
     case slideTo
@@ -87,6 +88,7 @@ extension DestinationView {
         switch self {
             // MARK: Component
         case .customAnimatedToolBariOS26: CustomAnimatedToolBariOS26()
+        case .glassEffectModifieriOS26: GlassEffectModifieriOS26()
             
             // MARK: Component
         case .slideTo: SlideToSandbox()
