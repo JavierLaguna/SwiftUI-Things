@@ -28,6 +28,7 @@ struct ToolbariOS26: View {
                             
                         }
                     }
+                    .sharedBackgroundVisibility(.hidden)
                     
                     ToolbarItemGroup {
                         Button("Remove", systemImage: "minus") {
