@@ -30,6 +30,7 @@ extension Thing {
             Thing(title: "Toolbar examples", destination: .toolbariOS26, type: .iOS26),
             Thing(title: "GlassEffectContainer example", destination: .glassEffectContainerExampleiOS26, type: .iOS26),
             Thing(title: "Custom Animated ToolBar", destination: .customAnimatedToolBariOS26, type: .iOS26),
+            Thing(title: "Custom Menu", destination: .customMenuiOS26, type: .iOS26),
             
             // MARK: Component
             Thing(title: "Slide To", destination: .slideTo, type: .component),

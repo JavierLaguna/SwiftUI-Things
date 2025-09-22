@@ -120,6 +120,7 @@
 		49B8E2B92C75288600C8F0BE /* GaugeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2B82C75288600C8F0BE /* GaugeExample.swift */; };
 		49B8E2BB2C752B4D00C8F0BE /* TextSelectionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2BA2C752B4D00C8F0BE /* TextSelectionExample.swift */; };
 		49B8E2BD2C752EDA00C8F0BE /* CoverCarouselExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8E2BC2C752EDA00C8F0BE /* CoverCarouselExample.swift */; };
+		49C2BCEF2E81B35A0091A0CB /* CustomMenuiOS26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2BCEE2E81B35A0091A0CB /* CustomMenuiOS26.swift */; };
 		49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66B2C6A0C2600B77478 /* PsPage.swift */; };
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
@@ -246,6 +247,7 @@
 		49B8E2B82C75288600C8F0BE /* GaugeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeExample.swift; sourceTree = "<group>"; };
 		49B8E2BA2C752B4D00C8F0BE /* TextSelectionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSelectionExample.swift; sourceTree = "<group>"; };
 		49B8E2BC2C752EDA00C8F0BE /* CoverCarouselExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverCarouselExample.swift; sourceTree = "<group>"; };
+		49C2BCEE2E81B35A0091A0CB /* CustomMenuiOS26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuiOS26.swift; sourceTree = "<group>"; };
 		49D2D66B2C6A0C2600B77478 /* PsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsPage.swift; sourceTree = "<group>"; };
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				492C16432E7DB6C9006342FC /* CustomAnimatedToolBariOS26.swift */,
+				49C2BCEE2E81B35A0091A0CB /* CustomMenuiOS26.swift */,
 				492C16492E7FF57C006342FC /* GlassEffectContainerExampleiOS26.swift */,
 				492C16452E7FD8C8006342FC /* GlassEffectModifieriOS26.swift */,
 				492C164B2E801624006342FC /* TabBarExampleiOS26.swift */,
@@ -757,6 +760,7 @@
 				49851C642C6612320011E254 /* MaskingExample.swift in Sources */,
 				492C164C2E801624006342FC /* TabBarExampleiOS26.swift in Sources */,
 				495A93E42D97090E00DC1F31 /* AppWideOverlays.swift in Sources */,
+				49C2BCEF2E81B35A0091A0CB /* CustomMenuiOS26.swift in Sources */,
 				4971C95829B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift in Sources */,
 				49851C7C2C6647FE0011E254 /* FloatingBottomSheetExample.swift in Sources */,
 				49665AA929B50118007D55D8 /* TransformAnimationsExample.swift in Sources */,
