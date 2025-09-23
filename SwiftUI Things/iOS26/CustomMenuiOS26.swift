@@ -11,7 +11,55 @@ struct CustomMenuiOS26: View {
     var body: some View {
         if #available(iOS 26.0, *) {
             ScrollView(.vertical) {
-                VStack(alignment: .leading, spacing: 24) {
+                VStack(alignment: .leading, spacing: 32) {
+                    
+                    Text("Live Example")
+                        .font(.title2)
+                        .fontWeight(.medium)
+                    
+                    HStack {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Transaction History")
+                                .font(.title3)
+                                .fontWeight(.medium)
+                            
+                            Text("12 Jun 2025 - 20 Sep 2025")
+                                .font(.caption)
+                                .foregroundStyle(.gray)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        CustomMenuView(style: selectedOption) {
+                            Image(systemName: "calendar")
+                                .font(.title3)
+                                .frame(width: 40, height: 30)
+                            
+                        } content: {
+                            DateFilterView(
+                                interactiveDismissDisabled: dismissDisabled
+                            )
+                        }
+                    }
+                    
+                    Text("Properties")
+                        .font(.title2)
+                        .fontWeight(.medium)
+                    
+                    VStack(alignment: .leading, spacing: 16) {
+                        Picker("CustomMenuStyle", selection: $selectedOption) {
+                            ForEach(CustomMenuStyle.allCases, id: \.self) { item in
+                                Text("\(item.rawValue)").tag(item)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                        
+                        Divider()
+                        
+                        Toggle("Interactive Dismiss Disabled", isOn: $dismissDisabled)
+                    }
+                    .padding(24)
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
+                    .glassEffect(.regular, in: .rect(cornerRadius: 30))
                     
                     Text("Code")
                         .font(.title2)
@@ -44,48 +92,6 @@ struct CustomMenuiOS26: View {
                     .background {
                         RoundedRectangle(cornerRadius: 30)
                             .fill(.gray.opacity(0.15))
-                    }
-                    
-                    Text("Properties")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                    
-                    Picker("CustomMenuStyle", selection: $selectedOption) {
-                        ForEach(CustomMenuStyle.allCases, id: \.self) { item in
-                            Text("\(item.rawValue)").tag(item)
-                        }
-                    }
-                    .pickerStyle(.segmented)
-                    
-                    Toggle("Interactive Dismiss Disabled", isOn: $dismissDisabled)
-                    
-                    Text("Live Example")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                    
-                    HStack {
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Transaction History")
-                                .font(.title3)
-                                .fontWeight(.medium)
-                            
-                            Text("12 Jun 2025 - 20 Sep 2025")
-                                .font(.caption)
-                                .foregroundStyle(.gray)
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                        
-                        CustomMenuView(style: selectedOption) {
-                            Image(systemName: "calendar")
-                                .font(.title3)
-                                .frame(width: 40, height: 30)
-                            
-                        } content: {
-                            DateFilterView(
-                                interactiveDismissDisabled: dismissDisabled
-                            )
-                        }
                     }
                 }
                 .padding(16)
