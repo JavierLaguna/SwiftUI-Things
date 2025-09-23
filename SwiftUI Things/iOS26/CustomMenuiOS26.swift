@@ -5,13 +5,63 @@ import SwiftUI
 
 struct CustomMenuiOS26: View {
     
+    @State private var selectedOption: CustomMenuStyle = .glass
+    @State private var dismissDisabled = false
+    
     var body: some View {
         if #available(iOS 26.0, *) {
             ScrollView(.vertical) {
-                VStack(spacing: 24) {
-                    RoundedRectangle(cornerRadius: 30)
-                        .fill(.gray.opacity(0.15))
-                        .frame(height: 220)
+                VStack(alignment: .leading, spacing: 24) {
+                    
+                    Text("Code")
+                        .font(.title2)
+                        .fontWeight(.medium)
+                    
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text("Usage:")
+                            .font(.footnote)
+                            .foregroundStyle(.gray)
+                            .underline()
+                        
+                        Text(
+                            """
+                            CustomMenuView(style: \(selectedOption.codeValue)) {
+                                Image(systemName: "calendar")
+                                    .font(.title3)
+                                    .frame(width: 40, height: 30)
+                                
+                            } content: {
+                                DateFilterView(
+                                    interactiveDismissDisabled: \(String(describing: dismissDisabled))
+                                )                                
+                            }                            
+                            """
+                        )
+                        .font(.system(.body, design: .monospaced))
+                    }
+                    .padding(24)
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
+                    .background {
+                        RoundedRectangle(cornerRadius: 30)
+                            .fill(.gray.opacity(0.15))
+                    }
+                    
+                    Text("Properties")
+                        .font(.title2)
+                        .fontWeight(.medium)
+                    
+                    Picker("CustomMenuStyle", selection: $selectedOption) {
+                        ForEach(CustomMenuStyle.allCases, id: \.self) { item in
+                            Text("\(item.rawValue)").tag(item)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                    
+                    Toggle("Interactive Dismiss Disabled", isOn: $dismissDisabled)
+                    
+                    Text("Live Example")
+                        .font(.title2)
+                        .fontWeight(.medium)
                     
                     HStack {
                         VStack(alignment: .leading, spacing: 8) {
@@ -26,18 +76,19 @@ struct CustomMenuiOS26: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         
                         
-                        CustomMenuView(style: .glass) {
+                        CustomMenuView(style: selectedOption) {
                             Image(systemName: "calendar")
                                 .font(.title3)
                                 .frame(width: 40, height: 30)
                             
                         } content: {
-                            DateFilterView()
+                            DateFilterView(
+                                interactiveDismissDisabled: dismissDisabled
+                            )
                         }
                     }
                 }
                 .padding(16)
-                .padding(.bottom, 700)
             }
             
         } else {
@@ -83,6 +134,13 @@ private struct CustomMenuView<Label: View, Content: View>: View {
 private enum CustomMenuStyle: String, CaseIterable {
     case glass = "Glass"
     case glassProminent = "Glass Prominent"
+    
+    var codeValue: String {
+        switch self {
+        case .glass: ".glass"
+        case .glassProminent: ".glassProminent"
+        }
+    }
 }
 
 @available(iOS 26.0, *)
@@ -120,6 +178,12 @@ private struct PopOverHelper<Content: View>: View {
 private struct DateFilterView: View {
     
     @Environment(\.dismiss) var dismiss
+    
+    private let interactiveDismissDisabled: Bool
+    
+    init(interactiveDismissDisabled: Bool = false) {
+        self.interactiveDismissDisabled = interactiveDismissDisabled
+    }
     
     var body: some View {
         VStack(alignment: .center, spacing: 16) {
@@ -159,7 +223,7 @@ private struct DateFilterView: View {
         }
         .padding(16)
         .frame(width: 250, height: 250)
-//        .interactiveDismissDisabled()
+        .interactiveDismissDisabled(interactiveDismissDisabled)
     }
 }
 
