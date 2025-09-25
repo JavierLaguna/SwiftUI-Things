@@ -5,8 +5,23 @@ import SwiftUI
 
 struct CustomMenuiOS26: View {
     
+    private let pasteboard = UIPasteboard.general
     @State private var selectedOption: CustomMenuStyle = .glass
     @State private var dismissDisabled = false
+    
+    private var usageText: String {
+        """
+        CustomMenuView(style: \(selectedOption.codeValue)) {
+            Image(systemName: "calendar")
+                .font(.title3)
+                .frame(width: 40, height: 30)
+        } content: {
+            DateFilterView(
+                interactiveDismissDisabled: \(String(describing: dismissDisabled))
+            )
+        }
+        """
+    }
     
     var body: some View {
         if #available(iOS 26.0, *) {
@@ -65,26 +80,13 @@ struct CustomMenuiOS26: View {
                         .font(.title2)
                         .fontWeight(.medium)
                     
-                    VStack(alignment: .leading, spacing: 16) {
+                    VStack(alignment: .leading, spacing: 24) {
                         Text("Usage:")
                             .font(.footnote)
                             .foregroundStyle(.gray)
                             .underline()
                         
-                        Text(
-                            """
-                            CustomMenuView(style: \(selectedOption.codeValue)) {
-                                Image(systemName: "calendar")
-                                    .font(.title3)
-                                    .frame(width: 40, height: 30)
-                                
-                            } content: {
-                                DateFilterView(
-                                    interactiveDismissDisabled: \(String(describing: dismissDisabled))
-                                )                                
-                            }                            
-                            """
-                        )
+                        Text(usageText)
                         .font(.system(.body, design: .monospaced))
                     }
                     .padding(24)
@@ -92,6 +94,17 @@ struct CustomMenuiOS26: View {
                     .background {
                         RoundedRectangle(cornerRadius: 30)
                             .fill(.gray.opacity(0.15))
+                    }
+                    .overlay(alignment: .topTrailing) {
+                        Button {
+                            pasteboard.string = usageText
+                        } label: {
+                            Image(systemName: "clipboard.fill")
+                                .font(.title3)
+                                .padding(16)
+                                .padding(.trailing, 8)
+                                .tint(.gray)
+                        }
                     }
                 }
                 .padding(16)
