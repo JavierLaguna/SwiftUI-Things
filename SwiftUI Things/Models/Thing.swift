@@ -97,6 +97,7 @@ extension Thing {
             Thing(title: "App Wide Overlays", destination: .appWideOverlays, type: .container),
             Thing(title: "Glowing Gradient Border", destination: .glowingGradientBorder, type: .container),
             Thing(title: "Animated Dialogs", destination: .animatedDialogs, type: .container),
+            Thing(title: "SwiftUIView to PDF", destination: .swiftUIViewToPDF, type: .container),
             
             // MARK: SampleApp
             Thing(title: "Restart", destination: .restart, type: .sampleApp),

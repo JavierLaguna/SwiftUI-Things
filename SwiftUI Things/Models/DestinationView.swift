@@ -75,6 +75,7 @@ enum DestinationView {
     case appWideOverlays
     case glowingGradientBorder
     case animatedDialogs
+    case swiftUIViewToPDF
     
     // MARK: SampleApp
     case restart
@@ -163,6 +164,7 @@ extension DestinationView {
         case .appWideOverlays: AppWideOverlays()
         case .glowingGradientBorder: GlowingGradientBorder()
         case .animatedDialogs: AnimatedDialogs()
+        case .swiftUIViewToPDF: SwiftUIViewToPDF()
             
             // MARK: SampleApp
         case .restart: RestartMainView()
