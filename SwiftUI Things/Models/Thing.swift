@@ -106,6 +106,7 @@ extension Thing {
             Thing(title: "Connect 4", destination: .connect4, type: .sampleApp),
             Thing(title: "Wallet", destination: .wallet, type: .sampleApp),
             Thing(title: "PS Intro", destination: .psIntro, type: .sampleApp),
+            Thing(title: "Animated Paywall", destination: .animatedPaywall, type: .sampleApp),
         ]
     }
 }

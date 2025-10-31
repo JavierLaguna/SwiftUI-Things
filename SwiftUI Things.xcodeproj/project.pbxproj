@@ -130,6 +130,8 @@
 		49DF619F2C7326D200EF3DC9 /* PrivacySensitiveExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */; };
 		49DF61A12C732A9D00EF3DC9 /* ImageAndTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */; };
 		49DF61A32C732DC100EF3DC9 /* PhotosPickerStylesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF61A22C732DC100EF3DC9 /* PhotosPickerStylesExample.swift */; };
+		49F6C5992EA2692500FE1FEB /* Subscription.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 49F6C5982EA2692500FE1FEB /* Subscription.storekit */; };
+		49F6C59C2EA26EB300FE1FEB /* AnimatedPaywallExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6C59B2EA26EB300FE1FEB /* AnimatedPaywallExample.swift */; };
 		49F82D832E16C57700FDD69A /* StretchyVisualEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F82D822E16C57700FDD69A /* StretchyVisualEffect.swift */; };
 /* End PBXBuildFile section */
 
@@ -258,6 +260,8 @@
 		49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySensitiveExample.swift; sourceTree = "<group>"; };
 		49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTextExample.swift; sourceTree = "<group>"; };
 		49DF61A22C732DC100EF3DC9 /* PhotosPickerStylesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerStylesExample.swift; sourceTree = "<group>"; };
+		49F6C5982EA2692500FE1FEB /* Subscription.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Subscription.storekit; sourceTree = "<group>"; };
+		49F6C59B2EA26EB300FE1FEB /* AnimatedPaywallExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPaywallExample.swift; sourceTree = "<group>"; };
 		49F82D822E16C57700FDD69A /* StretchyVisualEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyVisualEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -516,6 +520,7 @@
 				49A9F79529957AC900B367AE /* Utilities */,
 				495A93E52D971BA600DC1F31 /* Resources */,
 				49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */,
+				49F6C5982EA2692500FE1FEB /* Subscription.storekit */,
 				49A0CE37298BE0CB00D54732 /* Preview Content */,
 			);
 			path = "SwiftUI Things";
@@ -619,6 +624,7 @@
 		49A9F7862995763F00B367AE /* SampleApps */ = {
 			isa = PBXGroup;
 			children = (
+				49F6C59A2EA26E8300FE1FEB /* AnimatedPaywall */,
 				497E334E2998FD23008710B9 /* Connect4 */,
 				494647CA299FB31600E47D4E /* Fructus */,
 				497E334029967C4B008710B9 /* Pinch */,
@@ -681,6 +687,14 @@
 				49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		49F6C59A2EA26E8300FE1FEB /* AnimatedPaywall */ = {
+			isa = PBXGroup;
+			children = (
+				49F6C59B2EA26EB300FE1FEB /* AnimatedPaywallExample.swift */,
+			);
+			path = AnimatedPaywall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -748,6 +762,7 @@
 				495A93E82D971BD100DC1F31 /* battery.mp4 in Resources */,
 				49A9F79429957AB400B367AE /* success.m4a in Resources */,
 				49A9F79329957AB400B367AE /* chimeup.mp3 in Resources */,
+				49F6C5992EA2692500FE1FEB /* Subscription.storekit in Resources */,
 				49A0CE39298BE0CB00D54732 /* Preview Assets.xcassets in Resources */,
 				49A0CE36298BE0CB00D54732 /* Assets.xcassets in Resources */,
 			);
@@ -816,6 +831,7 @@
 				494647E4299FB32B00E47D4E /* FructusContentView.swift in Sources */,
 				49665AA429B4AC1F007D55D8 /* LongPressGestureExample.swift in Sources */,
 				49A0CE43298BE38500D54732 /* Thing.swift in Sources */,
+				49F6C59C2EA26EB300FE1FEB /* AnimatedPaywallExample.swift in Sources */,
 				4971C96329B665A10078CF0B /* ShareSheetExample.swift in Sources */,
 				494647E8299FB32B00E47D4E /* FruitNutrientsView.swift in Sources */,
 				49DF619D2C6CC48900EF3DC9 /* MarkdownExample.swift in Sources */,

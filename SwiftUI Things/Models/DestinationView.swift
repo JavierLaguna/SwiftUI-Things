@@ -84,6 +84,7 @@ enum DestinationView {
     case connect4
     case wallet
     case psIntro
+    case animatedPaywall
 }
 
 extension DestinationView {
@@ -173,6 +174,7 @@ extension DestinationView {
         case .connect4: C4GameView()
         case .wallet: WalletSandbox()
         case .psIntro: PSIntroView()
+        case .animatedPaywall: AnimatedPaywallExample()
         }
     }
 }

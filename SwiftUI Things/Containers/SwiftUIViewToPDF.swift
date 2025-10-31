@@ -16,7 +16,7 @@ struct SwiftUIViewToPDF: View {
         })
     }
     
-    private var fileURL2: URL? {
+    private var fileURL2: URL? { // TODO: JLI - Show like option on the screen
         let pageCount = Int((PDFMaker.PageSize.a4().size.height - 120) / 80)
         let chunkTransactions = transactions.chunked(into: pageCount)
         
