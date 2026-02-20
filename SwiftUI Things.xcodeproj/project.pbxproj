@@ -16,6 +16,9 @@
 		492C164A2E7FF57C006342FC /* GlassEffectContainerExampleiOS26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C16492E7FF57C006342FC /* GlassEffectContainerExampleiOS26.swift */; };
 		492C164C2E801624006342FC /* TabBarExampleiOS26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C164B2E801624006342FC /* TabBarExampleiOS26.swift */; };
 		49344FFE2C74A71B00E84810 /* DropdownViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */; };
+		4935C3762F488C30002B7781 /* CalendarAppExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935C3752F488C30002B7781 /* CalendarAppExample.swift */; };
+		4935C3792F488D86002B7781 /* CalendarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935C3782F488D86002B7781 /* CalendarData.swift */; };
+		4935C37C2F488E1D002B7781 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935C37B2F488E1D002B7781 /* Date+Extensions.swift */; };
 		493D11A229B60D01000C701C /* PopoverExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D11A129B60D01000C701C /* PopoverExample.swift */; };
 		494277932A37596E007049B8 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494277922A37596E007049B8 /* LinkView.swift */; };
 		494277952A376BB5007049B8 /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494277942A376BB5007049B8 /* GradientText.swift */; };
@@ -143,6 +146,9 @@
 		492C16492E7FF57C006342FC /* GlassEffectContainerExampleiOS26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassEffectContainerExampleiOS26.swift; sourceTree = "<group>"; };
 		492C164B2E801624006342FC /* TabBarExampleiOS26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarExampleiOS26.swift; sourceTree = "<group>"; };
 		49344FFD2C74A71B00E84810 /* DropdownViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownViewExample.swift; sourceTree = "<group>"; };
+		4935C3752F488C30002B7781 /* CalendarAppExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarAppExample.swift; sourceTree = "<group>"; };
+		4935C3782F488D86002B7781 /* CalendarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarData.swift; sourceTree = "<group>"; };
+		4935C37B2F488E1D002B7781 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		493D11A129B60D01000C701C /* PopoverExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverExample.swift; sourceTree = "<group>"; };
 		494277922A37596E007049B8 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		494277942A376BB5007049B8 /* GradientText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
@@ -283,6 +289,32 @@
 				492C16472E7FE962006342FC /* ToolbariOS26.swift */,
 			);
 			path = iOS26;
+			sourceTree = "<group>";
+		};
+		4935C3742F488C10002B7781 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				4935C37A2F488E06002B7781 /* Extensions */,
+				4935C3772F488D68002B7781 /* Models */,
+				4935C3752F488C30002B7781 /* CalendarAppExample.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		4935C3772F488D68002B7781 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4935C3782F488D86002B7781 /* CalendarData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4935C37A2F488E06002B7781 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4935C37B2F488E1D002B7781 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		494647CA299FB31600E47D4E /* Fructus */ = {
@@ -618,6 +650,7 @@
 		49A9F7862995763F00B367AE /* SampleApps */ = {
 			isa = PBXGroup;
 			children = (
+				4935C3742F488C10002B7781 /* Calendar */,
 				49F6C59A2EA26E8300FE1FEB /* AnimatedPaywall */,
 				497E334E2998FD23008710B9 /* Connect4 */,
 				494647CA299FB31600E47D4E /* Fructus */,
@@ -827,6 +860,7 @@
 				495A93E22D97069F00DC1F31 /* ScrollViewAnimationEffect.swift in Sources */,
 				495A93EA2D971EC100DC1F31 /* ExpandableCustomSlider.swift in Sources */,
 				4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */,
+				4935C3762F488C30002B7781 /* CalendarAppExample.swift in Sources */,
 				49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */,
 				494647E4299FB32B00E47D4E /* FructusContentView.swift in Sources */,
 				49665AA429B4AC1F007D55D8 /* LongPressGestureExample.swift in Sources */,
@@ -843,6 +877,7 @@
 				49851C7A2C6644BE0011E254 /* CompositionalGridLayout.swift in Sources */,
 				49B8E2AD2C7500EE00C8F0BE /* RenameButtonExample.swift in Sources */,
 				496AA4D92BBAE67800CC3D05 /* AdaptedTextColorExample.swift in Sources */,
+				4935C37C2F488E1D002B7781 /* Date+Extensions.swift in Sources */,
 				49DF61A12C732A9D00EF3DC9 /* ImageAndTextExample.swift in Sources */,
 				49B8E2AF2C7509D500C8F0BE /* MenuWithSectionsExample.swift in Sources */,
 				49B8E2B92C75288600C8F0BE /* GaugeExample.swift in Sources */,
@@ -873,6 +908,7 @@
 				49851C6A2C661ADF0011E254 /* BadgeExample.swift in Sources */,
 				49DC600F2CB7B4E40045935E /* TimerExample.swift in Sources */,
 				49851C742C6632470011E254 /* MixColorsExample.swift in Sources */,
+				4935C3792F488D86002B7781 /* CalendarData.swift in Sources */,
 				492C16442E7DB6C9006342FC /* CustomAnimatedToolBariOS26.swift in Sources */,
 				492C164A2E7FF57C006342FC /* GlassEffectContainerExampleiOS26.swift in Sources */,
 				494647E7299FB32B00E47D4E /* SourceLinkView.swift in Sources */,
