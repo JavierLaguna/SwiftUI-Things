@@ -63,9 +63,6 @@ struct BackgroundMotionAnimationView: View {
     }
 }
 
-struct BackgroundMotionAnimationView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        BackgroundMotionAnimationView()
-    }
+#Preview {
+    BackgroundMotionAnimationView()
 }

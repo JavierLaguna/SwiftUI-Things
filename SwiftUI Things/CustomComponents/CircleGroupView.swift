@@ -44,14 +44,12 @@ struct CircleGroupViewSandbox: View {
     }
 }
 
-struct CircleGroupView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            CircleGroupView(ShapeColor: .orange, ShapeOpacity: 0.2)
+#Preview {
+    Group {
+        CircleGroupView(ShapeColor: .orange, ShapeOpacity: 0.2)
             .previewLayout(.sizeThatFits)
-            
-            CircleGroupViewSandbox()
-                .previewDisplayName("Sanbox")
-        }
+        
+        CircleGroupViewSandbox()
+            .previewDisplayName("Sanbox")
     }
 }
