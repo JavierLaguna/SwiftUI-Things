@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension ReserveTextSpaceExample: NativeModifiersThing {
+    static let title = "Reserve text space"
+    static func makeView() -> some View { Self() }
+}
 
 struct ReserveTextSpaceExample: View {
     
@@ -12,7 +16,7 @@ struct ReserveTextSpaceExample: View {
             Text("Reserved space text!")
                 .lineLimit(2, reservesSpace: true)
                 .background(.mint)
-            
+
         }
         .font(.largeTitle)
     }

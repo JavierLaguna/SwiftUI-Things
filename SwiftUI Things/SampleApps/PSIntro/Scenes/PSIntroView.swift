@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension PSIntroView: SampleAppThing {
+    static let title = "PSIntro"
+    static func makeView() -> some View { Self() }
+}
 
 struct PSIntroView: View {
     

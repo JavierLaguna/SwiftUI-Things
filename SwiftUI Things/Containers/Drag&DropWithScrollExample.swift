@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension DragNDropWithScrollExample: CustomComponentThing {
+    static let title = "DragNDropWithScroll"
+    static func makeView() -> some View { Self() }
+}
+
 struct DragNDropWithScrollExample: View {
     
     var body: some View {

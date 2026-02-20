@@ -1,6 +1,11 @@
 import SwiftUI
 import MapKit
 
+extension MapExample: NativeComponentThing {
+    static let title = "Map"
+    static func makeView() -> some View { Self() }
+}
+
 struct MapExample: View {
     
     private let location = CLLocationCoordinate2D(
@@ -37,7 +42,6 @@ struct MapExample: View {
     
     var body: some View {
         VStack {
-            
             Map(initialPosition:
                     .camera(MapCamera(
                         centerCoordinate: .init(

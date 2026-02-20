@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension TapAnimationExample: NativeModifiersThing {
+    static let title = "TapAnimation"
+    static func makeView() -> some View { Self() }
+}
 
 struct TapAnimationExample: View {
     
@@ -25,9 +29,6 @@ struct TapAnimationExample: View {
     }
 }
 
-struct TapAnimationExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        TapAnimationExample()
-    }
+#Preview {
+    TapAnimationExample()
 }

@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension GlassEffectContainerExampleiOS26: IOS26Thing {
+    static let title = "GlassEffect Container iOS26"
+    static func makeView() -> some View { Self() }
+}
+
 struct GlassEffectContainerExampleiOS26: View {
     
     enum Effect: String, CaseIterable {

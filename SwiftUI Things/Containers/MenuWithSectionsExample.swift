@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension MenuWithSectionsExample: NativeComponentThing {
+    static let title = "Menu with sections"
+    static func makeView() -> some View { Self() }
+}
+
 struct MenuWithSectionsExample: View {
     
     var body: some View {

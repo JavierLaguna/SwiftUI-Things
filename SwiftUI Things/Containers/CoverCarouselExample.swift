@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension CoverCarouselExample: CustomComponentThing {
+    static let title = "CoverCarousel"
+    static func makeView() -> some View { Self() }
+}
+
 struct CoverCarouselExample: View {
     
     enum Config {

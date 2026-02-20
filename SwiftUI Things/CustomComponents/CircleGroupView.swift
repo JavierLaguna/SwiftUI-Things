@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension CircleGroupViewSandbox: CustomComponentThing {
+    static let title = "CircleGroupView"
+    static func makeView() -> some View { Self() }
+}
 
 struct CircleGroupView: View {
     

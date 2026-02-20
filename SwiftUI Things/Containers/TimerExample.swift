@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension TimerExample: NativeModifiersThing {
+    static let title = "Timer"
+    static func makeView() -> some View { Self() }
+}
 
 struct TimerExample: View {
     

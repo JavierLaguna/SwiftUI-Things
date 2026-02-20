@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension GlassEffectModifieriOS26: IOS26Thing {
+    static let title = "GlassEffect Modifier iOS26"
+    static func makeView() -> some View { Self() }
+}
+
 struct GlassEffectModifieriOS26: View {
     
     var body: some View {

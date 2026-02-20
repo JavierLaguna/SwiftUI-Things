@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension MeshGradientExample: NativeModifiersThing {
+    static let title = "MeshGradient"
+    static func makeView() -> some View { Self() }
+}
+
 struct MeshGradientExample: View {
     
     var body: some View {

@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension ImageAndTextExample: NativeComponentThing {
+    static let title = "Image and text"
+    static func makeView() -> some View { Self() }
+}
 
 struct ImageAndTextExample: View {
     

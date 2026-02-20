@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension MorphingSymbolViewExample: CustomComponentThing {
+    static let title = "MorphingSymbol"
+    static func makeView() -> some View { Self() }
+}
+
 struct MorphingSymbolViewExample: View {
     
     @State private var active = false

@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension StretchyVisualEffect: CustomModifiersThing {
+    static let title = "StretchyVisualEffect"
+    static func makeView() -> some View { Self() }
+}
+
 extension View {
     
     func stretchyVisualEffect() -> some View {

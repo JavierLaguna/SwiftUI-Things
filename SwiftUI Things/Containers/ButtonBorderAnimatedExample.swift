@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension ButtonBorderAnimatedExample: NativeModifiersThing {
+    static let title = "ButtonBorderAnimated"
+    static func makeView() -> some View { Self() }
+}
+
 struct ButtonBorderAnimatedExample: View {
     
     private let gradient = Gradient(colors: [.red, .blue])

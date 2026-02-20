@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension AdvancedMatchedGeometryEffectExample: NativeModifiersThing {
+    static let title = "Advanced MatchedGeometryEffect"
+    static func makeView() -> some View { Self() }
+}
 
 struct AdvancedMatchedGeometryEffectExample: View {
     

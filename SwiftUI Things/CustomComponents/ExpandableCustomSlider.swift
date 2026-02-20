@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension ExpandableCustomSliderExample: CustomComponentThing {
+    static let title = "ExpandableCustomSlider"
+    static func makeView() -> some View { Self() }
+}
+
 struct ExpandableCustomSlider<Overlay: View>: View {
     @Binding var value: CGFloat
     var range: ClosedRange<CGFloat>

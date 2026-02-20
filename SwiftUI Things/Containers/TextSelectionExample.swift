@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension TextSelectionExample: NativeModifiersThing {
+    static let title = "TextSelection"
+    static func makeView() -> some View { Self() }
+}
+
 struct TextSelectionExample: View {
     
     var body: some View {

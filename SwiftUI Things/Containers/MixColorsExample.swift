@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension MixColorsExample: NativeModifiersThing {
+    static let title = "Mix colors"
+    static func makeView() -> some View { Self() }
+}
+
 struct MixColorsExample: View {
     
     @State private var color1 = Color.yellow

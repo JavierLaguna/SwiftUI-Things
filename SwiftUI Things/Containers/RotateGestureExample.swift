@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension RotateGestureExample: NativeModifiersThing {
+    static let title = "RotateGesture"
+    static func makeView() -> some View { Self() }
+}
+
 struct RotateGestureExample: View {
     
     @State private var angle: Angle = .zero

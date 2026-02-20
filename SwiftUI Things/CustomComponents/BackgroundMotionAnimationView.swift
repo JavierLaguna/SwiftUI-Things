@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension BackgroundMotionAnimationView: CustomComponentThing {
+    static let title = "BackgroundMotionAnimation"
+    static func makeView() -> some View { Self() }
+}
 
 struct BackgroundMotionAnimationView: View {
     

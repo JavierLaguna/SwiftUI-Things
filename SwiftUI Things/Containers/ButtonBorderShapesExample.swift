@@ -1,10 +1,17 @@
-
 import SwiftUI
+
+extension ButtonBorderShapesExample: NativeModifiersThing {
+    static let title = "ButtonBorderShapes"
+    static func makeView() -> some View { Self() }
+}
 
 struct ButtonBorderShapesExample: View {
     
     @ViewBuilder
-    private func buttonExample(name: String, buttonBorderShape: ButtonBorderShape) -> some View {
+    private func buttonExample(
+        name: String,
+        buttonBorderShape: ButtonBorderShape
+    ) -> some View {
         VStack(alignment: .leading, spacing: 16) {
             Text(name)
                 .font(.title2.bold())

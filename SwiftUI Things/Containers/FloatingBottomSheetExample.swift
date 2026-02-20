@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension FloatingBottomSheetExample: CustomModifiersThing {
+    static let title = "FloatingBottomSheet"
+    static func makeView() -> some View { Self() }
+}
+
 struct FloatingBottomSheetExample: View {
     
     private enum SheetType {

@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension ExpandableSearchBarExample: CustomComponentThing {
+    static let title = "ExpandableSearchBar"
+    static func makeView() -> some View { Self() }
+}
+
 struct ExpandableSearchBarExample: View {
     
     @State private var searchText = ""

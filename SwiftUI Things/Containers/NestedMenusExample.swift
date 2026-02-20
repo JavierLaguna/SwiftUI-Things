@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension NestedMenusExample: NativeComponentThing {
+    static let title = "Nested menus"
+    static func makeView() -> some View { Self() }
+}
+
 struct NestedMenusExample: View {
     
     var body: some View {

@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension LinkView: NativeComponentThing {
+    static let title = "LinkView"
+    static func makeView() -> some View { Self() }
+}
 
 struct LinkView: View {
     

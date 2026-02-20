@@ -56,7 +56,6 @@
 		49665AAD29B502FF007D55D8 /* MatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */; };
 		496A60602C736058006BC371 /* FloatingTabBarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A605F2C736058006BC371 /* FloatingTabBarExample.swift */; };
 		496A60622C737E1B006BC371 /* MorphingSymbolViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A60612C737E1B006BC371 /* MorphingSymbolViewExample.swift */; };
-		496AA4D72BBAE66200CC3D05 /* Color+Luminance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496AA4D62BBAE66200CC3D05 /* Color+Luminance.swift */; };
 		496AA4D92BBAE67800CC3D05 /* AdaptedTextColorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496AA4D82BBAE67800CC3D05 /* AdaptedTextColorExample.swift */; };
 		4971C95829B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */; };
 		4971C95A29B65FE20078CF0B /* RedactedPlaceholderExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */; };
@@ -94,11 +93,9 @@
 		49A0CE36298BE0CB00D54732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A0CE35298BE0CB00D54732 /* Assets.xcassets */; };
 		49A0CE39298BE0CB00D54732 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A0CE38298BE0CB00D54732 /* Preview Assets.xcassets */; };
 		49A0CE43298BE38500D54732 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE42298BE38500D54732 /* Thing.swift */; };
-		49A0CE45298BE98E00D54732 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE44298BE98E00D54732 /* DestinationView.swift */; };
 		49A0CE47298BEE0900D54732 /* SlideTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE46298BEE0900D54732 /* SlideTo.swift */; };
 		49A7305A2C7F25D60075953A /* ExpandableSearchBarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A730592C7F25D60075953A /* ExpandableSearchBarExample.swift */; };
 		49A9DA9F299FD92C0007632C /* GetHeightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9DA9E299FD92C0007632C /* GetHeightModifier.swift */; };
-		49A9F78529941FF600B367AE /* ThingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F78429941FF600B367AE /* ThingType.swift */; };
 		49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F7882995765900B367AE /* RestartHomeView.swift */; };
 		49A9F78B2995765A00B367AE /* RestartOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F7892995765900B367AE /* RestartOnboardingView.swift */; };
 		49A9F78D2995767800B367AE /* RestartMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F78C2995767800B367AE /* RestartMainView.swift */; };
@@ -133,6 +130,7 @@
 		49F6C5992EA2692500FE1FEB /* Subscription.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 49F6C5982EA2692500FE1FEB /* Subscription.storekit */; };
 		49F6C59C2EA26EB300FE1FEB /* AnimatedPaywallExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6C59B2EA26EB300FE1FEB /* AnimatedPaywallExample.swift */; };
 		49F82D832E16C57700FDD69A /* StretchyVisualEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F82D822E16C57700FDD69A /* StretchyVisualEffect.swift */; };
+		49FE59952F3E571B00034DDC /* SwipeActionsLabelStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE59942F3E571B00034DDC /* SwipeActionsLabelStyleExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,7 +183,6 @@
 		49665AAC29B502FF007D55D8 /* MatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
 		496A605F2C736058006BC371 /* FloatingTabBarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBarExample.swift; sourceTree = "<group>"; };
 		496A60612C737E1B006BC371 /* MorphingSymbolViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolViewExample.swift; sourceTree = "<group>"; };
-		496AA4D62BBAE66200CC3D05 /* Color+Luminance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Luminance.swift"; sourceTree = "<group>"; };
 		496AA4D82BBAE67800CC3D05 /* AdaptedTextColorExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptedTextColorExample.swift; sourceTree = "<group>"; };
 		4971C95729B65C020078CF0B /* AdvancedMatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
 		4971C95929B65FE20078CF0B /* RedactedPlaceholderExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedPlaceholderExample.swift; sourceTree = "<group>"; };
@@ -224,11 +221,9 @@
 		49A0CE35298BE0CB00D54732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49A0CE38298BE0CB00D54732 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49A0CE42298BE38500D54732 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
-		49A0CE44298BE98E00D54732 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		49A0CE46298BEE0900D54732 /* SlideTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTo.swift; sourceTree = "<group>"; };
 		49A730592C7F25D60075953A /* ExpandableSearchBarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableSearchBarExample.swift; sourceTree = "<group>"; };
 		49A9DA9E299FD92C0007632C /* GetHeightModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHeightModifier.swift; sourceTree = "<group>"; };
-		49A9F78429941FF600B367AE /* ThingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingType.swift; sourceTree = "<group>"; };
 		49A9F7882995765900B367AE /* RestartHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartHomeView.swift; sourceTree = "<group>"; };
 		49A9F7892995765900B367AE /* RestartOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartOnboardingView.swift; sourceTree = "<group>"; };
 		49A9F78C2995767800B367AE /* RestartMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartMainView.swift; sourceTree = "<group>"; };
@@ -263,6 +258,7 @@
 		49F6C5982EA2692500FE1FEB /* Subscription.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Subscription.storekit; sourceTree = "<group>"; };
 		49F6C59B2EA26EB300FE1FEB /* AnimatedPaywallExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPaywallExample.swift; sourceTree = "<group>"; };
 		49F82D822E16C57700FDD69A /* StretchyVisualEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyVisualEffect.swift; sourceTree = "<group>"; };
+		49FE59942F3E571B00034DDC /* SwipeActionsLabelStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionsLabelStyleExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,6 +446,7 @@
 				495A93E12D97069F00DC1F31 /* ScrollViewAnimationEffect.swift */,
 				4971C96229B665A10078CF0B /* ShareSheetExample.swift */,
 				49C9AA052E85AFD2002F1547 /* SwiftUIViewToPDF.swift */,
+				49FE59942F3E571B00034DDC /* SwipeActionsLabelStyleExample.swift */,
 				49665AAA29B50247007D55D8 /* TapAnimationExample.swift */,
 				49B8E2BA2C752B4D00C8F0BE /* TextSelectionExample.swift */,
 				49DC600E2CB7B4E40045935E /* TimerExample.swift */,
@@ -464,7 +461,6 @@
 		496AA4D52BBAE63F00CC3D05 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				496AA4D62BBAE66200CC3D05 /* Color+Luminance.swift */,
 				4971C96029B6653E0078CF0B /* View+hideKeyboard.swift */,
 				492959742D9D94B3009FA8D2 /* View+SafeArea.swift */,
 			);
@@ -512,7 +508,8 @@
 			children = (
 				49A0CE41298BE37200D54732 /* Models */,
 				492C16422E7DB69B006342FC /* iOS26 */,
-				49A0CE40298BE2F300D54732 /* Components */,
+				49A0CE40298BE2F300D54732 /* CustomComponents */,
+				49AFE1E12F4325C3003C46B8 /* NativeComponents */,
 				49665AA529B4B59C007D55D8 /* Containers */,
 				49A9F7862995763F00B367AE /* SampleApps */,
 				49A0CE3F298BE2EA00D54732 /* Scenes */,
@@ -542,7 +539,7 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		49A0CE40298BE2F300D54732 /* Components */ = {
+		49A0CE40298BE2F300D54732 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
 				49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */,
@@ -550,22 +547,19 @@
 				49851C792C6644BC0011E254 /* CompositionalGridLayout.swift */,
 				495A93E92D971EC100DC1F31 /* ExpandableCustomSlider.swift */,
 				494277942A376BB5007049B8 /* GradientText.swift */,
-				494277922A37596E007049B8 /* LinkView.swift */,
 				4971C95E29B6639B0078CF0B /* LoadingView.swift */,
 				49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */,
 				496A60612C737E1B006BC371 /* MorphingSymbolViewExample.swift */,
 				49A0CE46298BEE0900D54732 /* SlideTo.swift */,
 				49F82D822E16C57700FDD69A /* StretchyVisualEffect.swift */,
 			);
-			path = Components;
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 		49A0CE41298BE37200D54732 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				49A0CE44298BE98E00D54732 /* DestinationView.swift */,
 				49A0CE42298BE38500D54732 /* Thing.swift */,
-				49A9F78429941FF600B367AE /* ThingType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -662,6 +656,14 @@
 				49A9F79829957B9A00B367AE /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		49AFE1E12F4325C3003C46B8 /* NativeComponents */ = {
+			isa = PBXGroup;
+			children = (
+				494277922A37596E007049B8 /* LinkView.swift */,
+			);
+			path = NativeComponents;
 			sourceTree = "<group>";
 		};
 		49D2D6682C6A0BA100B77478 /* PSIntro */ = {
@@ -784,7 +786,6 @@
 				49851C7C2C6647FE0011E254 /* FloatingBottomSheetExample.swift in Sources */,
 				49665AA929B50118007D55D8 /* TransformAnimationsExample.swift in Sources */,
 				49A9F78F299577AA00B367AE /* CircleGroupView.swift in Sources */,
-				49A9F78529941FF600B367AE /* ThingType.swift in Sources */,
 				4956009C29D1D358001DE321 /* CreditCard.swift in Sources */,
 				494647E6299FB32B00E47D4E /* FruitRowView.swift in Sources */,
 				49851C6C2C661CED0011E254 /* UnevenRoundedRectangleExample.swift in Sources */,
@@ -817,7 +818,6 @@
 				49A0CE34298BE0C900D54732 /* MainView.swift in Sources */,
 				49851C722C6629920011E254 /* DateFormatExample.swift in Sources */,
 				49B8E2A72C74F46C00C8F0BE /* NestedMenusExample.swift in Sources */,
-				49A0CE45298BE98E00D54732 /* DestinationView.swift in Sources */,
 				491DFFCC2C886FF40022D003 /* Drag&DropWithScrollExample.swift in Sources */,
 				49A9F78D2995767800B367AE /* RestartMainView.swift in Sources */,
 				4971C96529B666900078CF0B /* ActionSheetExample.swift in Sources */,
@@ -835,6 +835,7 @@
 				4971C96329B665A10078CF0B /* ShareSheetExample.swift in Sources */,
 				494647E8299FB32B00E47D4E /* FruitNutrientsView.swift in Sources */,
 				49DF619D2C6CC48900EF3DC9 /* MarkdownExample.swift in Sources */,
+				49FE59952F3E571B00034DDC /* SwipeActionsLabelStyleExample.swift in Sources */,
 				496A60622C737E1B006BC371 /* MorphingSymbolViewExample.swift in Sources */,
 				49B8E2B12C75156900C8F0BE /* RotateGestureExample.swift in Sources */,
 				49344FFE2C74A71B00E84810 /* DropdownViewExample.swift in Sources */,
@@ -879,7 +880,6 @@
 				4956009E29D1D533001DE321 /* WalletConstants.swift in Sources */,
 				49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */,
 				494647E9299FB32B00E47D4E /* FruitHeaderView.swift in Sources */,
-				496AA4D72BBAE66200CC3D05 /* Color+Luminance.swift in Sources */,
 				494647DE299FB32B00E47D4E /* FruitData.swift in Sources */,
 				494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */,
 				49B8E2A92C74F9CF00C8F0BE /* InspectorExample.swift in Sources */,

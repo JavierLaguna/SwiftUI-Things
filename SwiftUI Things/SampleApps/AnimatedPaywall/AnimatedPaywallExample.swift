@@ -4,6 +4,11 @@
 import SwiftUI
 import StoreKit
 
+extension AnimatedPaywallExample: SampleAppThing {
+    static let title = "Animated Paywall"
+    static func makeView() -> some View { Self() }
+}
+
 struct AnimatedPaywallExample: View {
     
     static var productIDs: [String] {

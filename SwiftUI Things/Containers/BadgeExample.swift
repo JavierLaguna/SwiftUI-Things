@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension BadgeExample: NativeModifiersThing {
+    static let title = "Badge"
+    static func makeView() -> some View { Self() }
+}
+
 struct BadgeExample: View {
     
     var body: some View {

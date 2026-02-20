@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension DateFormatExample: NativeModifiersThing {
+    static let title = "Date format"
+    static func makeView() -> some View { Self() }
+}
+
 struct DateFormatExample: View {
     
     var body: some View {

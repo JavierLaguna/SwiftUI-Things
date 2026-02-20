@@ -1,6 +1,11 @@
 import SwiftUI
 import AVKit
 
+extension AppWideOverlays: SampleAppThing {
+    static let title = "AppWideOverlays"
+    static func makeView() -> some View { Self() }
+}
+
 struct AppWideOverlays: View {
     
     @State private var showVideoPlayer = false

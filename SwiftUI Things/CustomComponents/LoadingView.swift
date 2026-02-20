@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension LoadingView: CustomComponentThing {
+    static let title = "LoadingView"
+    static func makeView() -> some View { Self() }
+}
 
 struct LoadingView: View {
     

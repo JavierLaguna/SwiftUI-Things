@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension LongPressGestureExample: NativeModifiersThing {
+    static let title = "LongPressGesture"
+    static func makeView() -> some View { Self() }
+}
 
 struct LongPressGestureExample: View {
     
