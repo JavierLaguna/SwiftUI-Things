@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension GaugeExample: NativeComponentThing {
+    static let title = "Gauge"
+    static func makeView() -> some View { Self() }
+}
+
 struct GaugeExample: View {
     
     @State private var value = 0.5

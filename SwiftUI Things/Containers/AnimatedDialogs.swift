@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension AnimatedDialogs: NativeModifiersThing {
+    static let title = "AnimatedDialogs"
+    static func makeView() -> some View { Self() }
+}
+
 struct AnimatedDialogs: View {
     
     @State private var config = DrawerConfig()

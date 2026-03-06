@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension HorizontalScrollWithRotate3DEffectExample: NativeModifiersThing {
+    static let title = "HorizontalScrollWithRotate3DEffect"
+    static func makeView() -> some View { Self() }
+}
 
 struct HorizontalScrollWithRotate3DEffectExample: View {
     
@@ -28,9 +32,6 @@ struct HorizontalScrollWithRotate3DEffectExample: View {
     }
 }
 
-struct HorizontalScrollWithRotate3DEffectExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        HorizontalScrollWithRotate3DEffectExample()
-    }
+#Preview {
+    HorizontalScrollWithRotate3DEffectExample()
 }

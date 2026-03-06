@@ -1,5 +1,10 @@
-
 import SwiftUI
+
+extension ViewThatFitsScrollExample: NativeComponentThing {
+    static let title = "ViewThatFitsScroll"
+    static func makeView() -> some View { Self(count: 220)
+    }
+}
 
 struct ViewThatFitsScrollExample: View {
     
@@ -20,13 +25,10 @@ struct ViewThatFitsScrollExample: View {
     }
 }
 
-struct ViewThatFitsScrollExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        ViewThatFitsScrollExample(count: 100)
-            .previewDisplayName("Text")
-        
-        ViewThatFitsScrollExample(count: 300)
-            .previewDisplayName("ScrollView+Text")
-    }
+#Preview("Text") {
+    ViewThatFitsScrollExample(count: 100)
+}
+
+#Preview("ScrollView+Text") {
+    ViewThatFitsScrollExample(count: 300)
 }

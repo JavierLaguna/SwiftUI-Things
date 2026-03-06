@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension MaskingExample: NativeModifiersThing {
+    static let title = "Mask"
+    static func makeView() -> some View { Self() }
+}
+
 struct MaskingExample: View {
     
     var body: some View {

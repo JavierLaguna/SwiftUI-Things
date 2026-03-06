@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension AnimationModifierAndTimingExample: NativeModifiersThing {
+    static let title = "AnimationModifierAndTiming"
+    static func makeView() -> some View { Self() }
+}
 
 struct AnimationModifierAndTimingExample: View {
     
@@ -33,10 +37,6 @@ struct AnimationModifierAndTimingExample: View {
     }
 }
 
-
-struct AnimationModifierAndTimingExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        AnimationModifierAndTimingExample()
-    }
+#Preview {
+    AnimationModifierAndTimingExample()
 }

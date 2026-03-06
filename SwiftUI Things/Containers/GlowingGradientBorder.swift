@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension GlowingGradientBorder: NativeModifiersThing {
+    static let title = "GlowingGradientBorder"
+    static func makeView() -> some View { Self() }
+}
+
 struct GlowingGradientBorder: View {
     
     var body: some View {

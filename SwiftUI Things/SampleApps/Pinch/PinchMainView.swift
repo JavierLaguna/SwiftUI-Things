@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension PinchMainView: SampleAppThing {
+    static let title = "Pinch"
+    static func makeView() -> some View { Self() }
+}
 
 struct PinchMainView: View {
     

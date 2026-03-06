@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension PopoverExample: NativeModifiersThing {
+    static let title = "Popover"
+    static func makeView() -> some View { Self() }
+}
 
 struct PopoverExample: View {
     
@@ -27,9 +31,6 @@ private struct PopoverView: View {
     }
 }
 
-struct PopoverExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        PopoverExample()
-    }
+#Preview {
+    PopoverExample()
 }

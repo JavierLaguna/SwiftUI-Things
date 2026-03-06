@@ -1,6 +1,11 @@
 
 import SwiftUI
 
+extension SlideToSandbox: CustomComponentThing {
+    static let title = "SlideTo"
+    static func makeView() -> some View { Self() }
+}
+
 struct SlideTo: View {
     
     typealias OnComplete = () -> Void

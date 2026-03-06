@@ -1,6 +1,11 @@
 import SwiftUI
 import PhotosUI
 
+extension PhotosPickerStylesExample: NativeComponentThing {
+    static let title = "PhotosPicker styles"
+    static func makeView() -> some View { Self() }
+}
+
 struct PhotosPickerStylesExample: View {
     
     @State private var selectedPhotos: [PhotosPickerItem] = []

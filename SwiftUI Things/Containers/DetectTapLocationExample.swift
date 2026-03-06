@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension DetectTapLocationExample: NativeModifiersThing {
+    static let title = "Detect Tap Location"
+    static func makeView() -> some View { Self() }
+}
+
 struct DetectTapLocationExample: View {
     
     @State private var tappedLocation: CGPoint = .zero

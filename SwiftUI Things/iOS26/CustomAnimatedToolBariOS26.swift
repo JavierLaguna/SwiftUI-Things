@@ -3,6 +3,11 @@
 
 import SwiftUI
 
+extension CustomAnimatedToolBariOS26: IOS26Thing {
+    static let title = "Custom AnimatedToolBar iOS26"
+    static func makeView() -> some View { Self() }
+}
+
 struct CustomAnimatedToolBariOS26: View {
     
     @State private var path: NavigationPath = .init()

@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension ScrollViewAnimationEffect: CustomComponentThing {
+    static let title = "ScrollViewAnimationEffect"
+    static func makeView() -> some View { Self() }
+}
+
 struct ScrollViewAnimationEffect: View {
     
     var body: some View {

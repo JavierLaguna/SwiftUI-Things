@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension ToolbariOS26: IOS26Thing {
+    static let title = "Toolbar iOS26"
+    static func makeView() -> some View { Self() }
+}
+
 struct ToolbariOS26: View {
     
     var body: some View {

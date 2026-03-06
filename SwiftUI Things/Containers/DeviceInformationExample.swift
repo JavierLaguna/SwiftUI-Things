@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension DeviceInformationExample: NativeComponentThing {
+    static let title = "Device information"
+    static func makeView() -> some View { Self() }
+}
+
 struct DeviceInformationExample: View {
     
     var body: some View {

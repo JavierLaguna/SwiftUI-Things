@@ -1,5 +1,9 @@
+import SwiftUI
 
-import SwiftUI 
+extension FructusApp: SampleAppThing {
+    static let title = "Fructus"
+    static func makeView() -> some View { Self() }
+}
 
 struct FructusApp: View {
     

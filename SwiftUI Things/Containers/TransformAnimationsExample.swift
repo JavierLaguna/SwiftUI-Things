@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension TransformAnimationsExample: NativeModifiersThing {
+    static let title = "TransformAnimations"
+    static func makeView() -> some View { Self() }
+}
 
 struct TransformAnimationsExample: View {
     
@@ -33,9 +37,6 @@ struct TransformAnimationsExample: View {
     }
 }
 
-struct TransformAnimationsExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        TransformAnimationsExample()
-    }
+#Preview {
+    TransformAnimationsExample()
 }

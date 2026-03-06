@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension PrivacySensitiveExample: NativeModifiersThing {
+    static let title = "Privacy sensitive"
+    static func makeView() -> some View { Self() }
+}
 
 struct PrivacySensitiveExample: View {
     

@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension RestartMainView: SampleAppThing {
+    static let title = "Restart"
+    static func makeView() -> some View { Self() }
+}
 
 struct RestartMainView: View {
     

@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension GradientText: CustomComponentThing {
+    static let title = "GradientText"
+    static func makeView() -> some View { Self() }
+}
 
 struct GradientText: View {
     
@@ -23,9 +27,6 @@ struct GradientText: View {
     }
 }
 
-struct GradientText_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        GradientText()
-    }
+#Preview {
+    GradientText()
 }

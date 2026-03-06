@@ -3,6 +3,11 @@
 
 import SwiftUI
 
+extension CustomMenuiOS26: IOS26Thing {
+    static let title = "Custom Menu iOS26"
+    static func makeView() -> some View { Self() }
+}
+
 struct CustomMenuiOS26: View {
     
     private let pasteboard = UIPasteboard.general

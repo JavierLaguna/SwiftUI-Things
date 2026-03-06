@@ -1,6 +1,12 @@
 import SwiftUI
 
+extension InvertedMaskingExample: NativeModifiersThing {
+    static let title = "Inverted Masking"
+    static func makeView() -> some View { Self() }
+}
+
 struct InvertedMaskingExample: View {
+    
     var body: some View {
         ZStack {
             Image(.sonoma)

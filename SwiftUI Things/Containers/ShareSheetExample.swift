@@ -1,6 +1,11 @@
 
 import SwiftUI
 
+extension ShareSheetExample: NativeComponentThing {
+    static let title = "Share sheet"
+    static func makeView() -> some View { Self() }
+}
+
 struct ShareSheetExample: View {
     
     private func shareButton() {
@@ -18,9 +23,6 @@ struct ShareSheetExample: View {
     }
 }
 
-struct ShareSheetExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        ShareSheetExample()
-    }
+#Preview {
+    ShareSheetExample()
 }

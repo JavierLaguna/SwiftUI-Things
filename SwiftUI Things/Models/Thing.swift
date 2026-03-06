@@ -1,112 +1,143 @@
+import SwiftUI
 
-import Foundation
+protocol Thing {
+    associatedtype FeatureView: View
+    static var title: String { get }
+    @ViewBuilder static func makeView() -> FeatureView
+}
 
-struct Thing: Identifiable {
+struct AnyThing: Identifiable {
     let id = UUID()
     let title: String
-    let destination: DestinationView
-    let type: ThingType
-}
+    let view: AnyView
 
-extension Array where Element == Thing {
-    
-    func getByType() -> [(ThingType, [Thing])] {
-        return [
-            (.iOS26, self.filter { $0.type == .iOS26 }),
-            (.component, self.filter { $0.type == .component }),
-            (.container, self.filter { $0.type == .container }),
-            (.sampleApp, self.filter { $0.type == .sampleApp })
-        ]
+    init<F: Thing>(_ type: F.Type) {
+        title = F.title
+        view = AnyView(F.makeView())
     }
 }
 
-extension Thing {
+protocol IOS26Thing: Thing {}
+protocol CustomComponentThing: Thing {}
+protocol NativeComponentThing: Thing {}
+protocol CustomModifiersThing: Thing {}
+protocol NativeModifiersThing: Thing {}
+protocol NativeEnvironmentThing: Thing {}
+protocol SampleAppThing: Thing {}
+
+enum ThingSection: String, CaseIterable, Identifiable {
+    case ios26 = "iOS 26 Liquid Glass"
+    case customComponents = "Custom Components"
+    case nativeComponents = "Native Components"
+    case customModifiers = "Custom Modifiers"
+    case nativeModifiers = "Native Modifiers"
+    case nativeEnvironment = "Native Environment"
+    case sampleApps = "Sample Apps"
+
+    var id: String { rawValue }
+}
+
+enum ThingRegistry {
     
-    static func allThings() -> [Thing] {
-        [
-            // MARK: iOS 26
-            Thing(title: "GlassEffect Modifier", destination: .glassEffectModifieriOS26, type: .iOS26),
-            Thing(title: "TabBar example", destination: .tabBarExampleiOS26, type: .iOS26),
-            Thing(title: "Toolbar examples", destination: .toolbariOS26, type: .iOS26),
-            Thing(title: "GlassEffectContainer example", destination: .glassEffectContainerExampleiOS26, type: .iOS26),
-            Thing(title: "Custom Animated ToolBar", destination: .customAnimatedToolBariOS26, type: .iOS26),
-            Thing(title: "Custom Menu", destination: .customMenuiOS26, type: .iOS26),
-            
-            // MARK: Component
-            Thing(title: "Slide To", destination: .slideTo, type: .component),
-            Thing(title: "Circle Group", destination: .circleGroup, type: .component),
-            Thing(title: "Background Motion Animation", destination: .backgroundMotionAnimation, type: .component),
-            Thing(title: "Loading", destination: .loading, type: .component),
-            Thing(title: "Link", destination: .link, type: .component),
-            Thing(title: "Gradient Text", destination: .gradientText, type: .component),
-            Thing(title: "Morphing Symbol", destination: .morphingSymbol, type: .component),
-            Thing(title: "Expandable Custom Slider", destination: .expandableCustomSlider, type: .component),
-            Thing(title: "Stretchy VisualEffect", destination: .stretchyVisualEffect, type: .component),
-            
-            // MARK: Container
-            Thing(title: "Long Press Gesture", destination: .longPressGestureExample, type: .container),
-            Thing(title: "Animation Modifier and Timing", destination: .animationModifierAndTimingExample, type: .container),
-            Thing(title: "Transform Animations", destination: .transformAnimationsExample, type: .container),
-            Thing(title: "Tap Animation", destination: .tapAnimationExample, type: .container),
-            Thing(title: "Matched Geometry Effect", destination: .matchedGeometryEffectExample, type: .container),
-            Thing(title: "Popover", destination: .popoverExample, type: .container),
-            Thing(title: "Advanced Matched Geometry Effect", destination: .advancedMatchedGeometryEffectExample, type: .container),
-            Thing(title: "Redacted Placeholder", destination: .redactedPlaceholderExample, type: .container),
-            Thing(title: "Horizontal Scroll Rotate 3D Effect", destination: .horizontalScrollWithRotate3DEffectExample, type: .container),
-            Thing(title: "Share Sheet", destination: .shareSheetExample, type: .container),
-            Thing(title: "Action Sheet", destination: .actionSheetExample, type: .container),
-            Thing(title: "ViewThatFits", destination: .viewThatFitsExample, type: .container),
-            Thing(title: "ViewThatFits Scroll", destination: .viewThatFitsScrollExample, type: .container),
-            Thing(title: "Adapted Text Color", destination: .adaptedTextColor, type: .container),
-            Thing(title: "Masking", destination: .masking, type: .container),
-            Thing(title: "Inverted Masking", destination: .invertedMasking, type: .container),
-            Thing(title: "List Section Spacing", destination: .listSectionSpacing, type: .container),
-            Thing(title: "Badges", destination: .badge, type: .container),
-            Thing(title: "UnevenRoundedRectangle", destination: .unevenRoundedRectangle, type: .container),
-            Thing(title: "Map", destination: .map, type: .container),
-            Thing(title: "Display array user friendly", destination: .displayArrayUserFriendly, type: .container),
-            Thing(title: "Date Format", destination: .dateFormat, type: .container),
-            Thing(title: "Mix Colors", destination: .mixColors, type: .container),
-            Thing(title: "Mesh Gradient", destination: .meshGradient, type: .container),
-            Thing(title: "Compositional Grid Layout", destination: .compositionalGridLayout, type: .container),
-            Thing(title: "Floating Bottom Sheet", destination: .floatingBottomSheet, type: .container),
-            Thing(title: "Reserve Text Space", destination: .reserveTextSpace, type: .container),
-            Thing(title: "Button Border Shapes", destination: .buttonBorderShapes, type: .container),
-            Thing(title: "Button Border Animated", destination: .buttonBorderAnimated, type: .container),
-            Thing(title: "Markdown text", destination: .markdown, type: .container),
-            Thing(title: "Privacy sensitive text", destination: .privacySensitive, type: .container),
-            Thing(title: "Image and Text", destination: .imageAndText, type: .container),
-            Thing(title: "Photos Picker Styles", destination: .photosPickerStyles, type: .container),
-            Thing(title: "Floating Tab Bar", destination: .floatingTabBar, type: .container),
-            Thing(title: "Dropdown", destination: .dropdownView, type: .container),
-            Thing(title: "Menu with Sections", destination: .menuWithSections, type: .container),
-            Thing(title: "Nested Menus", destination: .nestedMenus, type: .container),
-            Thing(title: "Inspector", destination: .inspector, type: .container),
-            Thing(title: "Detect Tap Location", destination: .detectTapLocation, type: .container),
-            Thing(title: "RenameButton", destination: .renameButton, type: .container),
-            Thing(title: "Rotate Gesture", destination: .rotateGesture, type: .container),
-            Thing(title: "Device Information", destination: .deviceInformation, type: .container),
-            Thing(title: "Gauge", destination: .gauge, type: .container),
-            Thing(title: "TextSelection", destination: .textSelection, type: .container),
-            Thing(title: "Cover Carousel", destination: .coverCarousel, type: .container),
-            Thing(title: "Expandable Search Bar", destination: .expandableSearchBar, type: .container),
-            Thing(title: "GroupBox Example", destination: .groupBox, type: .container),
-            Thing(title: "Drag & Drop with scroll", destination: .dragNDropWithScroll, type: .container),
-            Thing(title: "Timer", destination: .timer, type: .container),
-            Thing(title: "ScrollView Animation Effect", destination: .scrollViewAnimationEffect, type: .container),
-            Thing(title: "App Wide Overlays", destination: .appWideOverlays, type: .container),
-            Thing(title: "Glowing Gradient Border", destination: .glowingGradientBorder, type: .container),
-            Thing(title: "Animated Dialogs", destination: .animatedDialogs, type: .container),
-            Thing(title: "SwiftUIView to PDF", destination: .swiftUIViewToPDF, type: .container),
-            
-            // MARK: SampleApp
-            Thing(title: "Restart", destination: .restart, type: .sampleApp),
-            Thing(title: "Pinch", destination: .pinch, type: .sampleApp),
-            Thing(title: "Fructus", destination: .fructus, type: .sampleApp),
-            Thing(title: "Connect 4", destination: .connect4, type: .sampleApp),
-            Thing(title: "Wallet", destination: .wallet, type: .sampleApp),
-            Thing(title: "PS Intro", destination: .psIntro, type: .sampleApp),
-            Thing(title: "Animated Paywall", destination: .animatedPaywall, type: .sampleApp),
-        ]
-    }
+    static let bySection: [ThingSection: [AnyThing]] = [
+        .ios26: [
+            AnyThing(CustomAnimatedToolBariOS26.self),
+            AnyThing(GlassEffectModifieriOS26.self),
+            AnyThing(ToolbariOS26.self),
+            AnyThing(GlassEffectContainerExampleiOS26.self),
+            AnyThing(TabBarExampleiOS26Wrapper.self),
+            AnyThing(CustomMenuiOS26.self),
+        ],
+        .customComponents: [
+            AnyThing(SlideToSandbox.self),
+            AnyThing(CircleGroupViewSandbox.self),
+            AnyThing(BackgroundMotionAnimationView.self),
+            AnyThing(LoadingView.self),
+            AnyThing(GradientText.self),
+            AnyThing(MorphingSymbolViewExample.self),
+            AnyThing(ExpandableCustomSliderExample.self),
+            AnyThing(CompositionalGridLayoutExample.self),
+            AnyThing(DropdownViewExample.self),
+            AnyThing(CoverCarouselExample.self),
+            AnyThing(ExpandableSearchBarExample.self),
+            AnyThing(DragNDropWithScrollExample.self),
+            AnyThing(ScrollViewAnimationEffect.self),
+            AnyThing(AnimatedDialogs.self),
+            AnyThing(SwiftUIViewToPDF.self),
+            AnyThing(TagStatusExample.self),
+            AnyThing(ToolbarHeaderScrollAnimationExample.self),
+        ],
+        .nativeComponents: [
+            AnyThing(ViewThatFitsExample.self),
+            AnyThing(ViewThatFitsScrollExample.self),
+            AnyThing(LinkView.self),
+            AnyThing(ShareSheetExample.self),
+            AnyThing(UnevenRoundedRectangleExample.self),
+            AnyThing(MapExample.self),
+            AnyThing(MeshGradientExample.self),
+            AnyThing(MarkdownExample.self),
+            AnyThing(ImageAndTextExample.self),
+            AnyThing(PhotosPickerStylesExample.self),
+            AnyThing(FloatingTabBarExample.self),
+            AnyThing(MenuWithSectionsExample.self),
+            AnyThing(NestedMenusExample.self),
+            AnyThing(RenameButtonExample.self),
+            AnyThing(DeviceInformationExample.self),
+            AnyThing(GaugeExample.self),
+            AnyThing(GroupBoxExample.self),
+            AnyThing(CountDownExample.self),
+        ],
+        .customModifiers: [
+            AnyThing(StretchyVisualEffect.self),
+            AnyThing(AdaptedTextColorExample.self),
+            AnyThing(FloatingBottomSheetExample.self),
+        ],
+        .nativeModifiers: [
+            AnyThing(LongPressGestureExample.self),
+            AnyThing(AnimationModifierAndTimingExample.self),
+            AnyThing(TransformAnimationsExample.self),
+            AnyThing(TapAnimationExample.self),
+            AnyThing(MatchedGeometryEffectExample.self),
+            AnyThing(AdvancedMatchedGeometryEffectExample.self),
+            AnyThing(PopoverExample.self),
+            AnyThing(RedactedPlaceholderExample.self),
+            AnyThing(HorizontalScrollWithRotate3DEffectExample.self),
+            AnyThing(ActionSheetExample.self),
+            AnyThing(MaskingExample.self),
+            AnyThing(InvertedMaskingExample.self),
+            AnyThing(ListSectionSpacingExample.self),
+            AnyThing(BadgeExample.self),
+            AnyThing(DisplayArrayUserFriendlyExample.self),
+            AnyThing(DateFormatExample.self),
+            AnyThing(MixColorsExample.self),
+            AnyThing(ReserveTextSpaceExample.self),
+            AnyThing(ButtonBorderShapesExample.self),
+            AnyThing(ButtonBorderAnimatedExample.self),
+            AnyThing(PrivacySensitiveExample.self),
+            AnyThing(InspectorExample.self),
+            AnyThing(DetectTapLocationExample.self),
+            AnyThing(RotateGestureExample.self),
+            AnyThing(TextSelectionExample.self),
+            AnyThing(TimerExample.self),
+            AnyThing(GlowingGradientBorder.self),
+            AnyThing(SwipeActionsLabelStyleExample.self),
+            AnyThing(ListLetterIndexExample.self),
+            AnyThing(DisplayLargeNumbersExample.self),
+            AnyThing(BlurTextExample.self),
+        ],
+        .nativeEnvironment: [
+            AnyThing(DetermineLightDarkModeExample.self),
+        ],
+        .sampleApps: [
+            AnyThing(RestartMainView.self),
+            AnyThing(PinchMainView.self),
+            AnyThing(FructusApp.self),
+            AnyThing(C4GameView.self),
+            AnyThing(WalletSandbox.self),
+            AnyThing(PSIntroView.self),
+            AnyThing(AnimatedPaywallExample.self),
+            AnyThing(AppWideOverlays.self),
+            AnyThing(CalendarAppExample.self),
+        ],
+    ]
 }

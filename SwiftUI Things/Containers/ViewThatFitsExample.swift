@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension ViewThatFitsExample: NativeComponentThing {
+    static let title = "ViewThatFits"
+    static func makeView() -> some View { Self() }
+}
 
 struct ViewThatFitsExample: View {
     

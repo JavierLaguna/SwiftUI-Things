@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension MatchedGeometryEffectExample: NativeModifiersThing {
+    static let title = "MatchedGeometryEffect"
+    static func makeView() -> some View { Self() }
+}
 
 /***
  It is not recommended to use Matched Geometry Effect on containers like
@@ -88,9 +92,6 @@ struct MatchedGeometryEffectExample: View {
     }
 }
 
-struct MatchedGeometryEffectExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        MatchedGeometryEffectExample()
-    }
+#Preview {
+    MatchedGeometryEffectExample()
 }

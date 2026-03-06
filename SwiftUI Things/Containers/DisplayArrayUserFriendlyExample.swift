@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension DisplayArrayUserFriendlyExample: NativeModifiersThing {
+    static let title = "Display array user friendly"
+    static func makeView() -> some View { Self() }
+}
+
 struct DisplayArrayUserFriendlyExample: View {
     
     private let items = [

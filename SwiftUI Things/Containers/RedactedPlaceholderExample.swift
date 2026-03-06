@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension RedactedPlaceholderExample: NativeModifiersThing {
+    static let title = "Redacted placeholder"
+    static func makeView() -> some View { Self() }
+}
 
 struct RedactedPlaceholderExample: View {
     
@@ -52,9 +56,6 @@ private struct CardView: View {
     }
 }
 
-struct RedactedPlaceholderExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        RedactedPlaceholderExample()
-    }
+#Preview {
+    RedactedPlaceholderExample()
 }

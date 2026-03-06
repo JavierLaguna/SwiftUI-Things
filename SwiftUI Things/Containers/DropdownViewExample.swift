@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension DropdownViewExample: CustomComponentThing {
+    static let title = "DropdownView"
+    static func makeView() -> some View { Self() }
+}
 
 struct DropdownViewExample: View {
     

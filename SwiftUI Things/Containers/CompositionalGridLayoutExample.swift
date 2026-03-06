@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension CompositionalGridLayoutExample: CustomComponentThing {
+    static let title = "CompositionalGridLayout"
+    static func makeView() -> some View { Self() }
+}
 
 struct CompositionalGridLayoutExample: View {
     

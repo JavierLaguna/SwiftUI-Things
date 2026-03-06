@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension GroupBoxExample: NativeComponentThing {
+    static let title = "GroupBox"
+    static func makeView() -> some View { Self() }
+}
+
 struct GroupBoxExample: View {
     
     @State private var isExpanded = false

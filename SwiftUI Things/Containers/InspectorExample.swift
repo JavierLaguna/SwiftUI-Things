@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension InspectorExample: NativeModifiersThing {
+    static let title = "Inspector"
+    static func makeView() -> some View { Self() }
+}
+
 struct InspectorExample: View {
     
     @State private var showInspector = false

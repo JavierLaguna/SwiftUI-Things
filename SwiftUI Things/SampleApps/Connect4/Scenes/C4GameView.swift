@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension C4GameView: SampleAppThing {
+    static let title = "C4Game"
+    static func makeView() -> some View { Self() }
+}
 
 struct C4GameView: View {
     
@@ -145,9 +149,6 @@ struct C4GameView: View {
     }
 }
 
-struct C4GameView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        C4GameView()
-    }
+#Preview {
+    C4GameView()
 }

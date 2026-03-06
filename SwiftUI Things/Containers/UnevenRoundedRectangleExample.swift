@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension UnevenRoundedRectangleExample: NativeComponentThing {
+    static let title = "UnevenRoundedRectangle"
+    static func makeView() -> some View { Self() }
+}
+
 struct UnevenRoundedRectangleExample: View {
 
     var body: some View {

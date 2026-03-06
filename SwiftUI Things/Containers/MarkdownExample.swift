@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension MarkdownExample: NativeModifiersThing {
+    static let title = "Markdown text"
+    static func makeView() -> some View { Self() }
+}
 
 struct MarkdownExample: View {
     

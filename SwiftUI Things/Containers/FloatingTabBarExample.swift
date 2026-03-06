@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension FloatingTabBarExample: NativeComponentThing {
+    static let title = "Floating TabBar"
+    static func makeView() -> some View { Self() }
+}
+
 struct FloatingTabBarExample: View {
     
     @State private var activeTab: TabModel = .home

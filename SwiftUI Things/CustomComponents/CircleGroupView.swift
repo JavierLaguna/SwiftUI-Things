@@ -1,5 +1,9 @@
-
 import SwiftUI
+
+extension CircleGroupViewSandbox: CustomComponentThing {
+    static let title = "CircleGroupView"
+    static func makeView() -> some View { Self() }
+}
 
 struct CircleGroupView: View {
     
@@ -40,14 +44,12 @@ struct CircleGroupViewSandbox: View {
     }
 }
 
-struct CircleGroupView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            CircleGroupView(ShapeColor: .orange, ShapeOpacity: 0.2)
+#Preview {
+    Group {
+        CircleGroupView(ShapeColor: .orange, ShapeOpacity: 0.2)
             .previewLayout(.sizeThatFits)
-            
-            CircleGroupViewSandbox()
-                .previewDisplayName("Sanbox")
-        }
+        
+        CircleGroupViewSandbox()
+            .previewDisplayName("Sanbox")
     }
 }

@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension TabBarExampleiOS26Wrapper: IOS26Thing {
+    static let title = "TabBar iOS26"
+    static func makeView() -> some View { Self() }
+}
+
 struct TabBarExampleiOS26Wrapper: View {
     
     var body: some View {

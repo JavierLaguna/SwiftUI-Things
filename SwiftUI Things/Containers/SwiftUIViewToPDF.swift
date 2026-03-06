@@ -4,6 +4,11 @@
 import SwiftUI
 import PDFKit
 
+extension SwiftUIViewToPDF: CustomComponentThing {
+    static let title = "SwiftUI view to PDF"
+    static func makeView() -> some View { Self() }
+}
+
 struct SwiftUIViewToPDF: View {
     
     @State private var pdfURL: URL?

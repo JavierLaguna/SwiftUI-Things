@@ -1,5 +1,10 @@
 import SwiftUI
 
+extension ListSectionSpacingExample: NativeModifiersThing {
+    static let title = "ListSectionSpacing"
+    static func makeView() -> some View { Self() }
+}
+
 struct ListSectionSpacingExample: View {
     
     private let options: [ListSectionSpacing] = [
