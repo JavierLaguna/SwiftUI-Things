@@ -3,7 +3,8 @@ import Foundation
 struct Month: Identifiable {
     var id: String = UUID().uuidString
     var name: String
-    var weels: [Week]
+    var date: Date
+    var weeks: [Week]
 }
 
 struct Week: Identifiable {
@@ -15,6 +16,6 @@ struct Week: Identifiable {
 struct Day: Identifiable {
     var id: String = UUID().uuidString
     var value: Int?
-    var date: Int?
+    var date: Date?
     var isPlaceholder: Bool
 }

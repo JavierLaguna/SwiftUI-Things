@@ -136,6 +136,7 @@ enum ThingRegistry {
             AnyThing(PSIntroView.self),
             AnyThing(AnimatedPaywallExample.self),
             AnyThing(AppWideOverlays.self),
+            AnyThing(CalendarAppExample.self),
         ],
     ]
 }

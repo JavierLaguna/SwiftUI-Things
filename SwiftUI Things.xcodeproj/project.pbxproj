@@ -49,6 +49,8 @@
 		495A93EC2D97264400DC1F31 /* GlowingGradientBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93EB2D97264400DC1F31 /* GlowingGradientBorder.swift */; };
 		495A93EE2D9C4BCC00DC1F31 /* AnimatedDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A93ED2D9C4BCC00DC1F31 /* AnimatedDialogs.swift */; };
 		495CA98329D2F7D500417D73 /* WalletSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495CA98229D2F7D500417D73 /* WalletSandbox.swift */; };
+		495FA8652F56EE960010F5A5 /* Month+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495FA8642F56EE960010F5A5 /* Month+Extension.swift */; };
+		495FA8682F56F15B0010F5A5 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495FA8672F56F15B0010F5A5 /* CalendarView.swift */; };
 		4964571A29CB733C00192C54 /* WalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571929CB733C00192C54 /* WalletMainView.swift */; };
 		4964571E29CC3E0E00192C54 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964571D29CC3E0E00192C54 /* CreditCardView.swift */; };
 		49665AA229B4A673007D55D8 /* BackgroundMotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */; };
@@ -128,6 +130,8 @@
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
 		49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */; };
 		49DC600F2CB7B4E40045935E /* TimerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC600E2CB7B4E40045935E /* TimerExample.swift */; };
+		49DF2F422F57018600438BF5 /* ScrollInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F412F57018600438BF5 /* ScrollInfo.swift */; };
+		49DF2F442F570E9500438BF5 /* ScrollToTopDisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F432F570E9500438BF5 /* ScrollToTopDisable.swift */; };
 		49DF2F492F584E3100438BF5 /* DisplayLargeNumbersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F482F584E3100438BF5 /* DisplayLargeNumbersExample.swift */; };
 		49DF2F4B2F584FD100438BF5 /* CountDownExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F4A2F584FD100438BF5 /* CountDownExample.swift */; };
 		49DF2F4D2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F4C2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift */; };
@@ -186,6 +190,8 @@
 		495A93EB2D97264400DC1F31 /* GlowingGradientBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingGradientBorder.swift; sourceTree = "<group>"; };
 		495A93ED2D9C4BCC00DC1F31 /* AnimatedDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedDialogs.swift; sourceTree = "<group>"; };
 		495CA98229D2F7D500417D73 /* WalletSandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSandbox.swift; sourceTree = "<group>"; };
+		495FA8642F56EE960010F5A5 /* Month+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Month+Extension.swift"; sourceTree = "<group>"; };
+		495FA8672F56F15B0010F5A5 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		4964571929CB733C00192C54 /* WalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMainView.swift; sourceTree = "<group>"; };
 		4964571D29CC3E0E00192C54 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
 		49665AA129B4A673007D55D8 /* BackgroundMotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMotionAnimationView.swift; sourceTree = "<group>"; };
@@ -266,6 +272,8 @@
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
 		49D2D6702C6A10A100B77478 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
 		49DC600E2CB7B4E40045935E /* TimerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExample.swift; sourceTree = "<group>"; };
+		49DF2F412F57018600438BF5 /* ScrollInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollInfo.swift; sourceTree = "<group>"; };
+		49DF2F432F570E9500438BF5 /* ScrollToTopDisable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToTopDisable.swift; sourceTree = "<group>"; };
 		49DF2F482F584E3100438BF5 /* DisplayLargeNumbersExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLargeNumbersExample.swift; sourceTree = "<group>"; };
 		49DF2F4A2F584FD100438BF5 /* CountDownExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownExample.swift; sourceTree = "<group>"; };
 		49DF2F4C2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineLightDarkModeExample.swift; sourceTree = "<group>"; };
@@ -310,6 +318,7 @@
 			children = (
 				4935C37A2F488E06002B7781 /* Extensions */,
 				4935C3772F488D68002B7781 /* Models */,
+				495FA8662F56F1410010F5A5 /* Scenes */,
 				4935C3752F488C30002B7781 /* CalendarAppExample.swift */,
 			);
 			path = Calendar;
@@ -319,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				4935C3782F488D86002B7781 /* CalendarData.swift */,
+				49DF2F412F57018600438BF5 /* ScrollInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,6 +337,8 @@
 			isa = PBXGroup;
 			children = (
 				4935C37B2F488E1D002B7781 /* Date+Extensions.swift */,
+				495FA8642F56EE960010F5A5 /* Month+Extension.swift */,
+				49DF2F432F570E9500438BF5 /* ScrollToTopDisable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -410,6 +422,14 @@
 				495A93E72D971BD100DC1F31 /* battery.mp4 */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		495FA8662F56F1410010F5A5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				495FA8672F56F15B0010F5A5 /* CalendarView.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		4964571829CB731400192C54 /* Wallet */ = {
@@ -842,6 +862,7 @@
 				49A9F78F299577AA00B367AE /* CircleGroupView.swift in Sources */,
 				4956009C29D1D358001DE321 /* CreditCard.swift in Sources */,
 				494647E6299FB32B00E47D4E /* FruitRowView.swift in Sources */,
+				495FA8682F56F15B0010F5A5 /* CalendarView.swift in Sources */,
 				49851C6C2C661CED0011E254 /* UnevenRoundedRectangleExample.swift in Sources */,
 				49851C782C66384C0011E254 /* CompositionalGridLayoutExample.swift in Sources */,
 				4971C95F29B6639B0078CF0B /* LoadingView.swift in Sources */,
@@ -856,6 +877,7 @@
 				49B3BE7629B72E1600B06E18 /* ViewThatFitsExample.swift in Sources */,
 				49F76C632F5AB52500E24EBF /* TagStatusView.swift in Sources */,
 				494647DF299FB32B00E47D4E /* FruitDetailView.swift in Sources */,
+				495FA8652F56EE960010F5A5 /* Month+Extension.swift in Sources */,
 				491DFFCA2C8867490022D003 /* GroupBoxExample.swift in Sources */,
 				49A9F78A2995765A00B367AE /* RestartHomeView.swift in Sources */,
 				4956009929D1D2CF001DE321 /* WalletCardDetailView.swift in Sources */,
@@ -880,6 +902,7 @@
 				4971C96529B666900078CF0B /* ActionSheetExample.swift in Sources */,
 				497E334429967C8C008710B9 /* PinchPage.swift in Sources */,
 				49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */,
+				49DF2F442F570E9500438BF5 /* ScrollToTopDisable.swift in Sources */,
 				49F82D832E16C57700FDD69A /* StretchyVisualEffect.swift in Sources */,
 				495A93E22D97069F00DC1F31 /* ScrollViewAnimationEffect.swift in Sources */,
 				495A93EA2D971EC100DC1F31 /* ExpandableCustomSlider.swift in Sources */,
@@ -911,6 +934,7 @@
 				49A7305A2C7F25D60075953A /* ExpandableSearchBarExample.swift in Sources */,
 				494647E2299FB32B00E47D4E /* FructusOnboardingView.swift in Sources */,
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
+				49DF2F422F57018600438BF5 /* ScrollInfo.swift in Sources */,
 				49DF2F4F2F5853AD00438BF5 /* BlurTextExample.swift in Sources */,
 				497E33512998FD3A008710B9 /* C4GameView.swift in Sources */,
 				49DF61A32C732DC100EF3DC9 /* PhotosPickerStylesExample.swift in Sources */,
