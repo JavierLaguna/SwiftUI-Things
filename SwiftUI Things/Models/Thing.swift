@@ -22,6 +22,7 @@ protocol CustomComponentThing: Thing {}
 protocol NativeComponentThing: Thing {}
 protocol CustomModifiersThing: Thing {}
 protocol NativeModifiersThing: Thing {}
+protocol NativeEnvironmentThing: Thing {}
 protocol SampleAppThing: Thing {}
 
 enum ThingSection: String, CaseIterable, Identifiable {
@@ -29,7 +30,8 @@ enum ThingSection: String, CaseIterable, Identifiable {
     case customComponents = "Custom Components"
     case nativeComponents = "Native Components"
     case customModifiers = "Custom Modifiers"
-    case nativeModifiers = "Modifiers"
+    case nativeModifiers = "Native Modifiers"
+    case nativeEnvironment = "Native Environment"
     case sampleApps = "Sample Apps"
 
     var id: String { rawValue }
@@ -62,6 +64,8 @@ enum ThingRegistry {
             AnyThing(ScrollViewAnimationEffect.self),
             AnyThing(AnimatedDialogs.self),
             AnyThing(SwiftUIViewToPDF.self),
+            AnyThing(TagStatusExample.self),
+            AnyThing(ToolbarHeaderScrollAnimationExample.self),
         ],
         .nativeComponents: [
             AnyThing(ViewThatFitsExample.self),
@@ -81,6 +85,7 @@ enum ThingRegistry {
             AnyThing(DeviceInformationExample.self),
             AnyThing(GaugeExample.self),
             AnyThing(GroupBoxExample.self),
+            AnyThing(CountDownExample.self),
         ],
         .customModifiers: [
             AnyThing(StretchyVisualEffect.self),
@@ -116,6 +121,11 @@ enum ThingRegistry {
             AnyThing(TimerExample.self),
             AnyThing(GlowingGradientBorder.self),
             AnyThing(SwipeActionsLabelStyleExample.self),
+            AnyThing(DisplayLargeNumbersExample.self),
+            AnyThing(BlurTextExample.self),
+        ],
+        .nativeEnvironment: [
+            AnyThing(DetermineLightDarkModeExample.self),
         ],
         .sampleApps: [
             AnyThing(RestartMainView.self),

@@ -149,9 +149,6 @@ struct C4GameView: View {
     }
 }
 
-struct C4GameView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        C4GameView()
-    }
+#Preview {
+    C4GameView()
 }

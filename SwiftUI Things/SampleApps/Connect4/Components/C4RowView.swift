@@ -24,10 +24,7 @@ struct C4RowView: View {
     }
 }
 
-struct C4RowView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        C4RowView(row: [], numOfHoles: 6)
-            .previewLayout(.sizeThatFits)
-    }
+#Preview {
+    C4RowView(row: [], numOfHoles: 6)
+        .previewLayout(.sizeThatFits)
 }

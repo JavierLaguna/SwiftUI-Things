@@ -27,9 +27,7 @@ struct C4HoleView: View {
     }
 }
 
-struct C4HoleView_Previews: PreviewProvider {
-    static var previews: some View {
-        C4HoleView(size: 80)
-            .previewLayout(.sizeThatFits)
-    }
+#Preview{
+    C4HoleView(size: 80)
+        .previewLayout(.sizeThatFits)
 }

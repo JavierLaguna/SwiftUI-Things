@@ -27,9 +27,6 @@ struct GradientText: View {
     }
 }
 
-struct GradientText_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        GradientText()
-    }
+#Preview {
+    GradientText()
 }
