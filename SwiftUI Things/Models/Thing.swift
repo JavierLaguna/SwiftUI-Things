@@ -121,6 +121,7 @@ enum ThingRegistry {
             AnyThing(TimerExample.self),
             AnyThing(GlowingGradientBorder.self),
             AnyThing(SwipeActionsLabelStyleExample.self),
+            AnyThing(ListLetterIndexExample.self),
             AnyThing(DisplayLargeNumbersExample.self),
             AnyThing(BlurTextExample.self),
         ],
