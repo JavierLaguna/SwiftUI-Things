@@ -132,11 +132,11 @@
 		49DC600F2CB7B4E40045935E /* TimerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC600E2CB7B4E40045935E /* TimerExample.swift */; };
 		49DF2F422F57018600438BF5 /* ScrollInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F412F57018600438BF5 /* ScrollInfo.swift */; };
 		49DF2F442F570E9500438BF5 /* ScrollToTopDisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F432F570E9500438BF5 /* ScrollToTopDisable.swift */; };
+		49DF2F472F584A8400438BF5 /* ListLetterIndexExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F462F584A8400438BF5 /* ListLetterIndexExample.swift */; };
 		49DF2F492F584E3100438BF5 /* DisplayLargeNumbersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F482F584E3100438BF5 /* DisplayLargeNumbersExample.swift */; };
 		49DF2F4B2F584FD100438BF5 /* CountDownExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F4A2F584FD100438BF5 /* CountDownExample.swift */; };
 		49DF2F4D2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F4C2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift */; };
 		49DF2F4F2F5853AD00438BF5 /* BlurTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F4E2F5853AD00438BF5 /* BlurTextExample.swift */; };
-		49DF2F472F584A8400438BF5 /* ListLetterIndexExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F462F584A8400438BF5 /* ListLetterIndexExample.swift */; };
 		49DF619D2C6CC48900EF3DC9 /* MarkdownExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */; };
 		49DF619F2C7326D200EF3DC9 /* PrivacySensitiveExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */; };
 		49DF61A12C732A9D00EF3DC9 /* ImageAndTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */; };
@@ -275,11 +275,11 @@
 		49DC600E2CB7B4E40045935E /* TimerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExample.swift; sourceTree = "<group>"; };
 		49DF2F412F57018600438BF5 /* ScrollInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollInfo.swift; sourceTree = "<group>"; };
 		49DF2F432F570E9500438BF5 /* ScrollToTopDisable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToTopDisable.swift; sourceTree = "<group>"; };
+		49DF2F462F584A8400438BF5 /* ListLetterIndexExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLetterIndexExample.swift; sourceTree = "<group>"; };
 		49DF2F482F584E3100438BF5 /* DisplayLargeNumbersExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLargeNumbersExample.swift; sourceTree = "<group>"; };
 		49DF2F4A2F584FD100438BF5 /* CountDownExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownExample.swift; sourceTree = "<group>"; };
 		49DF2F4C2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineLightDarkModeExample.swift; sourceTree = "<group>"; };
 		49DF2F4E2F5853AD00438BF5 /* BlurTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurTextExample.swift; sourceTree = "<group>"; };
-		49DF2F462F584A8400438BF5 /* ListLetterIndexExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLetterIndexExample.swift; sourceTree = "<group>"; };
 		49DF619C2C6CC48900EF3DC9 /* MarkdownExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownExample.swift; sourceTree = "<group>"; };
 		49DF619E2C7326D200EF3DC9 /* PrivacySensitiveExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySensitiveExample.swift; sourceTree = "<group>"; };
 		49DF61A02C732A9D00EF3DC9 /* ImageAndTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTextExample.swift; sourceTree = "<group>"; };
@@ -579,19 +579,16 @@
 				49A0CE40298BE2F300D54732 /* CustomComponents */,
 				49AFE1E12F4325C3003C46B8 /* NativeComponents */,
 				49DF2F452F584A4C00438BF5 /* NativeModifiers */,
+				49B2D5132F633BFE00491853 /* NativeEnvironments */,
 				49665AA529B4B59C007D55D8 /* Containers */,
 				49A9F7862995763F00B367AE /* SampleApps */,
-				49A0CE3F298BE2EA00D54732 /* Scenes */,
 				49A9DA9B299FD8620007632C /* Modifiers */,
 				49A9F79529957AC900B367AE /* Utilities */,
 				495A93E52D971BA600DC1F31 /* Resources */,
+				49A0CE33298BE0C900D54732 /* MainView.swift */,
 				49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */,
 				49F6C5982EA2692500FE1FEB /* Subscription.storekit */,
 				49A0CE37298BE0CB00D54732 /* Preview Content */,
-				49DF2F482F584E3100438BF5 /* DisplayLargeNumbersExample.swift */,
-				49DF2F4A2F584FD100438BF5 /* CountDownExample.swift */,
-				49DF2F4C2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift */,
-				49DF2F4E2F5853AD00438BF5 /* BlurTextExample.swift */,
 				49B2D5112F5AF72300491853 /* PermissionAnimationExample.swift */,
 			);
 			path = "SwiftUI Things";
@@ -603,14 +600,6 @@
 				49A0CE38298BE0CB00D54732 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		49A0CE3F298BE2EA00D54732 /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				49A0CE33298BE0C900D54732 /* MainView.swift */,
-			);
-			path = Scenes;
 			sourceTree = "<group>";
 		};
 		49A0CE40298BE2F300D54732 /* CustomComponents */ = {
@@ -739,8 +728,17 @@
 			isa = PBXGroup;
 			children = (
 				494277922A37596E007049B8 /* LinkView.swift */,
+				49DF2F4A2F584FD100438BF5 /* CountDownExample.swift */,
 			);
 			path = NativeComponents;
+			sourceTree = "<group>";
+		};
+		49B2D5132F633BFE00491853 /* NativeEnvironments */ = {
+			isa = PBXGroup;
+			children = (
+				49DF2F4C2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift */,
+			);
+			path = NativeEnvironments;
 			sourceTree = "<group>";
 		};
 		49D2D6682C6A0BA100B77478 /* PSIntro */ = {
@@ -771,7 +769,9 @@
 		49DF2F452F584A4C00438BF5 /* NativeModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				49DF2F482F584E3100438BF5 /* DisplayLargeNumbersExample.swift */,
 				49DF2F462F584A8400438BF5 /* ListLetterIndexExample.swift */,
+				49DF2F4E2F5853AD00438BF5 /* BlurTextExample.swift */,
 			);
 			path = NativeModifiers;
 			sourceTree = "<group>";
