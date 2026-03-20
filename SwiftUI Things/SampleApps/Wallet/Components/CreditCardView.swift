@@ -16,11 +16,8 @@ struct CreditCardView: View {
     }
 }
 
-struct CreditCardView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        CreditCardView(cardName: "creditCard1")
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
+#Preview {
+    CreditCardView(cardName: "creditCard1")
+        .previewLayout(.sizeThatFits)
+        .padding()
 }

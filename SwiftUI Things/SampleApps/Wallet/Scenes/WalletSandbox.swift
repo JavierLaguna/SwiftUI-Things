@@ -13,12 +13,9 @@ struct WalletSandbox: View {
     }
 }
 
-struct WalletSandbox_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        NavigationView {
-            WalletSandbox()
-                .navigationTitle("navTitle")
-        }
+#Preview {
+    NavigationView {
+        WalletSandbox()
+            .navigationTitle("navTitle")
     }
 }

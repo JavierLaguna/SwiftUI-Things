@@ -192,12 +192,8 @@ private struct ControlImageView: View {
     }
 }
 
-
-struct PinchMainView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        PinchMainView()
-            .preferredColorScheme(.dark)
-            .previewDevice("iPhone 13")
-    }
+#Preview {
+    PinchMainView()
+        .preferredColorScheme(.dark)
+        .previewDevice("iPhone 13")
 }

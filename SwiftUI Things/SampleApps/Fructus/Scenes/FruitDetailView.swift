@@ -45,13 +45,9 @@ struct FruitDetailView: View {
     }
 }
 
-// MARK: - PREVIEW
-struct FruitDetailView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        NavigationView {
-            FruitDetailView(fruit: fruitsData[0])
-        }
-        .previewDevice("iPhone 13")
+#Preview {
+    NavigationView {
+        FruitDetailView(fruit: fruitsData[0])
     }
+    .previewDevice("iPhone 13")
 }

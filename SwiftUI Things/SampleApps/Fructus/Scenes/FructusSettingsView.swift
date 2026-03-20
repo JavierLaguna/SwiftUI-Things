@@ -89,12 +89,8 @@ struct FructusSettingsView: View {
     }
 }
 
-// MARK: - PREVIEW
-struct FructusSettingsView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        FructusSettingsView()
-            .preferredColorScheme(.dark)
-            .previewDevice("iPhone 13")
-    }
+#Preview {
+    FructusSettingsView()
+        .preferredColorScheme(.dark)
+        .previewDevice("iPhone 13")
 }

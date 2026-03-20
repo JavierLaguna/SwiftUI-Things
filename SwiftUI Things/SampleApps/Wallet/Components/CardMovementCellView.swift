@@ -41,11 +41,8 @@ struct CardMovementCellView: View {
     }
 }
 
-struct CardMovementCellView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        CardMovementCellView(movement: CreditCardMovement.random())
-            .previewLayout(.sizeThatFits)
-            .background(Color("ColorAppleWallet"))
-    }
+#Preview {
+    CardMovementCellView(movement: CreditCardMovement.random())
+        .previewLayout(.sizeThatFits)
+        .background(Color("ColorAppleWallet"))
 }

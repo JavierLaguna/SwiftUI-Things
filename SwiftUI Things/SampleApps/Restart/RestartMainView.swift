@@ -21,9 +21,6 @@ struct RestartMainView: View {
     }
 }
 
-struct RestartMainView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        RestartMainView()
-    }
+#Preview {
+    RestartMainView()
 }

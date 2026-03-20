@@ -15,12 +15,8 @@ struct SettingsLabelView: View {
     }
 }
 
-// MARK: - PREVIEW
-struct SettingsLabelView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        SettingsLabelView(labelText: "Fructus", labelImage: "info.circle")
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
+#Preview {
+    SettingsLabelView(labelText: "Fructus", labelImage: "info.circle")
+        .previewLayout(.sizeThatFits)
+        .padding()
 }

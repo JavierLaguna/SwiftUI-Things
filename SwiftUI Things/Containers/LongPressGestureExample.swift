@@ -30,9 +30,6 @@ struct LongPressGestureExample: View {
     }
 }
 
-struct LongPressGestureExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        LongPressGestureExample()
-    }
+#Preview {
+    LongPressGestureExample()
 }

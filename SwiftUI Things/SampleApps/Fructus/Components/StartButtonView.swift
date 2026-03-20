@@ -1,5 +1,5 @@
 
-import SwiftUI 
+import SwiftUI
 
 struct StartButtonView: View {
     
@@ -25,12 +25,8 @@ struct StartButtonView: View {
     }
 }
 
-// MARK: - PREVIEW
-struct StartButtonView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        StartButtonView()
-            .preferredColorScheme(.dark)
-            .previewLayout(.sizeThatFits)
-    }
+#Preview {
+    StartButtonView()
+        .preferredColorScheme(.dark)
+        .previewLayout(.sizeThatFits)
 }

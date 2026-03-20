@@ -59,6 +59,24 @@ private struct PermissionOnBoarding: View {
         ZStack(alignment: .bottom) {
             Rectangle()
                 .foregroundStyle(.clear)
+            
+            // View Content
+            VStack(spacing: 16) {
+                Text(config.title)
+                    .font(.title.bold())
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                
+                Text(config.description)
+                    .font(.caption)
+                    .foregroundStyle(.gray)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                    .padding(.bottom, 10)
+                
+                
+            }
+            .frame(height: 220)
         }
     }
 }

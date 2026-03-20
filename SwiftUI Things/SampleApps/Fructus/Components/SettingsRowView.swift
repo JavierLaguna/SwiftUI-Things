@@ -29,19 +29,15 @@ struct SettingsRowView: View {
     }
 }
 
-// MARK: - PREVIEW
-struct SettingsRowView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        Group {
-            SettingsRowView(name: "Developer", content: "John / Jane")
-                .previewLayout(.fixed(width: 375, height: 60))
-                .padding()
-            
-            SettingsRowView(name: "Website", linkLabel: "SwiftUI Masterclass", linkDestination: "swiftuimasterclass.com")
-                .preferredColorScheme(.dark)
-                .previewLayout(.fixed(width: 375, height: 60))
-                .padding()
-        }
+#Preview {
+    Group {
+        SettingsRowView(name: "Developer", content: "John / Jane")
+            .previewLayout(.fixed(width: 375, height: 60))
+            .padding()
+        
+        SettingsRowView(name: "Website", linkLabel: "SwiftUI Masterclass", linkDestination: "swiftuimasterclass.com")
+            .preferredColorScheme(.dark)
+            .previewLayout(.fixed(width: 375, height: 60))
+            .padding()
     }
 }

@@ -33,13 +33,9 @@ struct FructusContentView: View {
     }
 }
 
-// MARK: - PREVIEW
-struct FructusContentView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        NavigationView {
-            FructusContentView(fruits: fruitsData)
-        }
-        .previewDevice("iPhone 13")
+#Preview {
+    NavigationView {
+        FructusContentView(fruits: fruitsData)
     }
+    .previewDevice("iPhone 13")
 }

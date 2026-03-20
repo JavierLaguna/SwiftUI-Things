@@ -31,13 +31,9 @@ struct FruitNutrientsView: View {
     }
 }
 
-// MARK: - PREVIEW
-struct FruitNutrientsView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        FruitNutrientsView(fruit: fruitsData[0])
-            .preferredColorScheme(.dark)
-            .previewLayout(.fixed(width: 375, height: 480))
-            .padding()
-    }
+#Preview {
+    FruitNutrientsView(fruit: fruitsData[0])
+        .preferredColorScheme(.dark)
+        .previewLayout(.fixed(width: 375, height: 480))
+        .padding()
 }

@@ -139,17 +139,14 @@ struct SlideToSandbox: View {
     }
 }
 
-struct SlideTo_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        Group {
-            SlideTo(title: "Get Started") {
-                print("Completed!")
-            }
-            .previewLayout(.sizeThatFits)
-            
-            SlideToSandbox()
-                .previewDisplayName("Sanbox")
+#Preview {
+    Group {
+        SlideTo(title: "Get Started") {
+            print("Completed!")
         }
+        .previewLayout(.sizeThatFits)
+        
+        SlideToSandbox()
+            .previewDisplayName("Sanbox")
     }
 }

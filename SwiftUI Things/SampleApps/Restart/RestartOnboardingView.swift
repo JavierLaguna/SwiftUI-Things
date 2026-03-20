@@ -111,11 +111,6 @@ struct RestartOnboardingView: View {
     }
 }
 
-struct RestartOnboardingView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        RestartOnboardingView()
-    }
+#Preview {
+    RestartOnboardingView()
 }
-
-

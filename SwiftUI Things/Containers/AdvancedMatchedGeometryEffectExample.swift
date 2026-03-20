@@ -101,18 +101,12 @@ private struct PlayView: View {
     }
 }
 
-struct AdvancedMatchedGeometryEffectExample_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        AdvancedMatchedGeometryEffectExample()
-    }
+#Preview {
+    AdvancedMatchedGeometryEffectExample()
 }
 
-struct PlayView_Previews: PreviewProvider {
+#Preview {
+    @Previewable @Namespace var namespace
     
-    @Namespace static var namespace
-    
-    static var previews: some View {
-        PlayView(namespace: namespace)
-    }
+    PlayView(namespace: namespace)
 }

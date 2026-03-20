@@ -15,10 +15,8 @@ struct SourceLinkView: View {
     }
 }
 
-struct SourceLinkView_Previews: PreviewProvider {
-    static var previews: some View {
-        SourceLinkView()
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
+#Preview {
+    SourceLinkView()
+        .previewLayout(.sizeThatFits)
+        .padding()
 }

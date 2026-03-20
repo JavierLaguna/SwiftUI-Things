@@ -48,9 +48,6 @@ struct LinkView: View {
     }
 }
 
-struct LinkView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        LinkView()
-    }
+#Preview {
+    LinkView()
 }

@@ -22,10 +22,7 @@ struct C4BoardView: View {
     }
 }
 
-struct C4BoardView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        C4BoardView(grid: [], rowHoles: 7, columnHoles: 6)
-            .previewLayout(.sizeThatFits)
-    }
+#Preview {
+    C4BoardView(grid: [], rowHoles: 7, columnHoles: 6)
+        .previewLayout(.sizeThatFits)
 }

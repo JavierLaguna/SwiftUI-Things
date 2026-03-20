@@ -150,17 +150,14 @@ struct ViewOffsetKey: PreferenceKey {
     }
 }
 
-struct WalletCardDetailView_Previews: PreviewProvider {
+#Preview {
+    @Namespace var namespace
     
-    static var previews: some View {
-        @Namespace var namespace
+    WalletCardDetailView(
+        card: CreditCard.mockCards.first!,
+        showDetailContent: true,
+        namespace: namespace
+    ) {
         
-        WalletCardDetailView(
-            card: CreditCard.mockCards.first!,
-            showDetailContent: true,
-            namespace: namespace
-        ) {
-            
-        }
     }
 }

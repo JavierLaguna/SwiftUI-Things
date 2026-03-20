@@ -66,9 +66,6 @@ struct RestartHomeView: View {
     }
 }
 
-struct RestartHomeView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        RestartHomeView()
-    }
+#Preview {
+    RestartHomeView()
 }

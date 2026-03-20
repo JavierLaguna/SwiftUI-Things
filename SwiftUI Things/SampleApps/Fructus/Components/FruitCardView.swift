@@ -45,11 +45,7 @@ struct FruitCardView: View {
     }
 }
 
-// MARK: - PREVIEW
-struct FruitCardView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        FruitCardView(fruit: fruitsData[1])
-            .previewLayout(.fixed(width: 320, height: 640))
-    }
+#Preview {
+    FruitCardView(fruit: fruitsData[1])
+        .previewLayout(.fixed(width: 320, height: 640))
 }

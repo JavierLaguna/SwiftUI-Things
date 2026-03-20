@@ -62,12 +62,9 @@ private struct OptionsView: View {
     }
 }
 
-struct ViewThatFitsExample_Previews: PreviewProvider {
+#Preview {
+    ViewThatFitsExample()
     
-    static var previews: some View {
-        ViewThatFitsExample()
-        
-        ViewThatFitsExample()
-            .previewInterfaceOrientation(.landscapeRight)
-    }
+    ViewThatFitsExample()
+        .previewInterfaceOrientation(.landscapeRight)
 }
