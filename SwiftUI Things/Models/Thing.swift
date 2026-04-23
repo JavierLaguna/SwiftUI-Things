@@ -138,6 +138,7 @@ enum ThingRegistry {
             AnyThing(AnimatedPaywallExample.self),
             AnyThing(AppWideOverlays.self),
             AnyThing(CalendarAppExample.self),
+            AnyThing(PermissionAnimationExample.self),
         ],
     ]
 }
