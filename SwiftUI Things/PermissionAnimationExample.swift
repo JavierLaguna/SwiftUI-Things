@@ -276,7 +276,7 @@ private struct PermissionOnBoarding: View {
                     }
                 }
             }
-            .frame(height: 220)
+            .frame(height: 240)
             .padding(16)
             .frame(maxWidth: .infinity)
             .background {
