@@ -91,6 +91,7 @@ enum ThingRegistry {
             AnyThing(StretchyVisualEffect.self),
             AnyThing(AdaptedTextColorExample.self),
             AnyThing(FloatingBottomSheetExample.self),
+            AnyThing(GlowingBorderAnimatedExample.self),
         ],
         .nativeModifiers: [
             AnyThing(LongPressGestureExample.self),

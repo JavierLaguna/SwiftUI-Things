@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		491EF1712FDC07250053B00D /* GlowingBorderAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1702FDC07250053B00D /* GlowingBorderAnimated.swift */; };
+		491EF1712FDC07250053B00D /* GlowingBorderAnimatedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1702FDC07250053B00D /* GlowingBorderAnimatedExample.swift */; };
 		491EF1732FDC073F0053B00D /* StretchyVisualEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1722FDC073F0053B00D /* StretchyVisualEffect.swift */; };
 		491EF1892FDC08920053B00D /* ScrollViewAnimationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1872FDC08920053B00D /* ScrollViewAnimationEffect.swift */; };
 		491EF18A2FDC08920053B00D /* ExpandableSearchBarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1862FDC08920053B00D /* ExpandableSearchBarExample.swift */; };
@@ -61,7 +61,6 @@
 		491EF1E92FDC09070053B00D /* AnimationModifierAndTimingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1B12FDC09070053B00D /* AnimationModifierAndTimingExample.swift */; };
 		491EF1EA2FDC09070053B00D /* MixColorsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1C22FDC09070053B00D /* MixColorsExample.swift */; };
 		491EF1EB2FDC09070053B00D /* MaskingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1BF2FDC09070053B00D /* MaskingExample.swift */; };
-
 		491EF2332FDC098B0053B00D /* FloatingBottomSheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF2312FDC098B0053B00D /* FloatingBottomSheetExample.swift */; };
 		491EF2342FDC098B0053B00D /* AdaptedTextColorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF2302FDC098B0053B00D /* AdaptedTextColorExample.swift */; };
 		492959752D9D94B9009FA8D2 /* View+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492959742D9D94B3009FA8D2 /* View+SafeArea.swift */; };
@@ -152,7 +151,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		491EF1702FDC07250053B00D /* GlowingBorderAnimated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingBorderAnimated.swift; sourceTree = "<group>"; };
+		491EF1702FDC07250053B00D /* GlowingBorderAnimatedExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingBorderAnimatedExample.swift; sourceTree = "<group>"; };
 		491EF1722FDC073F0053B00D /* StretchyVisualEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyVisualEffect.swift; sourceTree = "<group>"; };
 		491EF1822FDC08920053B00D /* CompositionalGridLayoutExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalGridLayoutExample.swift; sourceTree = "<group>"; };
 		491EF1832FDC08920053B00D /* CoverCarouselExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverCarouselExample.swift; sourceTree = "<group>"; };
@@ -206,7 +205,6 @@
 		491EF1CA2FDC09070053B00D /* TextSelectionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSelectionExample.swift; sourceTree = "<group>"; };
 		491EF1CB2FDC09070053B00D /* TimerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExample.swift; sourceTree = "<group>"; };
 		491EF1CC2FDC09070053B00D /* TransformAnimationsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformAnimationsExample.swift; sourceTree = "<group>"; };
-
 		491EF2302FDC098B0053B00D /* AdaptedTextColorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptedTextColorExample.swift; sourceTree = "<group>"; };
 		491EF2312FDC098B0053B00D /* FloatingBottomSheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingBottomSheetExample.swift; sourceTree = "<group>"; };
 		492959742D9D94B3009FA8D2 /* View+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SafeArea.swift"; sourceTree = "<group>"; };
@@ -313,6 +311,7 @@
 			children = (
 				491EF2302FDC098B0053B00D /* AdaptedTextColorExample.swift */,
 				491EF2312FDC098B0053B00D /* FloatingBottomSheetExample.swift */,
+				491EF1702FDC07250053B00D /* GlowingBorderAnimatedExample.swift */,
 			);
 			path = CustomModifiers;
 			sourceTree = "<group>";
@@ -578,7 +577,6 @@
 				49A0CE46298BEE0900D54732 /* SlideTo.swift */,
 				49F76C622F5AB52500E24EBF /* TagStatusView.swift */,
 				49B2D50F2F5AE10000491853 /* ToolbarHeaderScrollAnimationExample.swift */,
-				491EF1702FDC07250053B00D /* GlowingBorderAnimated.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -956,10 +954,8 @@
 				491EF18B2FDC08920053B00D /* SwiftUIViewToPDF.swift in Sources */,
 				491EF18C2FDC08920053B00D /* DropdownViewExample.swift in Sources */,
 				491EF18D2FDC08920053B00D /* CoverCarouselExample.swift in Sources */,
-
 				491EF2332FDC098B0053B00D /* FloatingBottomSheetExample.swift in Sources */,
 				491EF2342FDC098B0053B00D /* AdaptedTextColorExample.swift in Sources */,
-
 				491EF18E2FDC08920053B00D /* CompositionalGridLayoutExample.swift in Sources */,
 				491EF18F2FDC08920053B00D /* Drag&DropWithScrollExample.swift in Sources */,
 				497E334229967C59008710B9 /* PinchMainView.swift in Sources */,
@@ -975,7 +971,7 @@
 				49B2D5102F5AE10000491853 /* ToolbarHeaderScrollAnimationExample.swift in Sources */,
 				494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */,
 				4971C96129B6653E0078CF0B /* View+hideKeyboard.swift in Sources */,
-				491EF1712FDC07250053B00D /* GlowingBorderAnimated.swift in Sources */,
+				491EF1712FDC07250053B00D /* GlowingBorderAnimatedExample.swift in Sources */,
 				49DF2F472F584A8400438BF5 /* ListLetterIndexExample.swift in Sources */,
 				494647E1299FB32B00E47D4E /* SettingsRowView.swift in Sources */,
 				4935C3792F488D86002B7781 /* CalendarData.swift in Sources */,

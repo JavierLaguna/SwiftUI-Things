@@ -1,6 +1,14 @@
+// Credits: Kavsoft
+// https://www.youtube.com/watch?v=DHqLSjgBNPY
+
 import SwiftUI
 
-struct GlowingBorderAnimated: View {
+extension GlowingBorderAnimatedExample: CustomModifiersThing {
+    static let title = "GlowingBorderAnimated"
+    static func makeView() -> some View { Self() }
+}
+
+struct GlowingBorderAnimatedExample: View {
     
     var body: some View {
         VStack {
@@ -71,7 +79,7 @@ struct GlowingBorderAnimated: View {
     }
 }
 
-private extension View {
+extension View {
     
     @ViewBuilder
     func borderBeam(
@@ -95,7 +103,7 @@ private extension View {
     }
 }
 
-private struct BorderBeamEffect: ViewModifier {
+struct BorderBeamEffect: ViewModifier {
     
     var border: Color
     var hideFadeBorder: Bool
@@ -167,5 +175,5 @@ private struct BorderBeamEffect: ViewModifier {
 }
 
 #Preview {
-    GlowingBorderAnimated()
+    GlowingBorderAnimatedExample()
 }
