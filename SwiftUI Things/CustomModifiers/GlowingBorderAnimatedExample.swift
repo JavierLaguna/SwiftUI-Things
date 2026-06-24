@@ -34,7 +34,7 @@ struct GlowingBorderAnimatedExample: View {
                         Button {
                             
                         } label: {
-                            Image(systemName: "plue")
+                            Image(systemName: "plus")
                         }
                         
                         Button {
