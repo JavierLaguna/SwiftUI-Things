@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct MorphingSymbolView: View {
@@ -66,8 +65,11 @@ struct MorphingSymbolView: View {
 }
 
 #Preview {
+
+    @Previewable @State var active = false
+    
     MorphingSymbolView(
-        symbol: "gearshape.fill",
+        symbol: active ? "apple.logo" : "apple.meditate",
         config: .init(
             font: .system(size: 100, weight: .bold),
             frame: .init(width: 250, height: 200),
@@ -75,4 +77,7 @@ struct MorphingSymbolView: View {
             foregroundColor: .black
         )
     )
+    .onTapGesture {
+        active.toggle()
+    }
 }
