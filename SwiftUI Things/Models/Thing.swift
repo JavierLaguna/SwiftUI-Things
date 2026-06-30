@@ -94,6 +94,7 @@ enum ThingRegistry {
             AnyThing(GlowingBorderAnimatedExample.self),
         ],
         .nativeModifiers: [
+            AnyThing(DefaultScrollAnchorExample.self),
             AnyThing(LongPressGestureExample.self),
             AnyThing(AnimationModifierAndTimingExample.self),
             AnyThing(TransformAnimationsExample.self),
