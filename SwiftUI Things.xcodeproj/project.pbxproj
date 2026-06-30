@@ -144,7 +144,7 @@
 		49DF2F4D2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F4C2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift */; };
 		49DF2F4F2F5853AD00438BF5 /* BlurTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F4E2F5853AD00438BF5 /* BlurTextExample.swift */; };
 		49DF2F512F5853B000438BF5 /* DefaultScrollAnchorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF2F502F5853B000438BF5 /* DefaultScrollAnchorExample.swift */; };
-		49EE5D522F76903100A1652D /* AAAAA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE5D512F76903100A1652D /* AAAAA.swift */; };
+		49EE5D522F76903100A1652D /* iOS26Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE5D512F76903100A1652D /* iOS26Availability.swift */; };
 		49F6C5992EA2692500FE1FEB /* Subscription.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 49F6C5982EA2692500FE1FEB /* Subscription.storekit */; };
 		49F6C59C2EA26EB300FE1FEB /* AnimatedPaywallExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6C59B2EA26EB300FE1FEB /* AnimatedPaywallExample.swift */; };
 		49F76C632F5AB52500E24EBF /* TagStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F76C622F5AB52500E24EBF /* TagStatusView.swift */; };
@@ -290,7 +290,7 @@
 		49DF2F4C2F5851BA00438BF5 /* DetermineLightDarkModeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineLightDarkModeExample.swift; sourceTree = "<group>"; };
 		49DF2F4E2F5853AD00438BF5 /* BlurTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurTextExample.swift; sourceTree = "<group>"; };
 		49DF2F502F5853B000438BF5 /* DefaultScrollAnchorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultScrollAnchorExample.swift; sourceTree = "<group>"; };
-		49EE5D512F76903100A1652D /* AAAAA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAAAA.swift; sourceTree = "<group>"; };
+		49EE5D512F76903100A1652D /* iOS26Availability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS26Availability.swift; sourceTree = "<group>"; };
 		49F6C5982EA2692500FE1FEB /* Subscription.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Subscription.storekit; sourceTree = "<group>"; };
 		49F6C59B2EA26EB300FE1FEB /* AnimatedPaywallExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPaywallExample.swift; sourceTree = "<group>"; };
 		49F76C622F5AB52500E24EBF /* TagStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagStatusView.swift; sourceTree = "<group>"; };
@@ -544,7 +544,6 @@
 				49F6C5982EA2692500FE1FEB /* Subscription.storekit */,
 				49A0CE37298BE0CB00D54732 /* Preview Content */,
 				49B2D5112F5AF72300491853 /* PermissionAnimationExample.swift */,
-				49EE5D512F76903100A1652D /* AAAAA.swift */,
 			);
 			path = "SwiftUI Things";
 			sourceTree = "<group>";
@@ -681,6 +680,7 @@
 			isa = PBXGroup;
 			children = (
 				496AA4D52BBAE63F00CC3D05 /* Extensions */,
+				49EE5D512F76903100A1652D /* iOS26Availability.swift */,
 				49A9F79629957AC900B367AE /* AudioPlayer.swift */,
 				49A9F79829957B9A00B367AE /* Constants.swift */,
 			);
@@ -923,7 +923,7 @@
 				491EF1EB2FDC09070053B00D /* MaskingExample.swift in Sources */,
 				49A9DA9F299FD92C0007632C /* GetHeightModifier.swift in Sources */,
 				4956009729D1BA84001DE321 /* CardMovementCellView.swift in Sources */,
-				49EE5D522F76903100A1652D /* AAAAA.swift in Sources */,
+				49EE5D522F76903100A1652D /* iOS26Availability.swift in Sources */,
 				49DF2F492F584E3100438BF5 /* DisplayLargeNumbersExample.swift in Sources */,
 				49B2D5122F5AF72300491853 /* PermissionAnimationExample.swift in Sources */,
 				49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */,
