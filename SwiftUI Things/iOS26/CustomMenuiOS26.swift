@@ -31,93 +31,160 @@ struct CustomMenuiOS26: View {
     var body: some View {
         if #available(iOS 26.0, *) {
             ScrollView(.vertical) {
-                VStack(alignment: .leading, spacing: 32) {
-                    
-                    Text("Live Example")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                    
-                    HStack {
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Transaction History")
-                                .font(.title3)
-                                .fontWeight(.medium)
-                            
-                            Text("12 Jun 2025 - 20 Sep 2025")
-                                .font(.caption)
-                                .foregroundStyle(.gray)
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                        CustomMenuView(style: selectedOption) {
-                            Image(systemName: "calendar")
-                                .font(.title3)
-                                .frame(width: 40, height: 30)
-                            
-                        } content: {
-                            DateFilterView(
-                                interactiveDismissDisabled: dismissDisabled
-                            )
-                        }
-                    }
-                    
-                    Text("Properties")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                    
-                    VStack(alignment: .leading, spacing: 16) {
-                        Picker("CustomMenuStyle", selection: $selectedOption) {
-                            ForEach(CustomMenuStyle.allCases, id: \.self) { item in
-                                Text("\(item.rawValue)").tag(item)
-                            }
-                        }
-                        .pickerStyle(.segmented)
-                        
-                        Divider()
-                        
-                        Toggle("Interactive Dismiss Disabled", isOn: $dismissDisabled)
-                    }
-                    .padding(24)
-                    .frame(maxWidth: .infinity, alignment: .topLeading)
-                    .glassEffect(.regular, in: .rect(cornerRadius: 30))
-                    
-                    Text("Code")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                    
-                    VStack(alignment: .leading, spacing: 24) {
-                        Text("Usage:")
-                            .font(.footnote)
-                            .foregroundStyle(.gray)
-                            .underline()
-                        
-                        Text(usageText)
-                        .font(.system(.body, design: .monospaced))
-                    }
-                    .padding(24)
-                    .frame(maxWidth: .infinity, alignment: .topLeading)
-                    .background {
-                        RoundedRectangle(cornerRadius: 30)
-                            .fill(.gray.opacity(0.15))
-                    }
-                    .overlay(alignment: .topTrailing) {
-                        Button {
-                            pasteboard.string = usageText
-                        } label: {
-                            Image(systemName: "clipboard.fill")
-                                .font(.title3)
-                                .padding(16)
-                                .padding(.trailing, 8)
-                                .tint(.gray)
-                        }
-                    }
+                VStack(spacing: 28) {
+                    headerSection
+                    livePreviewSection
+                    propertiesSection
+                    codeSection
                 }
                 .padding(16)
             }
-            
         } else {
             Text("iOS 26 device required")
         }
+    }
+    
+    // MARK: - Header
+    private var headerSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 8) {
+                Label("iOS 26+", systemImage: "iphone.gen4")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 4)
+                    .background(Capsule().fill(.blue.gradient))
+                
+                Text("UI Component")
+                    .font(.caption.weight(.medium))
+                    .foregroundStyle(.secondary)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 4)
+                    .background(Capsule().fill(.gray.opacity(0.15)))
+                
+                Spacer()
+            }
+            
+            Text(CustomMenuiOS26.title)
+                .font(.largeTitle.weight(.bold))
+        }
+    }
+    
+    // MARK: - Live Preview
+    @available(iOS 26.0, *)
+    private var livePreviewSection: some View {
+        SectionCard(icon: "play.fill", title: "Live Preview") {
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Transaction History")
+                        .font(.title3.weight(.medium))
+                    
+                    Text("12 Jun 2025 - 20 Sep 2025")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+                CustomMenuView(style: selectedOption) {
+                    Image(systemName: "calendar")
+                        .font(.title3)
+                        .frame(width: 40, height: 30)
+                } content: {
+                    DateFilterView(
+                        interactiveDismissDisabled: dismissDisabled
+                    )
+                }
+            }
+        }
+    }
+    
+    // MARK: - Properties
+    @available(iOS 26.0, *)
+    private var propertiesSection: some View {
+        SectionCard(icon: "slider.horizontal.3", title: "Properties") {
+            VStack(alignment: .leading, spacing: 16) {
+                Picker("Menu Style", selection: $selectedOption) {
+                    ForEach(CustomMenuStyle.allCases, id: \.self) { item in
+                        Text(item.rawValue).tag(item)
+                    }
+                }
+                .pickerStyle(.segmented)
+                
+                Divider()
+                
+                Toggle("Interactive Dismiss Disabled", isOn: $dismissDisabled)
+            }
+        }
+    }
+    
+    // MARK: - Code
+    private var codeSection: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Label("Code", systemImage: "chevron.left.forwardslash.chevron.right")
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(.secondary)
+                .textCase(.uppercase)
+            
+            VStack(alignment: .leading, spacing: 0) {
+                HStack {
+                    Label("ContentView.swift", systemImage: "swift")
+                        .font(.caption.weight(.medium))
+                        .foregroundStyle(.secondary)
+                    
+                    Spacer()
+                    
+                    Button {
+                        pasteboard.string = usageText
+                    } label: {
+                        Label("Copy", systemImage: "clipboard")
+                            .font(.caption.weight(.medium))
+                    }
+                    .buttonStyle(.plain)
+                    .foregroundStyle(.tint)
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .background(.gray.opacity(0.08))
+                
+                Divider()
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    Text(usageText)
+                        .font(.system(.callout, design: .monospaced))
+                        .lineSpacing(6)
+                        .padding(16)
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                }
+            }
+            .background(.gray.opacity(0.06))
+            .clipShape(.rect(cornerRadius: 16))
+            .overlay {
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(.gray.opacity(0.15), lineWidth: 1)
+            }
+        }
+    }
+}
+
+// MARK: - Section Card
+
+@available(iOS 26.0, *)
+private struct SectionCard<Content: View>: View {
+    let icon: String
+    let title: String
+    @ViewBuilder let content: Content
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Label(title, systemImage: icon)
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(.secondary)
+                .textCase(.uppercase)
+            
+            content
+        }
+        .padding(20)
+        .glassEffect(.regular, in: .rect(cornerRadius: 24))
     }
 }
 
