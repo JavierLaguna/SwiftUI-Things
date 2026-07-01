@@ -11,7 +11,7 @@ public struct StorybookBadge: Identifiable {
     }
 }
 
-@available(iOS 26.0, *)
+//@available(iOS 26.0, *)
 public struct Storybook<Preview: View, Properties: View>: View {
 
     private let title: String

@@ -1,6 +1,5 @@
 import SwiftUI
 
-@available(iOS 26.0, *)
 struct SectionCard<Content: View>: View {
     let icon: String
     let title: String
