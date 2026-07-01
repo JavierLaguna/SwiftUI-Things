@@ -1,4 +1,5 @@
 import SwiftUI
+import iOS26Macros
 
 extension MenuWithSectionsExample: NativeComponentThing {
     static let title = "Menu with sections"
@@ -6,44 +7,55 @@ extension MenuWithSectionsExample: NativeComponentThing {
 }
 
 struct MenuWithSectionsExample: View {
-    
+
     var body: some View {
-        Menu {
-            Section {
-                Button {
-                    // Empty
-                } label: {
-                    Label("Edit", systemImage: "pencil")
+        let (preview, code) = #CodeSnippet(
+            Menu {
+                Section {
+                    Button {
+                        // Empty
+                    } label: {
+                        Label("Edit", systemImage: "pencil")
+                    }
+
+                    Button {
+                        // Empty
+                    } label: {
+                        Label("Share", systemImage: "square.and.arrow.up")
+                    }
                 }
-                
-                Button {
-                    // Empty
-                } label: {
-                    Label("Share", systemImage: "square.and.arrow.up")
+
+                Section("Section name") {
+                    Button {
+                        // Empty
+                    } label: {
+                        Label("More", systemImage: "ellipsis")
+                    }
                 }
+
+                Section {
+                    Button(role: .destructive) {
+                        // Empty
+                    } label: {
+                        Label("Delete", systemImage: "trash")
+                    }
+                }
+
+            } label: {
+                Label("More", systemImage: "ellipsis.circle")
+                    .foregroundStyle(.purple)
             }
-            
-            Section("Section name") {
-                Button {
-                    // Empty
-                } label: {
-                    Label("More", systemImage: "ellipsis")
-                }
-            }
-            
-            Section {
-                Button(role: .destructive) {
-                    // Empty
-                } label: {
-                    Label("Delete", systemImage: "trash")
-                }
-            }
-            
-        } label: {
-            Label("More", systemImage: "ellipsis.circle")
-                .foregroundStyle(.purple)
-        }
-        .menuOrder(.fixed)
+            .menuOrder(.fixed)
+        )
+
+        Storybook(
+            title: Self.title,
+            badges: [
+                .init(title: "Native Component", icon: "square.3.layers.3d"),
+            ],
+            code: code,
+            preview: { preview }
+        )
     }
 }
 
