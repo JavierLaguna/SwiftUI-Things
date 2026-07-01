@@ -2,6 +2,7 @@
 // https://www.youtube.com/watch?v=RwPsJhrPP9g
 
 import SwiftUI
+import iOS26Macros
 
 extension CustomMenuiOS26: IOS26Thing {
     static let title = "Custom Menu iOS26"
@@ -14,20 +15,6 @@ struct CustomMenuiOS26: View {
     @State private var selectedOption: CustomMenuStyle = .glass
     @State private var dismissDisabled = false
     
-    private var usageText: String {
-        """
-        CustomMenuView(style: \(selectedOption.codeValue)) {
-            Image(systemName: "calendar")
-                .font(.title3)
-                .frame(width: 40, height: 30)
-        } content: {
-            DateFilterView(
-                interactiveDismissDisabled: \(String(describing: dismissDisabled))
-            )
-        }
-        """
-    }
-    
     var body: some View {
         if #available(iOS 26.0, *) {
             ScrollView(.vertical) {
@@ -35,7 +22,7 @@ struct CustomMenuiOS26: View {
                     headerSection
                     livePreviewSection
                     propertiesSection
-                    codeSection
+                    codeSection()
                 }
                 .padding(16)
             }
@@ -118,8 +105,21 @@ struct CustomMenuiOS26: View {
     }
     
     // MARK: - Code
-    private var codeSection: some View {
-        VStack(alignment: .leading, spacing: 14) {
+    @available(iOS 26.0, *)
+    private func codeSection() -> some View {
+        let code = #CodeSnippet {
+            CustomMenuView(style: selectedOption) {
+                Image(systemName: "calendar")
+                    .font(.title3)
+                    .frame(width: 40, height: 30)
+            } content: {
+                DateFilterView(
+                    interactiveDismissDisabled: dismissDisabled
+                )
+            }
+        }
+        
+        return VStack(alignment: .leading, spacing: 14) {
             Label("Code", systemImage: "chevron.left.forwardslash.chevron.right")
                 .font(.footnote.weight(.semibold))
                 .foregroundStyle(.secondary)
@@ -134,7 +134,7 @@ struct CustomMenuiOS26: View {
                     Spacer()
                     
                     Button {
-                        pasteboard.string = usageText
+                        pasteboard.string = code
                     } label: {
                         Label("Copy", systemImage: "clipboard")
                             .font(.caption.weight(.medium))
@@ -149,7 +149,7 @@ struct CustomMenuiOS26: View {
                 Divider()
                 
                 ScrollView(.horizontal, showsIndicators: false) {
-                    Text(usageText)
+                    Text(code)
                         .font(.system(.callout, design: .monospaced))
                         .lineSpacing(6)
                         .padding(16)
