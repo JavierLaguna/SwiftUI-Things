@@ -1,4 +1,5 @@
 import SwiftUI
+import iOS26Macros
 
 extension DropdownViewExample: CustomComponentThing {
     static let title = "DropdownView"
@@ -6,20 +7,36 @@ extension DropdownViewExample: CustomComponentThing {
 }
 
 struct DropdownViewExample: View {
-    
+
     private let pickerVelues = ["YouTube", "Instagram", "X (Twitter)", "Snapchat", "TikTok"]
-    
+
     @State private var config: DropdownConfig = .init(activeText: "YouTube")
-    
+
     var body: some View {
-        NavigationStack {
-            List {
-                SourceDropdownView(config: $config)
-                    .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-            }
-            .navigationTitle("Dropdown")
+        if #available(iOS 26.0, *) {
+            let (preview, code) = #CodeSnippet(
+                NavigationStack {
+                    List {
+                        SourceDropdownView(config: $config)
+                            .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    }
+                    .navigationTitle("Dropdown")
+                }
+                .dropdownOverlay($config, values: pickerVelues)
+            )
+
+            Storybook(
+                title: Self.title,
+                badges: [
+                    .init(title: "Custom Component", icon: "rectangle.3.group"),
+                ],
+                code: code,
+                preview: { preview }
+            )
+
+        } else {
+            Text("iOS 26 device required")
         }
-        .dropdownOverlay($config, values: pickerVelues)
     }
 }
 

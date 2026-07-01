@@ -149,9 +149,12 @@
 		49F6C59C2EA26EB300FE1FEB /* AnimatedPaywallExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6C59B2EA26EB300FE1FEB /* AnimatedPaywallExample.swift */; };
 		49F76C632F5AB52500E24EBF /* TagStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F76C622F5AB52500E24EBF /* TagStatusView.swift */; };
 		49F76C652FAB123400E24EBF /* AppWideOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F76C642FAB123400E24EBF /* AppWideOverlays.swift */; };
+		749379445456BDA9F9BAE320 /* SectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3339A71075F4F7990083B272 /* SectionCard.swift */; };
+		9401674AE25404A9FB89C3B1 /* Storybook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65736088863F21DD823162A4 /* Storybook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3339A71075F4F7990083B272 /* SectionCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionCard.swift; sourceTree = "<group>"; };
 		491EF1702FDC07250053B00D /* GlowingBorderAnimatedExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingBorderAnimatedExample.swift; sourceTree = "<group>"; };
 		491EF1722FDC073F0053B00D /* StretchyVisualEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyVisualEffect.swift; sourceTree = "<group>"; };
 		491EF1822FDC08920053B00D /* CompositionalGridLayoutExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalGridLayoutExample.swift; sourceTree = "<group>"; };
@@ -295,14 +298,8 @@
 		49F6C59B2EA26EB300FE1FEB /* AnimatedPaywallExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPaywallExample.swift; sourceTree = "<group>"; };
 		49F76C622F5AB52500E24EBF /* TagStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagStatusView.swift; sourceTree = "<group>"; };
 		49F76C642FAB123400E24EBF /* AppWideOverlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWideOverlays.swift; sourceTree = "<group>"; };
+		65736088863F21DD823162A4 /* Storybook.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Storybook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		49EE5D532F76903100A1652E /* iOS26Macros */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = Packages/iOS26Macros;
-		};
-/* End XCLocalSwiftPackageReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		49A0CE2B298BE0C900D54732 /* Frameworks */ = {
@@ -690,9 +687,11 @@
 				49EE5D512F76903100A1652D /* iOS26Availability.swift */,
 				49A9F79629957AC900B367AE /* AudioPlayer.swift */,
 				49A9F79829957B9A00B367AE /* Constants.swift */,
+				3339A71075F4F7990083B272 /* SectionCard.swift */,
+				65736088863F21DD823162A4 /* Storybook.swift */,
 			);
-			path = Utilities;
-			sourceTree = "<group>";
+			path = "SwiftUI Things/Utilities";
+			sourceTree = SOURCE_ROOT;
 		};
 		49AFE1E12F4325C3003C46B8 /* NativeComponents */ = {
 			isa = PBXGroup;
@@ -848,7 +847,7 @@
 			);
 			mainGroup = 49A0CE25298BE0C900D54732;
 			packageReferences = (
-				49EE5D532F76903100A1652E /* iOS26Macros */,
+				49EE5D532F76903100A1652E /* XCLocalSwiftPackageReference "iOS26Macros" */,
 			);
 			productRefGroup = 49A0CE2F298BE0C900D54732 /* Products */;
 			projectDirPath = "";
@@ -1016,6 +1015,8 @@
 				494647E3299FB32B00E47D4E /* FructusApp.swift in Sources */,
 				4964571E29CC3E0E00192C54 /* CreditCardView.swift in Sources */,
 				49F76C652FAB123400E24EBF /* AppWideOverlays.swift in Sources */,
+				749379445456BDA9F9BAE320 /* SectionCard.swift in Sources */,
+				9401674AE25404A9FB89C3B1 /* Storybook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1224,12 +1225,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		49EE5D532F76903100A1652E /* XCLocalSwiftPackageReference "iOS26Macros" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/iOS26Macros;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-49EE5D552F76903100A16530 /* iOS26Macros */ = {
-	isa = XCSwiftPackageProductDependency;
-	package = 49EE5D532F76903100A1652E /* iOS26Macros */;
-	productName = iOS26Macros;
-};
+		49EE5D552F76903100A16530 /* iOS26Macros */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49EE5D532F76903100A1652E /* XCLocalSwiftPackageReference "iOS26Macros" */;
+			productName = iOS26Macros;
+		};
 /* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49A0CE26298BE0C900D54732 /* Project object */;
