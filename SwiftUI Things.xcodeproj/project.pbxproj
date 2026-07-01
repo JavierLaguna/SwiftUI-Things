@@ -115,6 +115,7 @@
 		497E3356299A8AC1008710B9 /* C4GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E3355299A8AC1008710B9 /* C4GameViewModel.swift */; };
 		497E3358299BFEB3008710B9 /* C4PlayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E3357299BFEB3008710B9 /* C4PlayerType.swift */; };
 		49851C7A2C6644BE0011E254 /* CompositionalGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49851C792C6644BC0011E254 /* CompositionalGridLayout.swift */; };
+		498B58742FF4F38B00FC17D1 /* PermissionAnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B58732FF4F38B00FC17D1 /* PermissionAnimationExample.swift */; };
 		49A0CE32298BE0C900D54732 /* SwiftUI_ThingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */; };
 		49A0CE34298BE0C900D54732 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A0CE33298BE0C900D54732 /* MainView.swift */; };
 		49A0CE36298BE0CB00D54732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A0CE35298BE0CB00D54732 /* Assets.xcassets */; };
@@ -131,7 +132,6 @@
 		49A9F79729957ACA00B367AE /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F79629957AC900B367AE /* AudioPlayer.swift */; };
 		49A9F79929957B9A00B367AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F79829957B9A00B367AE /* Constants.swift */; };
 		49B2D5102F5AE10000491853 /* ToolbarHeaderScrollAnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2D50F2F5AE10000491853 /* ToolbarHeaderScrollAnimationExample.swift */; };
-		49B2D5122F5AF72300491853 /* PermissionAnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2D5112F5AF72300491853 /* PermissionAnimationExample.swift */; };
 		49C2BCEF2E81B35A0091A0CB /* CustomMenuiOS26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2BCEE2E81B35A0091A0CB /* CustomMenuiOS26.swift */; };
 		49D2D66C2C6A0C2D00B77478 /* PsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66B2C6A0C2600B77478 /* PsPage.swift */; };
 		49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */; };
@@ -260,6 +260,7 @@
 		497E3355299A8AC1008710B9 /* C4GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4GameViewModel.swift; sourceTree = "<group>"; };
 		497E3357299BFEB3008710B9 /* C4PlayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4PlayerType.swift; sourceTree = "<group>"; };
 		49851C792C6644BC0011E254 /* CompositionalGridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalGridLayout.swift; sourceTree = "<group>"; };
+		498B58732FF4F38B00FC17D1 /* PermissionAnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionAnimationExample.swift; sourceTree = "<group>"; };
 		49A0CE2E298BE0C900D54732 /* SwiftUI Things.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Things.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ThingsApp.swift; sourceTree = "<group>"; };
 		49A0CE33298BE0C900D54732 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -277,7 +278,6 @@
 		49A9F79629957AC900B367AE /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		49A9F79829957B9A00B367AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49B2D50F2F5AE10000491853 /* ToolbarHeaderScrollAnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarHeaderScrollAnimationExample.swift; sourceTree = "<group>"; };
-		49B2D5112F5AF72300491853 /* PermissionAnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionAnimationExample.swift; sourceTree = "<group>"; };
 		49C2BCEE2E81B35A0091A0CB /* CustomMenuiOS26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuiOS26.swift; sourceTree = "<group>"; };
 		49D2D66B2C6A0C2600B77478 /* PsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsPage.swift; sourceTree = "<group>"; };
 		49D2D66E2C6A0F5200B77478 /* PSIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIntroView.swift; sourceTree = "<group>"; };
@@ -543,7 +543,6 @@
 				49A0CE31298BE0C900D54732 /* SwiftUI_ThingsApp.swift */,
 				49F6C5982EA2692500FE1FEB /* Subscription.storekit */,
 				49A0CE37298BE0CB00D54732 /* Preview Content */,
-				49B2D5112F5AF72300491853 /* PermissionAnimationExample.swift */,
 			);
 			path = "SwiftUI Things";
 			sourceTree = "<group>";
@@ -644,11 +643,12 @@
 		49A9F7862995763F00B367AE /* SampleApps */ = {
 			isa = PBXGroup;
 			children = (
+				49F6C59A2EA26E8300FE1FEB /* AnimatedPaywall */,
 				49F76C642FAB123400E24EBF /* AppWideOverlays.swift */,
 				4935C3742F488C10002B7781 /* Calendar */,
-				49F6C59A2EA26E8300FE1FEB /* AnimatedPaywall */,
 				497E334E2998FD23008710B9 /* Connect4 */,
 				494647CA299FB31600E47D4E /* Fructus */,
+				498B58732FF4F38B00FC17D1 /* PermissionAnimationExample.swift */,
 				497E334029967C4B008710B9 /* Pinch */,
 				49D2D6682C6A0BA100B77478 /* PSIntro */,
 				49A9F7872995764A00B367AE /* Restart */,
@@ -925,7 +925,6 @@
 				4956009729D1BA84001DE321 /* CardMovementCellView.swift in Sources */,
 				49EE5D522F76903100A1652D /* iOS26Availability.swift in Sources */,
 				49DF2F492F584E3100438BF5 /* DisplayLargeNumbersExample.swift in Sources */,
-				49B2D5122F5AF72300491853 /* PermissionAnimationExample.swift in Sources */,
 				49D2D66F2C6A0F5200B77478 /* PSIntroView.swift in Sources */,
 				497E334C2998FCCA008710B9 /* C4BoardView.swift in Sources */,
 				49665AA229B4A673007D55D8 /* BackgroundMotionAnimationView.swift in Sources */,
@@ -1000,6 +999,7 @@
 				49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */,
 				494647E9299FB32B00E47D4E /* FruitHeaderView.swift in Sources */,
 				494647DE299FB32B00E47D4E /* FruitData.swift in Sources */,
+				498B58742FF4F38B00FC17D1 /* PermissionAnimationExample.swift in Sources */,
 				494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */,
 				497E3358299BFEB3008710B9 /* C4PlayerType.swift in Sources */,
 				497E334629967D5F008710B9 /* InfoPanelView.swift in Sources */,
