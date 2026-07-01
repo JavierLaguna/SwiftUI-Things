@@ -17,15 +17,28 @@ struct CustomMenuiOS26: View {
     
     var body: some View {
         if #available(iOS 26.0, *) {
+            let (preview, code) = #CodeSnippet(
+                CustomMenuView(style: selectedOption) {
+                    Image(systemName: "calendar")
+                        .font(.title3)
+                        .frame(width: 40, height: 30)
+                } content: {
+                    DateFilterView(
+                        interactiveDismissDisabled: dismissDisabled
+                    )
+                }
+            )
+            
             ScrollView(.vertical) {
                 VStack(spacing: 28) {
                     headerSection
-                    livePreviewSection
+                    livePreviewSection(preview)
                     propertiesSection
-                    codeSection()
+                    codeSection(code)
                 }
                 .padding(16)
             }
+            
         } else {
             Text("iOS 26 device required")
         }
@@ -59,7 +72,7 @@ struct CustomMenuiOS26: View {
     
     // MARK: - Live Preview
     @available(iOS 26.0, *)
-    private var livePreviewSection: some View {
+    private func livePreviewSection(_ view: some View) -> some View {
         SectionCard(icon: "play.fill", title: "Live Preview") {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
@@ -72,15 +85,7 @@ struct CustomMenuiOS26: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
-                CustomMenuView(style: selectedOption) {
-                    Image(systemName: "calendar")
-                        .font(.title3)
-                        .frame(width: 40, height: 30)
-                } content: {
-                    DateFilterView(
-                        interactiveDismissDisabled: dismissDisabled
-                    )
-                }
+                view
             }
         }
     }
@@ -106,20 +111,8 @@ struct CustomMenuiOS26: View {
     
     // MARK: - Code
     @available(iOS 26.0, *)
-    private func codeSection() -> some View {
-        let code = #CodeSnippet {
-            CustomMenuView(style: selectedOption) {
-                Image(systemName: "calendar")
-                    .font(.title3)
-                    .frame(width: 40, height: 30)
-            } content: {
-                DateFilterView(
-                    interactiveDismissDisabled: dismissDisabled
-                )
-            }
-        }
-        
-        return VStack(alignment: .leading, spacing: 14) {
+    private func codeSection(_ code: String) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
             Label("Code", systemImage: "chevron.left.forwardslash.chevron.right")
                 .font(.footnote.weight(.semibold))
                 .foregroundStyle(.secondary)

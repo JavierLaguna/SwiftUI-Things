@@ -16,19 +16,17 @@ import SwiftUI
 @freestanding(expression)
 public macro iOS26Only<Content: View>(@ViewBuilder content: () -> Content) -> any View = #externalMacro(module: "iOS26MacrosMacros", type: "iOS26OnlyMacro")
 
-/// Captures the source code of the given closure body and returns it as a string.
+/// Captures the source code of an expression and returns it alongside the evaluated value.
 ///
-/// Use this to display usage code snippets in a StoryBook without duplicating hardcoded strings.
-/// The closure body is never executed — only parsed at compile time for its source text.
+/// Use this to display usage code snippets in a StoryBook without duplicating the view expression.
+/// The expression is evaluated normally; its source text is captured at compile time.
 ///
 /// ```swift
-/// let code = #CodeSnippet {
-///     CustomMenuView(style: selectedOption) {
-///         Image(systemName: "calendar")
-///     } content: {
-///         DateFilterView()
-///     }
-/// }
+/// let (view, code) = #CodeSnippet(CustomMenuView(style: .glass) {
+///     Image(systemName: "calendar")
+/// } content: {
+///     DateFilterView()
+/// })
 /// ```
 @freestanding(expression)
-public macro CodeSnippet<Result>(_ body: () -> Result) -> String = #externalMacro(module: "iOS26MacrosMacros", type: "CodeSnippetMacro")
+public macro CodeSnippet<Result>(_ expression: Result) -> (value: Result, code: String) = #externalMacro(module: "iOS26MacrosMacros", type: "CodeSnippetMacro")

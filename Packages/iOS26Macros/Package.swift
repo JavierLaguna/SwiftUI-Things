@@ -32,7 +32,8 @@ let package = Package(
             dependencies: [
                 "iOS26MacrosMacros",
                 .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
-            ]
+            ],
+            path: "Tests/iOS26MacrosTests"
         ),
     ]
 )
