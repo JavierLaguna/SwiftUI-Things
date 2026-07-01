@@ -6,23 +6,26 @@ struct SectionCard<Content: View>: View {
     @ViewBuilder let content: Content
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 14) {
+        VStack(alignment: .leading, spacing: 0) {
             Label(title, systemImage: icon)
                 .font(.footnote.weight(.semibold))
                 .foregroundStyle(.secondary)
                 .textCase(.uppercase)
+                .padding(.bottom, 12)
+                .padding(.horizontal, 20)
+
+            Divider()
+                .padding(.bottom, 16)
 
             content
+                .frame(maxWidth: .infinity)
         }
-        .padding(20)
-        .glassEffect(.regular, in: .rect(cornerRadius: 24))
+        .padding(.vertical, 20)
     }
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
-    if #available(iOS 26.0, *) {
-        SectionCard(icon: "star.fill", title: "Preview") {
-            Text("Hello from SectionCard")
-        }
+    SectionCard(icon: "star.fill", title: "Preview") {
+        Text("Hello from SectionCard")
     }
 }

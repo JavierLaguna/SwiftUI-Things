@@ -12,16 +12,26 @@ extension View {
     /// }
     /// ```
     @ViewBuilder
-    func ifAvailableiOS26<T: View, F: View>(
-        _ transform: (Self) -> T,
-        else fallback: ((Self) -> F)? = nil
+    func ifAvailableiOS26<T: View>(
+        @ViewBuilder _ transform: (Self) -> T
     ) -> some View {
         if #available(iOS 26, *) {
             transform(self)
-        } else if let fallback {
-            fallback(self)
         } else {
             self
+        }
+    }
+
+    /// Applies a transformation on iOS 26+, with a fallback for older versions.
+    @ViewBuilder
+    func ifAvailableiOS26<T: View, F: View>(
+        _ transform: (Self) -> T,
+        else fallback: (Self) -> F
+    ) -> some View {
+        if #available(iOS 26, *) {
+            transform(self)
+        } else {
+            fallback(self)
         }
     }
 

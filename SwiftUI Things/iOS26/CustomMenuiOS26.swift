@@ -40,7 +40,19 @@ struct CustomMenuiOS26: View {
                     "dismissDisabled": "\(dismissDisabled)",
                 ],
                 preview: {
-                    preview
+                    HStack {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Transaction History")
+                                .font(.title3.weight(.medium))
+
+                            Text("12 Jun 2025 - 20 Sep 2025")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                        preview
+                    }
                 },
                 properties: {
                     Picker("Menu Style", selection: $selectedOption) {
@@ -55,7 +67,6 @@ struct CustomMenuiOS26: View {
                     Toggle("Interactive Dismiss Disabled", isOn: $dismissDisabled)
                 }
             )
-
         } else {
             Text("iOS 26 device required")
         }
