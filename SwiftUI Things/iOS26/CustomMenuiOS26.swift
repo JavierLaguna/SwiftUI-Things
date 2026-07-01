@@ -112,7 +112,10 @@ struct CustomMenuiOS26: View {
     // MARK: - Code
     @available(iOS 26.0, *)
     private func codeSection(_ code: String) -> some View {
-        VStack(alignment: .leading, spacing: 14) {
+        let displayCode = code
+            .replacingOccurrences(of: "selectedOption", with: selectedOption.codeValue)
+            .replacingOccurrences(of: "dismissDisabled", with: "\(dismissDisabled)")
+        return VStack(alignment: .leading, spacing: 14) {
             Label("Code", systemImage: "chevron.left.forwardslash.chevron.right")
                 .font(.footnote.weight(.semibold))
                 .foregroundStyle(.secondary)
@@ -127,7 +130,7 @@ struct CustomMenuiOS26: View {
                     Spacer()
                     
                     Button {
-                        pasteboard.string = code
+                        pasteboard.string = displayCode
                     } label: {
                         Label("Copy", systemImage: "clipboard")
                             .font(.caption.weight(.medium))
@@ -142,7 +145,7 @@ struct CustomMenuiOS26: View {
                 Divider()
                 
                 ScrollView(.horizontal, showsIndicators: false) {
-                    Text(code)
+                    Text(displayCode)
                         .font(.system(.callout, design: .monospaced))
                         .lineSpacing(6)
                         .padding(16)
