@@ -28,7 +28,8 @@ struct GaugeExample: View {
                 }
                 .gaugeStyle(.accessoryCircular)
                 .tint(.red)
-                .scaleEffect(4.0)
+                .scaleEffect(3.0)
+                .frame(width: 180, height: 180)
 
                 Slider(value: $value) {
                     // Empty
@@ -37,7 +38,7 @@ struct GaugeExample: View {
                 } maximumValueLabel: {
                     Text("100")
                 }
-                .padding(.top, 120)
+                .padding(.top, 8)
                 .padding(.horizontal, 24)
             }
         )
