@@ -567,6 +567,7 @@
 				491EF1842FDC08920053B00D /* Drag&DropWithScrollExample.swift */,
 				491EF1852FDC08920053B00D /* DropdownViewExample.swift */,
 				491EF1862FDC08920053B00D /* ExpandableSearchBarExample.swift */,
+				491EF1932FDC08E90053B00D /* FloatingTabBarExample.swift */,
 				491EF1872FDC08920053B00D /* ScrollViewAnimationEffect.swift */,
 				491EF1882FDC08920053B00D /* SwiftUIViewToPDF.swift */,
 				491EF1722FDC073F0053B00D /* StretchyVisualEffect.swift */,
@@ -698,7 +699,6 @@
 			children = (
 				491EF1AC2FDC08F30053B00D /* ViewThatFitsScrollExample.swift */,
 				491EF1922FDC08E90053B00D /* DeviceInformationExample.swift */,
-				491EF1932FDC08E90053B00D /* FloatingTabBarExample.swift */,
 				491EF1942FDC08E90053B00D /* GaugeExample.swift */,
 				491EF1952FDC08E90053B00D /* GroupBoxExample.swift */,
 				491EF1962FDC08E90053B00D /* ImageAndTextExample.swift */,

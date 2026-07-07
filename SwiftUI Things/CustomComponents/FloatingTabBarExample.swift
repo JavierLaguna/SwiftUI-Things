@@ -1,76 +1,85 @@
 import SwiftUI
+import iOS26Macros
 
-extension FloatingTabBarExample: NativeComponentThing {
+extension FloatingTabBarExample: CustomComponentThing {
     static let title = "Floating TabBar"
     static func makeView() -> some View { Self() }
 }
 
 struct FloatingTabBarExample: View {
-    
+
     @State private var activeTab: TabModel = .home
     @State private var isTabBarHidden = false
-    
+
     var body: some View {
-        ZStack(alignment: .bottom) {
-            Group {
-                if #available(iOS 18, *) {
-                    TabView(selection: $activeTab) {
-                        Tab.init(value: .home) {
+        let (preview, code) = #CodeSnippet(
+            ZStack(alignment: .bottom) {
+                Group {
+                    if #available(iOS 18, *) {
+                        TabView(selection: $activeTab) {
+                            Tab.init(value: .home) {
+                                HomeView()
+                                    .toolbarVisibility(.hidden, for: .tabBar)
+                            }
+
+                            Tab.init(value: .search) {
+                                Text("Search")
+                                    .toolbarVisibility(.hidden, for: .tabBar)
+                            }
+
+                            Tab.init(value: .notification) {
+                                Text("Notifications")
+                                    .toolbarVisibility(.hidden, for: .tabBar)
+                            }
+
+                            Tab.init(value: .settings) {
+                                Text("Settings")
+                                    .toolbarVisibility(.hidden, for: .tabBar)
+                            }
+                        }
+
+                    } else {
+                        TabView(selection: $activeTab) {
+
                             HomeView()
-                                .toolbarVisibility(.hidden, for: .tabBar)
-                        }
-                        
-                        Tab.init(value: .search) {
-                            Text("Search")
-                                .toolbarVisibility(.hidden, for: .tabBar)
-                        }
-                        
-                        Tab.init(value: .notification) {
-                            Text("Notifications")
-                                .toolbarVisibility(.hidden, for: .tabBar)
-                        }
-                        
-                        Tab.init(value: .settings) {
-                            Text("Settings")
-                                .toolbarVisibility(.hidden, for: .tabBar)
-                        }
-                    }
-                    
-                } else {
-                    TabView(selection: $activeTab) {
-                        
-                        HomeView()
-                            .tag(TabModel.home)
-                            .background {
-                                if !isTabBarHidden {
-                                    HideTabBar {
-                                        isTabBarHidden = true
+                                .tag(TabModel.home)
+                                .background {
+                                    if !isTabBarHidden {
+                                        HideTabBar {
+                                            isTabBarHidden = true
+                                        }
                                     }
                                 }
-                            }
-                        
-                        Text("Search")
-                            .tag(TabModel.home)
-                        //                    .toolbar(.hidden, for: .tabBar)
-                        
-                        Text("Notifications")
-                            .tag(TabModel.home)
-                        //                    .toolbar(.hidden, for: .tabBar)
-                        
-                        Text("Settings")
-                            .tag(TabModel.home)
-                        //                    .toolbar(.hidden, for: .tabBar)
+
+                            Text("Search")
+                                .tag(TabModel.home)
+
+                            Text("Notifications")
+                                .tag(TabModel.home)
+
+                            Text("Settings")
+                                .tag(TabModel.home)
+                        }
                     }
                 }
+
+                CustomTabBar(activeTab: $activeTab)
             }
-            
-            CustomTabBar(activeTab: $activeTab)
-        }
+        )
+
+        Storybook(
+            title: Self.title,
+            badges: [
+                .init(title: "Custom Component", icon: "rectangle.3.group"),
+            ],
+            code: code,
+            preview: { preview }
+        )
     }
 }
 
 private struct HomeView: View {
-    
+
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
@@ -91,29 +100,29 @@ private struct HomeView: View {
 }
 
 private struct CustomTabBar: View {
-    
+
     var activeForeground: Color = .white
     var activeBackground: Color = .blue
     @Binding var activeTab: TabModel
-    
+
     @Namespace private var animation
     @State private var tabLocation: CGRect = .zero
-    
+
     var body: some View {
         let status = activeTab == .home || activeTab == .search
-        
+
         HStack(spacing: !status ? 0 : 12) {
             HStack(spacing: 0) {
                 ForEach(TabModel.allCases, id: \.rawValue) { tab in
                     Button {
                         activeTab = tab
-                        
+
                     } label: {
                         HStack(spacing: 0) {
                             Image(systemName: tab.rawValue)
                                 .font(.title3.bold())
                                 .frame(width: 30, height: 30)
-                            
+
                             if activeTab == tab {
                                 Text(tab.title)
                                     .font(.caption)
@@ -158,14 +167,14 @@ private struct CustomTabBar: View {
                 in: .capsule
             )
             .zIndex(10)
-            
+
             Button {
                 if activeTab == .home {
                     print("Profile")
                 } else {
                     print("Microphone Search")
                 }
-                
+
             } label: {
                 MorphingSymbolView(
                     symbol: activeTab == .home ? "person.fill" : "mic.fill",
@@ -191,30 +200,30 @@ private struct CustomTabBar: View {
 }
 
 private struct HideTabBar: UIViewRepresentable {
-    
+
     var result: () -> ()
-    
+
     func makeUIView(context: Context) -> UIView {
         let view = UIView(frame: .zero)
         view.backgroundColor = .clear
-        
+
         DispatchQueue.main.async {
             if let tabController = view.tabController {
                 tabController.tabBar.isHidden = true
                 result()
             }
         }
-        
+
         return view
     }
-    
+
     func updateUIView(_ uiView: UIView, context: Context) {
         // Empty
     }
 }
 
 private extension UIView {
-    
+
     var tabController: UITabBarController? {
         if let controller = sequence(first: self, next: {
             $0.next
@@ -223,7 +232,7 @@ private extension UIView {
         }) as? UITabBarController {
             return controller
         }
-        
+
         return nil
     }
 }
@@ -233,7 +242,7 @@ private enum TabModel: String, CaseIterable {
     case search = "magnifyingglass"
     case notification = "bell"
     case settings = "gearshape"
-    
+
     var title: String {
         switch self {
         case .home: "Home"

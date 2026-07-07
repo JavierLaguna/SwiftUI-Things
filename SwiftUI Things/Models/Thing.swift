@@ -58,6 +58,7 @@ enum ThingRegistry {
             AnyThing(DropdownViewExample.self),
             AnyThing(ExpandableCustomSliderExample.self),
             AnyThing(ExpandableSearchBarExample.self),
+            AnyThing(FloatingTabBarExample.self),
             AnyThing(GradientText.self),
             AnyThing(LoadingView.self),
             AnyThing(MorphingSymbolViewExample.self),
@@ -70,7 +71,6 @@ enum ThingRegistry {
         .nativeComponents: [
             AnyThing(CountDownExample.self),
             AnyThing(DeviceInformationExample.self),
-            AnyThing(FloatingTabBarExample.self),
             AnyThing(GaugeExample.self),
             AnyThing(GroupBoxExample.self),
             AnyThing(ImageAndTextExample.self),
