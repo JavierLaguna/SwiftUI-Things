@@ -26,6 +26,7 @@ struct DeviceInformationExample: View {
                     icon: "square.3.layers.3d"
                 ),
             ],
+            description: "Displays device information using LabeledContent, including system name, version, model, and device name.",
             code: code,
             preview: { preview }
         )

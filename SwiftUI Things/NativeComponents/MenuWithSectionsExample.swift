@@ -53,6 +53,7 @@ struct MenuWithSectionsExample: View {
             badges: [
                 .init(title: "Native Component", icon: "square.3.layers.3d"),
             ],
+            description: "A Menu with multiple sections, including titled sections and a destructive role button.",
             code: code,
             preview: { preview }
         )

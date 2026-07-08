@@ -29,6 +29,7 @@ struct DropdownViewExample: View {
             badges: [
                 .init(title: "Custom Component", icon: "rectangle.3.group"),
             ],
+            description: "A custom dropdown picker with animated expansion, scroll-based selection, and a semi-transparent overlay background.",
             code: code,
             preview: { preview }
         )

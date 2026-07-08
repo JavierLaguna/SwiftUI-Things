@@ -30,6 +30,7 @@ struct CountDownExample: View {
             badges: [
                 .init(title: "Native Component", icon: "square.3.layers.3d"),
             ],
+            description: "Displays countdown and count-up timers using SwiftUI's timer interval text with large bold typography.",
             code: code,
             preview: { preview }
         )

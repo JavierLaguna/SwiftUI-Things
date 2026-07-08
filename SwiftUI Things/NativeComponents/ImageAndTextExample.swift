@@ -24,6 +24,7 @@ struct ImageAndTextExample: View {
             badges: [
                 .init(title: "Native Component", icon: "square.3.layers.3d"),
             ],
+            description: "Combines Text and Image views using string interpolation in SwiftUI to create mixed-content labels.",
             code: code,
             preview: { preview }
         )

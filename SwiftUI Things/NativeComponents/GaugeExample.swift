@@ -48,6 +48,7 @@ struct GaugeExample: View {
             badges: [
                 .init(title: "Native Component", icon: "square.3.layers.3d"),
             ],
+            description: "A circular gauge that displays a value with a fuel pump icon, animated symbol effects, and a slider to control the value.",
             code: code,
             preview: { preview }
         )

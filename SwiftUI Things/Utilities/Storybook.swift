@@ -15,6 +15,7 @@ public struct Storybook<Preview: View, Properties: View>: View {
 
     private let title: String
     private let badges: [StorybookBadge]
+    private let description: String?
     private let code: String
     private let codeReplacements: [String: String]
     private let preview: Preview
@@ -24,6 +25,7 @@ public struct Storybook<Preview: View, Properties: View>: View {
     public init(
         title: String,
         badges: [StorybookBadge] = [],
+        description: String? = nil,
         code: String,
         codeReplacements: [String: String] = [:],
         @ViewBuilder preview: () -> Preview,
@@ -31,6 +33,7 @@ public struct Storybook<Preview: View, Properties: View>: View {
     ) {
         self.title = title
         self.badges = badges
+        self.description = description
         self.code = code
         self.codeReplacements = codeReplacements
         self.preview = preview()
@@ -40,12 +43,14 @@ public struct Storybook<Preview: View, Properties: View>: View {
     public init(
         title: String,
         badges: [StorybookBadge] = [],
+        description: String? = nil,
         code: String,
         codeReplacements: [String: String] = [:],
         @ViewBuilder preview: () -> Preview
     ) where Properties == EmptyView {
         self.title = title
         self.badges = badges
+        self.description = description
         self.code = code
         self.codeReplacements = codeReplacements
         self.preview = preview()
@@ -61,7 +66,9 @@ public struct Storybook<Preview: View, Properties: View>: View {
                     preview
                         .frame(maxWidth: .infinity)
                 }
-                
+
+                descriptionSection
+
                 propertiesSection
                 
                 codeSection
@@ -75,6 +82,9 @@ public struct Storybook<Preview: View, Properties: View>: View {
     @ViewBuilder
     private var headerView: some View {
         VStack(alignment: .leading, spacing: 8) {
+            Text(title)
+                .font(.largeTitle.weight(.bold))
+
             if !badges.isEmpty {
                 HStack(spacing: 8) {
                     ForEach(badges.indices, id: \.self) { index in
@@ -83,9 +93,6 @@ public struct Storybook<Preview: View, Properties: View>: View {
                     Spacer()
                 }
             }
-
-            Text(title)
-                .font(.largeTitle.weight(.bold))
         }
     }
 
@@ -98,6 +105,7 @@ public struct Storybook<Preview: View, Properties: View>: View {
                 .padding(.horizontal, 10)
                 .padding(.vertical, 4)
                 .background(Capsule().fill(.blue.gradient))
+            
         } else {
             Text(badge.title)
                 .font(.caption.weight(.medium))
@@ -105,6 +113,22 @@ public struct Storybook<Preview: View, Properties: View>: View {
                 .padding(.horizontal, 10)
                 .padding(.vertical, 4)
                 .background(Capsule().fill(.gray.opacity(0.15)))
+        }
+    }
+
+    // MARK: - Description
+
+    @ViewBuilder
+    private var descriptionSection: some View {
+        if let description {
+            SectionCard(icon: "info.circle.fill", title: "Description") {
+                Text(description)
+                    .font(.body)
+                    .foregroundStyle(.primary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 8)
+            }
         }
     }
 

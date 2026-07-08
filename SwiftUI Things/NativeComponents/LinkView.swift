@@ -54,6 +54,7 @@ struct LinkView: View {
             badges: [
                 .init(title: "Native Component", icon: "square.3.layers.3d"),
             ],
+            description: "Demonstrates different Link button styles and configurations for URLs, phone calls, and emails.",
             code: code,
             preview: { preview }
         )

@@ -12,7 +12,6 @@ struct SectionCard<Content: View>: View {
                 .foregroundStyle(.secondary)
                 .textCase(.uppercase)
                 .padding(.bottom, 12)
-                .padding(.horizontal, 20)
 
             Divider()
                 .padding(.bottom, 16)
