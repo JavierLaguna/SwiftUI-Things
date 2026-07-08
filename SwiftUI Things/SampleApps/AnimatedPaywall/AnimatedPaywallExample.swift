@@ -163,13 +163,6 @@ private struct CustomSubscriptionStyle<Links: View>: SubscriptionStoreControlSty
     @ViewBuilder var links: Links
     var isLoaded: () -> ()
     
-    var isiOS26: Bool {
-        if #available(iOS 26, *) {
-            return true
-        }
-        return false
-    }
-    
     func makeBody(configuration: Configuration) -> some View {
         VStack(spacing: 10) {
             VStack(spacing: 25) {
@@ -184,7 +177,6 @@ private struct CustomSubscriptionStyle<Links: View>: SubscriptionStoreControlSty
             
             links
                 .buttonStyle(.plain)
-                .padding(.vertical, isiOS26 ? 0 : 5)
         }
         .onAppear(perform: isLoaded)
         .offset(y: 12)

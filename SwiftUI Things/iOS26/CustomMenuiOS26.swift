@@ -15,65 +15,61 @@ struct CustomMenuiOS26: View {
     @State private var dismissDisabled = false
 
     var body: some View {
-        if #available(iOS 26.0, *) {
-            let (preview, code) = #CodeSnippet(
-                CustomMenuView(style: selectedOption) {
-                    Image(systemName: "calendar")
-                        .font(.title3)
-                        .frame(width: 40, height: 30)
-                } content: {
-                    DateFilterView(
-                        interactiveDismissDisabled: dismissDisabled
-                    )
-                }
-            )
+        let (preview, code) = #CodeSnippet(
+            CustomMenuView(style: selectedOption) {
+                Image(systemName: "calendar")
+                    .font(.title3)
+                    .frame(width: 40, height: 30)
+            } content: {
+                DateFilterView(
+                    interactiveDismissDisabled: dismissDisabled
+                )
+            }
+        )
 
-            Storybook(
-                title: Self.title,
-                badges: [
-                    .init(title: "iOS 26+", icon: "iphone.gen4"),
-                    .init(title: "UI Component"),
-                ],
-                code: code,
-                codeReplacements: [
-                    "selectedOption": selectedOption.codeValue,
-                    "dismissDisabled": "\(dismissDisabled)",
-                ],
-                preview: {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Transaction History")
-                                .font(.title3.weight(.medium))
+        Storybook(
+            title: Self.title,
+            badges: [
+                .init(title: "iOS 26+", icon: "iphone.gen4"),
+                .init(title: "UI Component"),
+            ],
+            description: "A custom popover menu with glass and glass-prominent styles, interactive dismiss control, and a date filter view.",
+            code: code,
+            codeReplacements: [
+                "selectedOption": selectedOption.codeValue,
+                "dismissDisabled": "\(dismissDisabled)",
+            ],
+            preview: {
+                HStack {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Transaction History")
+                            .font(.title3.weight(.medium))
 
-                            Text("12 Jun 2025 - 20 Sep 2025")
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-
-                        preview
+                        Text("12 Jun 2025 - 20 Sep 2025")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
                     }
-                },
-                properties: {
-                    Picker("Menu Style", selection: $selectedOption) {
-                        ForEach(CustomMenuStyle.allCases, id: \.self) { item in
-                            Text(item.rawValue).tag(item)
-                        }
-                    }
-                    .pickerStyle(.segmented)
+                    .frame(maxWidth: .infinity, alignment: .leading)
 
-                    Divider()
-
-                    Toggle("Interactive Dismiss Disabled", isOn: $dismissDisabled)
+                    preview
                 }
-            )
-        } else {
-            Text("iOS 26 device required")
-        }
+            },
+            properties: {
+                Picker("Menu Style", selection: $selectedOption) {
+                    ForEach(CustomMenuStyle.allCases, id: \.self) { item in
+                        Text(item.rawValue).tag(item)
+                    }
+                }
+                .pickerStyle(.segmented)
+
+                Divider()
+
+                Toggle("Interactive Dismiss Disabled", isOn: $dismissDisabled)
+            }
+        )
     }
 }
 
-@available(iOS 26.0, *)
 private struct CustomMenuView<Label: View, Content: View>: View {
 
     var style: CustomMenuStyle = .glass
@@ -119,7 +115,6 @@ private enum CustomMenuStyle: String, CaseIterable {
     }
 }
 
-@available(iOS 26.0, *)
 private extension View {
 
     @ViewBuilder
@@ -150,7 +145,6 @@ private struct PopOverHelper<Content: View>: View {
     }
 }
 
-@available(iOS 26.0, *)
 private struct DateFilterView: View {
 
     @Environment(\.dismiss) var dismiss

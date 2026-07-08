@@ -9,56 +9,30 @@ extension FloatingTabBarExample: CustomComponentThing {
 struct FloatingTabBarExample: View {
 
     @State private var activeTab: TabModel = .home
-    @State private var isTabBarHidden = false
 
     var body: some View {
         let (preview, code) = #CodeSnippet(
             ZStack(alignment: .bottom) {
                 Group {
-                    if #available(iOS 18, *) {
-                        TabView(selection: $activeTab) {
-                            Tab.init(value: .home) {
-                                HomeView()
-                                    .toolbarVisibility(.hidden, for: .tabBar)
-                            }
-
-                            Tab.init(value: .search) {
-                                Text("Search")
-                                    .toolbarVisibility(.hidden, for: .tabBar)
-                            }
-
-                            Tab.init(value: .notification) {
-                                Text("Notifications")
-                                    .toolbarVisibility(.hidden, for: .tabBar)
-                            }
-
-                            Tab.init(value: .settings) {
-                                Text("Settings")
-                                    .toolbarVisibility(.hidden, for: .tabBar)
-                            }
+                    TabView(selection: $activeTab) {
+                        Tab.init(value: .home) {
+                            HomeView()
+                                .toolbarVisibility(.hidden, for: .tabBar)
                         }
 
-                    } else {
-                        TabView(selection: $activeTab) {
-
-                            HomeView()
-                                .tag(TabModel.home)
-                                .background {
-                                    if !isTabBarHidden {
-                                        HideTabBar {
-                                            isTabBarHidden = true
-                                        }
-                                    }
-                                }
-
+                        Tab.init(value: .search) {
                             Text("Search")
-                                .tag(TabModel.home)
+                                .toolbarVisibility(.hidden, for: .tabBar)
+                        }
 
+                        Tab.init(value: .notification) {
                             Text("Notifications")
-                                .tag(TabModel.home)
+                                .toolbarVisibility(.hidden, for: .tabBar)
+                        }
 
+                        Tab.init(value: .settings) {
                             Text("Settings")
-                                .tag(TabModel.home)
+                                .toolbarVisibility(.hidden, for: .tabBar)
                         }
                     }
                 }
@@ -72,6 +46,7 @@ struct FloatingTabBarExample: View {
             badges: [
                 .init(title: "Custom Component", icon: "rectangle.3.group"),
             ],
+            description: "A floating tab bar that overlays the content with animated capsule transitions and a morphing action button.",
             code: code,
             preview: { preview }
         )
@@ -196,44 +171,6 @@ private struct CustomTabBar: View {
         }
         .padding(.bottom, 5)
         .animation(.smooth(duration: 0.3, extraBounce: 0), value: activeTab)
-    }
-}
-
-private struct HideTabBar: UIViewRepresentable {
-
-    var result: () -> ()
-
-    func makeUIView(context: Context) -> UIView {
-        let view = UIView(frame: .zero)
-        view.backgroundColor = .clear
-
-        DispatchQueue.main.async {
-            if let tabController = view.tabController {
-                tabController.tabBar.isHidden = true
-                result()
-            }
-        }
-
-        return view
-    }
-
-    func updateUIView(_ uiView: UIView, context: Context) {
-        // Empty
-    }
-}
-
-private extension UIView {
-
-    var tabController: UITabBarController? {
-        if let controller = sequence(first: self, next: {
-            $0.next
-        }).first(where: {
-            $0 is UITabBarController
-        }) as? UITabBarController {
-            return controller
-        }
-
-        return nil
     }
 }
 

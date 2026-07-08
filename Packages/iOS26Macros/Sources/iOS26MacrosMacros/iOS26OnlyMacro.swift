@@ -11,11 +11,7 @@ public struct iOS26OnlyMacro: ExpressionMacro {
         }
 
         return """
-        if #available(iOS 26.0, *) {
-            \(argument)
-        } else {
-            Text("iOS 26 device required")
-        }
+        \(argument)
         """
     }
 }

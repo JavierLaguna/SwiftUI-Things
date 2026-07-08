@@ -1,8 +1,6 @@
 import SwiftUI
 
-/// Expands to `if #available(iOS 26.0, *) { … } else { Text("iOS 26 device required") }`.
-///
-/// Use this to wrap a view that requires iOS 26+ APIs without repeating the availability guard.
+/// Evaluates the view content directly (availability guard removed — iOS 26 is now the minimum deployment target).
 ///
 /// ```swift
 /// var body: some View {

@@ -300,22 +300,8 @@ extension View {
     
     @ViewBuilder
     func optionalLiquidGlass() -> some View {
-        if #available(iOS 26, *) {
-            self
-                .glassEffect(.clear, in: .rect(cornerRadius: 30))
-            
-        } else {
-            self
-                .background {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 30)
-                            .fill(.background)
-                        
-                        RoundedRectangle(cornerRadius: 30)
-                            .stroke(.gray.opacity(0.4), lineWidth: 1)
-                    }
-                }
-        }
+        self
+            .glassEffect(.clear, in: .rect(cornerRadius: 30))
     }
 }
 

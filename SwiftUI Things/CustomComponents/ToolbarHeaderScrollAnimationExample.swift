@@ -19,58 +19,53 @@ struct ToolbarHeaderScrollAnimationExample: View {
     
     @ViewBuilder
     private func HeaderView() -> some View {
-        if #available(iOS 26.0, *) {
-            VStack(alignment: .leading, spacing: 16) {
-                Image(systemName: "swift")
-                    .font(.system(size: 40))
-                    .foregroundStyle(.orange)
-                    .padding(16)
-                    .background(.orange.tertiary, in: .circle)
-                    .padding(.bottom, 6)
-                
-                Text("Swift/SwiftUI")
-                    .font(.title.bold())
-                    .onGeometryChange(for: Bool.self) {
-                        let height = $0.size.height
-                        let offset = $0.frame(in: .global).minY
-                        return -offset > height
-                        
-                    } action: { newValue in
-                        title = newValue ? "Swift/SwiftUI" : nil
-                    }
-
-                
-                Text("**125** Eventes   **5.6KK** Subscribers")
-                    .font(.callout)
-                
-                Text("Lorem ipsum dolor sit amet consectetur adipiscing, elit cubilia maecenas inceptos rutrum hac, sed faucibus interdum commodo curabitur. Gravida felis leo ut habitant eget in nam turpis vitae, quam taciti nullam aliquet rhoncus quisque dictumst fusce mattis, vel dui maecenas enim morbi sociosqu himenaeos erat. Fusce penatibus dictum pellentesque odio sagittis lobortis fermentum hendrerit mattis placerat, vel sociis facilisi tortor quisque tempus nisi mus primis, iaculis nisl ac egestas leo pulvinar ante quam vulputate.")
-                    .font(.callout)
-                    .lineLimit(5)
-                
-                Button("Subscribe") {
-                    
-                }
-                .buttonStyle(.glassProminent)
-                .buttonSizing(.flexible)
-                .frame(maxWidth: 140)
-                .tint(.orange)
+        VStack(alignment: .leading, spacing: 16) {
+            Image(systemName: "swift")
+                .font(.system(size: 40))
+                .foregroundStyle(.orange)
+                .padding(16)
+                .background(.orange.tertiary, in: .circle)
+                .padding(.bottom, 6)
+            
+            Text("Swift/SwiftUI")
+                .font(.title.bold())
                 .onGeometryChange(for: Bool.self) {
                     let height = $0.size.height
                     let offset = $0.frame(in: .global).minY
                     return -offset > height
                     
                 } action: { newValue in
-                    isPrimaryActionVisible = newValue
+                    title = newValue ? "Swift/SwiftUI" : nil
                 }
-            }
-            .padding(.bottom, 16)
-            .overlay(alignment: .bottom) {
-                Divider()
-                    .padding(.horizontal, -16)
-            }
+
             
-        } else {
-            EmptyView()
+            Text("**125** Eventes   **5.6KK** Subscribers")
+                .font(.callout)
+            
+            Text("Lorem ipsum dolor sit amet consectetur adipiscing, elit cubilia maecenas inceptos rutrum hac, sed faucibus interdum commodo curabitur. Gravida felis leo ut habitant eget in nam turpis vitae, quam taciti nullam aliquet rhoncus quisque dictumst fusce mattis, vel dui maecenas enim morbi sociosqu himenaeos erat. Fusce penatibus dictum pellentesque odio sagittis lobortis fermentum hendrerit mattis placerat, vel sociis facilisi tortor quisque tempus nisi mus primis, iaculis nisl ac egestas leo pulvinar ante quam vulputate.")
+                .font(.callout)
+                .lineLimit(5)
+            
+            Button("Subscribe") {
+                
+            }
+            .buttonStyle(.glassProminent)
+            .buttonSizing(.flexible)
+            .frame(maxWidth: 140)
+            .tint(.orange)
+            .onGeometryChange(for: Bool.self) {
+                let height = $0.size.height
+                let offset = $0.frame(in: .global).minY
+                return -offset > height
+                
+            } action: { newValue in
+                isPrimaryActionVisible = newValue
+            }
+        }
+        .padding(.bottom, 16)
+        .overlay(alignment: .bottom) {
+            Divider()
+                .padding(.horizontal, -16)
         }
     }
     
@@ -144,75 +139,69 @@ struct ToolbarHeaderScrollAnimationExample: View {
     }
     
     var body: some View {
-        if #available(iOS 26.0, *) {
-            NavigationStack {
-                ScrollView {
-                    LazyVStack(alignment: .leading, spacing: 16) {
-                        HeaderView()
+        NavigationStack {
+            ScrollView {
+                LazyVStack(alignment: .leading, spacing: 16) {
+                    HeaderView()
+                    
+                    CenterDummyContent()
+                    
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text("Nearby Events")
+                            .font(.title3)
+                            .fontWeight(.semibold)
                         
-                        CenterDummyContent()
-                        
-                        VStack(alignment: .leading, spacing: 16) {
-                            Text("Nearby Events")
-                                .font(.title3)
-                                .fontWeight(.semibold)
-                            
-                            ForEach(sampleEvents.indices, id: \.self) {
-                                EventsOnDay($0)
-                            }
+                        ForEach(sampleEvents.indices, id: \.self) {
+                            EventsOnDay($0)
                         }
-                        .padding(.bottom, 50)
                     }
-                    .padding(16)
+                    .padding(.bottom, 50)
                 }
-                .customToolBar(
-                    isPrimaryActionVisible: isPrimaryActionVisible,
-                    useLeadingFixedTitles: useLeadingFixedTitles,
-                    title: title,
-                    subtitle: subtitle) {
-                        Button("Back", systemImage: "chevron.left") {
-                            isPrimaryActionVisible.toggle()
-                        }
-                        
-                    } trailing: {
-                        HStack(spacing: 16) {
-                            Button("Search", systemImage: "magnifyingglass") {
-                                
-                            }
-                            
-                            Button("Options", systemImage: "ellipsis") {
-                                useLeadingFixedTitles.toggle()
-                            }
-                        }
-                        .padding(.horizontal, 4)
-                        
-                    } primaryAction: {
-                        Button("Add", systemImage: "plus") {
-                            
-                        }
-                        .buttonStyle(.glassProminent)
-                        .tint(.orange)
+                .padding(16)
+            }
+            .customToolBar(
+                isPrimaryActionVisible: isPrimaryActionVisible,
+                useLeadingFixedTitles: useLeadingFixedTitles,
+                title: title,
+                subtitle: subtitle) {
+                    Button("Back", systemImage: "chevron.left") {
+                        isPrimaryActionVisible.toggle()
                     }
-                
-            }
-            .onGeometryChange(for: EdgeInsets.self) {
-                $0.safeAreaInsets
-                
-            } action: { newValue in
-                print(newValue)
-                safeArea = newValue
-            }
-            .onChange(of: activeSubtitleIndex) { oldValue, newValue in
-                if let newValue {
-                    subtitle = sampleEvents[newValue]
-                } else {
-                    subtitle = nil
+                    
+                } trailing: {
+                    HStack(spacing: 16) {
+                        Button("Search", systemImage: "magnifyingglass") {
+                            
+                        }
+                        
+                        Button("Options", systemImage: "ellipsis") {
+                            useLeadingFixedTitles.toggle()
+                        }
+                    }
+                    .padding(.horizontal, 4)
+                    
+                } primaryAction: {
+                    Button("Add", systemImage: "plus") {
+                        
+                    }
+                    .buttonStyle(.glassProminent)
+                    .tint(.orange)
                 }
-            }
-
             
-        } else {
-            Text("iOS 26 device required")
+        }
+        .onGeometryChange(for: EdgeInsets.self) {
+            $0.safeAreaInsets
+            
+        } action: { newValue in
+            print(newValue)
+            safeArea = newValue
+        }
+        .onChange(of: activeSubtitleIndex) { oldValue, newValue in
+            if let newValue {
+                subtitle = sampleEvents[newValue]
+            } else {
+                subtitle = nil
+            }
         }
     }
 }

@@ -15,83 +15,77 @@ struct CustomAnimatedToolBariOS26: View {
     @FocusState private var isKeyboardActive: Bool
     
     var body: some View {
-        if #available(iOS 26.0, *) {
-            NavigationStack(path: $path) {
-                List {
-                    ForEach(1...5, id: \.self) { index in
-                        NavigationLink(value: "iCloud+ Subscription") {
-                            Text("iCloud+ Subscription \(index)")
-                        }
+        NavigationStack(path: $path) {
+            List {
+                ForEach(1...5, id: \.self) { index in
+                    NavigationLink(value: "iCloud+ Subscription") {
+                        Text("iCloud+ Subscription \(index)")
                     }
                 }
-                .navigationTitle("Inbox")
-                .navigationSubtitle("Last Updated - Just Now")
-                .toolbar {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button("Options", systemImage: "ellipsis") {
-                            
-                        }
-                    }
-                }
-                .safeAreaPadding(.bottom, 50)
-                .navigationDestination(for: String.self) { value in
-                    Text("Full-Email View")
-                        .navigationTitle(value)
-                }
-                
             }
-            .safeAreaBar(edge: .bottom, spacing: 0) {
-                Text(".") // iOS26.0 Workaround, CustomBottomBar should be here and not on overlay
-                    .blendMode(.destinationOut)
-                    .frame(height: 50)
-            }
-            .overlay(alignment: .bottom) {
-                CustomBottomBar(
-                    path: $path,
-                    searchText: $searchText,
-                    isKeyboardActive: $isKeyboardActive
-                ) { isExpanded in
-                    Group {
-                        ZStack {
-                            Image(systemName: "line.3.horizontal.decrease")
-                                .blurFade(!isExpanded)
-                            
-                            Image(systemName: "trash")
-                                .blurFade(isExpanded)
-                        }
+            .navigationTitle("Inbox")
+            .navigationSubtitle("Last Updated - Just Now")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Options", systemImage: "ellipsis") {
                         
-                        Group {
-                            Image(systemName: "folder")
-                            
-                            Image(systemName: "arrowshape.turn.up.forward.fill")
-                        }
-                        .blurFade(isExpanded)
                     }
-                    .font(.title2)
-                    
-                } mainAction: {
-                    Image(systemName: isKeyboardActive ? "xmark" : "square.and.pencil")
-                        .font(.title2)
-                        .contentTransition(.symbolEffect)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .contentShape(.circle)
-                        .onTapGesture {
-                            if isKeyboardActive {
-                                isKeyboardActive = false
-                            } else {
-                                print("Write")
-                            }
-                        }
                 }
+            }
+            .safeAreaPadding(.bottom, 50)
+            .navigationDestination(for: String.self) { value in
+                Text("Full-Email View")
+                    .navigationTitle(value)
             }
             
-        } else {
-            Text("iOS 26 device required")
+        }
+        .safeAreaBar(edge: .bottom, spacing: 0) {
+            Text(".") // iOS26.0 Workaround, CustomBottomBar should be here and not on overlay
+                .blendMode(.destinationOut)
+                .frame(height: 50)
+        }
+        .overlay(alignment: .bottom) {
+            CustomBottomBar(
+                path: $path,
+                searchText: $searchText,
+                isKeyboardActive: $isKeyboardActive
+            ) { isExpanded in
+                Group {
+                    ZStack {
+                        Image(systemName: "line.3.horizontal.decrease")
+                            .blurFade(!isExpanded)
+                        
+                        Image(systemName: "trash")
+                            .blurFade(isExpanded)
+                    }
+                    
+                    Group {
+                        Image(systemName: "folder")
+                        
+                        Image(systemName: "arrowshape.turn.up.forward.fill")
+                    }
+                    .blurFade(isExpanded)
+                }
+                .font(.title2)
+                
+            } mainAction: {
+                Image(systemName: isKeyboardActive ? "xmark" : "square.and.pencil")
+                    .font(.title2)
+                    .contentTransition(.symbolEffect)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .contentShape(.circle)
+                    .onTapGesture {
+                        if isKeyboardActive {
+                            isKeyboardActive = false
+                        } else {
+                            print("Write")
+                        }
+                    }
+            }
         }
     }
 }
 
-@available(iOS 26.0, *)
 private struct CustomBottomBar<LeadingContent: View, MainAction: View>: View {
     
     @Binding var path: NavigationPath
@@ -186,7 +180,6 @@ private extension View {
     }
 }
 
-@available(iOS 26.0, *)
 private struct ScaleModifier: ViewModifier, Animatable {
     var bounce: CGFloat
     var animatableData: CGFloat {

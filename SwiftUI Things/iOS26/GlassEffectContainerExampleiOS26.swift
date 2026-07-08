@@ -12,7 +12,6 @@ struct GlassEffectContainerExampleiOS26: View {
         case materialize
         case identity
         
-        @available(iOS 26.0, *)
         var transition: GlassEffectTransition {
             switch self {
             case .matchedGeometry: .matchedGeometry
@@ -26,61 +25,56 @@ struct GlassEffectContainerExampleiOS26: View {
     @State private var isExpanded = false
     
     var body: some View {
-        if #available(iOS 26.0, *) {
-            ScrollView {
-                Text("glassEffectTransition")
-                    .font(.title)
-                
-                Picker("glassEffectTransition", selection: $selectedOption) {
-                    ForEach(Effect.allCases, id: \.self) { item in
-                        Text("\(item.rawValue)").tag(item)
-                    }
+        ScrollView {
+            Text("glassEffectTransition")
+                .font(.title)
+            
+            Picker("glassEffectTransition", selection: $selectedOption) {
+                ForEach(Effect.allCases, id: \.self) { item in
+                    Text("\(item.rawValue)").tag(item)
                 }
-                .pickerStyle(.segmented)
             }
-            .navigationTitle("glassEffect Examples")
-            .overlay(alignment: .bottomTrailing, content: {
-                GlassEffectContainer {
-                    VStack {
-                        if isExpanded {
-                            Button {} label: {
-                                Image(systemName: "bandage")
-                            }
-                            
-                            Button {} label: {
-                                Image(systemName: "hammer")
-                            }
-                            
-                            Button {} label: {
-                                Image(systemName: "wrench")
-                            }
+            .pickerStyle(.segmented)
+        }
+        .navigationTitle("glassEffect Examples")
+        .overlay(alignment: .bottomTrailing, content: {
+            GlassEffectContainer {
+                VStack {
+                    if isExpanded {
+                        Button {} label: {
+                            Image(systemName: "bandage")
                         }
                         
-                        Button {
-                            withAnimation {
-                                isExpanded.toggle()
-                            }
-                        } label: {
-                            Image(systemName: isExpanded ? "xmark" : "ellipsis")
-                                .font(.title)
+                        Button {} label: {
+                            Image(systemName: "hammer")
+                        }
+                        
+                        Button {} label: {
+                            Image(systemName: "wrench")
                         }
                     }
-                    .padding(24)
-                    .buttonStyle(.glass)
-                    .buttonBorderShape(.circle)
-                    .controlSize(.large)
-                    .glassEffectTransition(selectedOption.transition)
+                    
+                    Button {
+                        withAnimation {
+                            isExpanded.toggle()
+                        }
+                    } label: {
+                        Image(systemName: isExpanded ? "xmark" : "ellipsis")
+                            .font(.title)
+                    }
                 }
-            })
-            .background {
-                Image(.iOS26Light)
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
+                .padding(24)
+                .buttonStyle(.glass)
+                .buttonBorderShape(.circle)
+                .controlSize(.large)
+                .glassEffectTransition(selectedOption.transition)
             }
-            
-        } else {
-            Text("iOS 26 device required")
+        })
+        .background {
+            Image(.iOS26Light)
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
         }
     }
 }

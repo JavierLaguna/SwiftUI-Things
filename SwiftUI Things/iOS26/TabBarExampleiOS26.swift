@@ -8,15 +8,10 @@ extension TabBarExampleiOS26Wrapper: IOS26Thing {
 struct TabBarExampleiOS26Wrapper: View {
     
     var body: some View {
-        if #available(iOS 26.0, *) {
-            TabBarExampleiOS26()
-        } else {
-            Text("iOS 26 device required")
-        }
+        TabBarExampleiOS26()
     }
 }
 
-@available(iOS 26.0, *)
 struct TabBarExampleiOS26: View {
     
     enum MinimizeBehavior: String, CaseIterable {
@@ -25,7 +20,6 @@ struct TabBarExampleiOS26: View {
         case onScrollUp
         case never
         
-        @available(iOS 26.0, *)
         var behavior: TabBarMinimizeBehavior {
             switch self {
             case .auto: .automatic

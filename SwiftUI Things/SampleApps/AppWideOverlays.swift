@@ -166,19 +166,14 @@ fileprivate class PassThroughWindow: UIWindow {
             return nil
         }
         
-        if #available(iOS 18, *) {
-            for subview in rootView.subviews.reversed() {
-                let pointInSubview = subview.convert(point, from: rootView)
-                if subview.hitTest(pointInSubview, with: event) == subview {
-                    return hitView
-                }
+        for subview in rootView.subviews.reversed() {
+            let pointInSubview = subview.convert(point, from: rootView)
+            if subview.hitTest(pointInSubview, with: event) == subview {
+                return hitView
             }
-            
-            return nil
-            
-        } else {
-            return hitView == rootView ? nil : hitView
         }
+        
+        return nil
     }
 }
 
