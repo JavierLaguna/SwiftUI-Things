@@ -2,6 +2,7 @@
 // https://www.youtube.com/watch?v=DHqLSjgBNPY
 
 import SwiftUI
+import iOS26Macros
 
 extension GlowingBorderAnimatedExample: CustomModifiersThing {
     static let title = "GlowingBorderAnimated"
@@ -9,78 +10,90 @@ extension GlowingBorderAnimatedExample: CustomModifiersThing {
 }
 
 struct GlowingBorderAnimatedExample: View {
-    
+
     var body: some View {
-        VStack {
-            VStack(alignment: .leading, spacing: 24) {
-                TextField("Ask Anything...", text: .constant(""))
-                    .padding(.top, 8)
-                
-                HStack(spacing: 20) {
-                    Button {
-                        
-                    } label: {
-                        Text("Name/Model Name")
-                            .font(.caption)
-                            .foregroundStyle(.primary.opacity(0.8))
-                            .padding(.vertical, 8)
-                            .padding(.horizontal, 16)
-                            .background(.fill, in: .capsule)
+        let (preview, code) = #CodeSnippet(
+            VStack {
+                VStack(alignment: .leading, spacing: 24) {
+                    TextField("Ask Anything...", text: .constant(""))
+                        .padding(.top, 8)
+
+                    HStack(spacing: 20) {
+                        Button {
+
+                        } label: {
+                            Text("Name/Model Name")
+                                .font(.caption)
+                                .foregroundStyle(.primary.opacity(0.8))
+                                .padding(.vertical, 8)
+                                .padding(.horizontal, 16)
+                                .background(.fill, in: .capsule)
+                        }
+
+                        Spacer(minLength: 0)
+
+                        Group {
+                            Button {
+
+                            } label: {
+                                Image(systemName: "plus")
+                            }
+
+                            Button {
+
+                            } label: {
+                                Image(systemName: "cloud")
+                            }
+
+                            Button {
+
+                            } label: {
+                                Image(systemName: "mic")
+                            }
+
+                            Button {
+
+                            } label: {
+                                Image(systemName: "arrow.up")
+                                    .frame(width: 34, height: 34)
+                                    .background(.background, in: .circle)
+                            }
+                        }
+                        .foregroundStyle(.primary)
                     }
-                    
-                    Spacer(minLength: 0)
-                    
-                    Group {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "plus")
-                        }
-                        
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "cloud")
-                        }
-                        
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "mic")
-                        }
-                        
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "arrow.up")
-                                .frame(width: 34, height: 34)
-                                .background(.background, in: .circle)
-                        }
-                    }
-                    .foregroundStyle(.primary)
                 }
+                .padding(16)
+                .borderBeam(
+                    border: .primary,
+                    hideFadeBorder: false,
+                    beam: [.green, .blue, .pink, .orange, .indigo],
+                    beamBlur: 15,
+                    cornerRadius: 20,
+                    isEnabled: true
+                )
+                .background(
+                    .gray.opacity(0.1),
+                    in: .rect(cornerRadius: 20)
+                )
+
             }
-            .padding(16)
-            .borderBeam(
-                border: .primary,
-                hideFadeBorder: false,
-                beam: [.green, .blue, .pink, .orange, .indigo],
-                beamBlur: 15,
-                cornerRadius: 20,
-                isEnabled: true
-            )
-            .background(
-                .gray.opacity(0.1),
-                in: .rect(cornerRadius: 20)
-            )
-            
-        }
-        .padding()
+            .padding()
+        )
+
+        Storybook(
+            title: Self.title,
+            badges: [
+                .init(title: "Custom Modifier", icon: "paintbrush.pointed"),
+            ],
+            description: "A custom borderBeam modifier overlays an animated multi-color beam on the edges of any view. Driven by a KeyframeAnimator that rotates an AngularGradient and masks it with a blurred LinearGradient beam, creating a continuous glowing border effect.",
+            code: code,
+            preview: { preview }
+        )
     }
 }
 
 extension View {
-    
+
     @ViewBuilder
     func borderBeam(
         border: Color,
@@ -104,14 +117,14 @@ extension View {
 }
 
 struct BorderBeamEffect: ViewModifier {
-    
+
     var border: Color
     var hideFadeBorder: Bool
     var beam: [Color]
     var beamBlur: CGFloat
     var cornerRadius: CGFloat
     var isEnabled: Bool
-    
+
     @ViewBuilder
     private func BorderBeamView() -> some View {
         ZStack {
@@ -119,7 +132,7 @@ struct BorderBeamEffect: ViewModifier {
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .stroke(border.tertiary, lineWidth: 0.6)
             }
-            
+
             KeyframeAnimator(initialValue: 0.0, repeating: true) { value in
                 let rotation = value * 360
                 let borderGradient = AngularGradient(
@@ -128,7 +141,7 @@ struct BorderBeamEffect: ViewModifier {
                     startAngle: .degrees(140 + rotation),
                     endAngle: .degrees(270 + rotation)
                 )
-                
+
                 // Beam Gradient
                 let beamGradient = LinearGradient(
                     colors: beam,
@@ -151,19 +164,19 @@ struct BorderBeamEffect: ViewModifier {
                             .blur(radius: beamBlur / 1.5)
                             .padding(-beamBlur * 2)
                     }
-                
-                
+
+
                 // Border Gradient
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .stroke(borderGradient, lineWidth: 0.6)
-                
+
             } keyframes: { _ in
                 LinearKeyframe(1, duration: 2.5)
             }
         }
         .padding(0.5)
     }
-    
+
     func body(content: Content) -> some View {
         content
             .background {
