@@ -1,4 +1,5 @@
 import SwiftUI
+import iOS26Macros
 
 extension MixColorsExample: NativeModifiersThing {
     static let title = "Mix colors"
@@ -6,41 +7,53 @@ extension MixColorsExample: NativeModifiersThing {
 }
 
 struct MixColorsExample: View {
-    
+
     @State private var color1 = Color.yellow
     @State private var color2 = Color.green
     @State private var by: Double = 0.5
-    
+
     var body: some View {
-        VStack {
-            HStack {
-                VStack {
-                    ColorPicker("Color 1", selection: $color1)
+        let (preview, code) = #CodeSnippet(
+            VStack {
+                HStack {
+                    VStack {
+                        ColorPicker("Color 1", selection: $color1)
+                    }
+                    .frame(width: 150, height: 150)
+                    .background(color1)
+
+                    Image(systemName: "plus.app")
+                        .font(.largeTitle)
+
+                    VStack {
+                        ColorPicker("Color 2", selection: $color2)
+                    }
+                    .frame(width: 150, height: 150)
+                    .background(color2)
                 }
-                .frame(width: 150, height: 150)
-                .background(color1)
-                
-                Image(systemName: "plus.app")
+
+                Slider(value: $by, in: 0...1)
+                    .padding()
+
+                Image(systemName: "arrowshape.down.circle")
                     .font(.largeTitle)
-                
-                VStack {
-                    ColorPicker("Color 2", selection: $color2)
-                }
-                .frame(width: 150, height: 150)
-                .background(color2)
+                    .padding()
+
+                Color(color1)
+                    .mix(with: color2, by: by)
+                    .frame(width: 300, height: 300)
             }
-            
-            Slider(value: $by, in: 0...1)
-                .padding()
-            
-            Image(systemName: "arrowshape.down.circle")
-                .font(.largeTitle)
-                .padding()
-            
-            Color(color1)
-                .mix(with: color2, by: by)
-                .frame(width: 300, height: 300)
-        }
+        )
+
+        Storybook(
+            title: Self.title,
+            badges: [
+                .init(title: "Native Modifier", icon: "wand.and.stars"),
+            ],
+            description: "An interactive color mixer with two ColorPickers, a blend slider, and a live preview of the mixed result using the .mix(with:by:) modifier at 300×300.",
+            code: code,
+            preview: { preview }
+        )
     }
 }
 

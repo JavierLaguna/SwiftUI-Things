@@ -1,4 +1,5 @@
 import SwiftUI
+import iOS26Macros
 
 extension ButtonBorderShapesExample: NativeModifiersThing {
     static let title = "ButtonBorderShapes"
@@ -6,7 +7,7 @@ extension ButtonBorderShapesExample: NativeModifiersThing {
 }
 
 struct ButtonBorderShapesExample: View {
-    
+
     @ViewBuilder
     private func buttonExample(
         name: String,
@@ -15,7 +16,7 @@ struct ButtonBorderShapesExample: View {
         VStack(alignment: .leading, spacing: 16) {
             Text(name)
                 .font(.title2.bold())
-            
+
             Button(action: {
                 // Empty
             }, label: {
@@ -26,14 +27,26 @@ struct ButtonBorderShapesExample: View {
             .buttonBorderShape(buttonBorderShape)
         }
     }
-    
+
     var body: some View {
-        VStack(alignment: .leading, spacing: 40) {
-            buttonExample(name: "roundedRectangle", buttonBorderShape: .roundedRectangle)
-            buttonExample(name: "roundedRectangle custom radius", buttonBorderShape: .roundedRectangle(radius: 2))
-            buttonExample(name: "capsule", buttonBorderShape: .capsule)
-            buttonExample(name: "circle", buttonBorderShape: .circle)
-        }
+        let (preview, code) = #CodeSnippet(
+            VStack(alignment: .leading, spacing: 40) {
+                buttonExample(name: "roundedRectangle", buttonBorderShape: .roundedRectangle)
+                buttonExample(name: "roundedRectangle custom radius", buttonBorderShape: .roundedRectangle(radius: 2))
+                buttonExample(name: "capsule", buttonBorderShape: .capsule)
+                buttonExample(name: "circle", buttonBorderShape: .circle)
+            }
+        )
+
+        Storybook(
+            title: Self.title,
+            badges: [
+                .init(title: "Native Modifier", icon: "wand.and.stars"),
+            ],
+            description: "Demonstrates the four .buttonBorderShape variants — roundedRectangle (default and custom radius), capsule, and circle — applied to bordered red trash buttons.",
+            code: code,
+            preview: { preview }
+        )
     }
 }
 
