@@ -34,6 +34,7 @@
 		491EF1AB2FDC08E90053B00D /* ShareSheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF19C2FDC08E90053B00D /* ShareSheetExample.swift */; };
 		491EF1AD2FDC08F30053B00D /* ViewThatFitsScrollExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1AC2FDC08F30053B00D /* ViewThatFitsScrollExample.swift */; };
 		7096EFCFD469AAFFF44C5658 /* OutlineGroupExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4397AEB08D12DC66015CF1C /* OutlineGroupExample.swift */; };
+		EA97790C6AA277E0D13C40D9 /* ConcentricCirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C780CCEA39C84C5A9797D /* ConcentricCirclesView.swift */; };
 		491EF1CD2FDC09070053B00D /* ReserveTextSpaceExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1C62FDC09070053B00D /* ReserveTextSpaceExample.swift */; };
 		491EF1CE2FDC09070053B00D /* MatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1C02FDC09070053B00D /* MatchedGeometryEffectExample.swift */; };
 		491EF1CF2FDC09070053B00D /* RotateGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1C72FDC09070053B00D /* RotateGestureExample.swift */; };
@@ -186,6 +187,7 @@
 		491EF19E2FDC08E90053B00D /* ViewThatFitsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsExample.swift; sourceTree = "<group>"; };
 		491EF1AC2FDC08F30053B00D /* ViewThatFitsScrollExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsScrollExample.swift; sourceTree = "<group>"; };
 		F4397AEB08D12DC66015CF1C /* OutlineGroupExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupExample.swift; sourceTree = "<group>"; };
+		BF6C780CCEA39C84C5A9797D /* ConcentricCirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentricCirclesView.swift; sourceTree = "<group>"; };
 		491EF1AE2FDC09070053B00D /* ActionSheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetExample.swift; sourceTree = "<group>"; };
 		491EF1AF2FDC09070053B00D /* AdvancedMatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
 		491EF1B02FDC09070053B00D /* AnimatedDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedDialogs.swift; sourceTree = "<group>"; };
@@ -769,6 +771,7 @@
 				491EF1B22FDC09070053B00D /* BadgeExample.swift */,
 				491EF1B32FDC09070053B00D /* ButtonBorderAnimatedExample.swift */,
 				491EF1B42FDC09070053B00D /* ButtonBorderShapesExample.swift */,
+				BF6C780CCEA39C84C5A9797D /* ConcentricCirclesView.swift */,
 				491EF1B52FDC09070053B00D /* DateFormatExample.swift */,
 				491EF1B62FDC09070053B00D /* DetectTapLocationExample.swift */,
 				491EF1B72FDC09070053B00D /* DisplayArrayUserFriendlyExample.swift */,
@@ -935,6 +938,7 @@
 				491EF1E42FDC09070053B00D /* AnimatedDialogs.swift in Sources */,
 				491EF1E52FDC09070053B00D /* GlowingGradientBorder.swift in Sources */,
 				491EF1E62FDC09070053B00D /* ButtonBorderShapesExample.swift in Sources */,
+				EA97790C6AA277E0D13C40D9 /* ConcentricCirclesView.swift in Sources */,
 				491EF1E72FDC09070053B00D /* DateFormatExample.swift in Sources */,
 				491EF1E82FDC09070053B00D /* InvertedMaskingExample.swift in Sources */,
 				491EF1E92FDC09070053B00D /* AnimationModifierAndTimingExample.swift in Sources */,

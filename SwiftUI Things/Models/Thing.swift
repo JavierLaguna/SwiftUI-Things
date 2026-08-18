@@ -104,6 +104,7 @@ enum ThingRegistry {
             AnyThing(BlurTextExample.self),
             AnyThing(ButtonBorderAnimatedExample.self),
             AnyThing(ButtonBorderShapesExample.self),
+            AnyThing(ConcentricCirclesView.self),
             AnyThing(DateFormatExample.self),
             AnyThing(DefaultScrollAnchorExample.self),
             AnyThing(DetectTapLocationExample.self),
