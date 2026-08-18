@@ -71,6 +71,7 @@ enum ThingRegistry {
         .nativeComponents: [
             AnyThing(Chart3DExample.self),
             AnyThing(CountDownExample.self),
+            AnyThing(ScrollContentBackgroundExample.self),
             AnyThing(DeviceInformationExample.self),
             AnyThing(GaugeExample.self),
             AnyThing(GroupBoxExample.self),
