@@ -69,6 +69,7 @@ enum ThingRegistry {
             AnyThing(ToolbarHeaderScrollAnimationExample.self),
         ],
         .nativeComponents: [
+            AnyThing(Chart3DExample.self),
             AnyThing(CountDownExample.self),
             AnyThing(DeviceInformationExample.self),
             AnyThing(GaugeExample.self),

@@ -17,6 +17,7 @@
 		491EF18E2FDC08920053B00D /* CompositionalGridLayoutExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1822FDC08920053B00D /* CompositionalGridLayoutExample.swift */; };
 		491EF18F2FDC08920053B00D /* Drag&DropWithScrollExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1842FDC08920053B00D /* Drag&DropWithScrollExample.swift */; };
 		491EF19F2FDC08E90053B00D /* ImageAndTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1962FDC08E90053B00D /* ImageAndTextExample.swift */; };
+		49C31E022FDC0A010053B002 /* Chart3DExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C31E012FDC0A010053B001 /* Chart3DExample.swift */; };
 		491EF1A02FDC08E90053B00D /* GaugeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1942FDC08E90053B00D /* GaugeExample.swift */; };
 		491EF1A12FDC08E90053B00D /* UnevenRoundedRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF19D2FDC08E90053B00D /* UnevenRoundedRectangleExample.swift */; };
 		491EF1A22FDC08E90053B00D /* FloatingTabBarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1932FDC08E90053B00D /* FloatingTabBarExample.swift */; };
@@ -166,6 +167,7 @@
 		491EF1882FDC08920053B00D /* SwiftUIViewToPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewToPDF.swift; sourceTree = "<group>"; };
 		491EF1922FDC08E90053B00D /* DeviceInformationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInformationExample.swift; sourceTree = "<group>"; };
 		491EF1932FDC08E90053B00D /* FloatingTabBarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBarExample.swift; sourceTree = "<group>"; };
+		49C31E012FDC0A010053B001 /* Chart3DExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart3DExample.swift; sourceTree = "<group>"; };
 		491EF1942FDC08E90053B00D /* GaugeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeExample.swift; sourceTree = "<group>"; };
 		491EF1952FDC08E90053B00D /* GroupBoxExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxExample.swift; sourceTree = "<group>"; };
 		491EF1962FDC08E90053B00D /* ImageAndTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTextExample.swift; sourceTree = "<group>"; };
@@ -698,6 +700,7 @@
 			children = (
 				491EF1AC2FDC08F30053B00D /* ViewThatFitsScrollExample.swift */,
 				491EF1922FDC08E90053B00D /* DeviceInformationExample.swift */,
+				49C31E012FDC0A010053B001 /* Chart3DExample.swift */,
 				491EF1942FDC08E90053B00D /* GaugeExample.swift */,
 				491EF1952FDC08E90053B00D /* GroupBoxExample.swift */,
 				491EF1962FDC08E90053B00D /* ImageAndTextExample.swift */,
@@ -991,6 +994,7 @@
 				492C16462E7FD8C8006342FC /* GlassEffectModifieriOS26.swift in Sources */,
 				4956009E29D1D533001DE321 /* WalletConstants.swift in Sources */,
 				491EF19F2FDC08E90053B00D /* ImageAndTextExample.swift in Sources */,
+				49C31E022FDC0A010053B002 /* Chart3DExample.swift in Sources */,
 				491EF1A02FDC08E90053B00D /* GaugeExample.swift in Sources */,
 				491EF1A12FDC08E90053B00D /* UnevenRoundedRectangleExample.swift in Sources */,
 				491EF1A22FDC08E90053B00D /* FloatingTabBarExample.swift in Sources */,
