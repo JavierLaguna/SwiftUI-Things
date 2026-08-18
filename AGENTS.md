@@ -3,7 +3,7 @@
 ## Project
 - **Build**: `SwiftUI Things.xcodeproj`, single scheme `SwiftUI Things`, single target (app).
 - **Xcode**: 16 (`LastUpgradeCheck = 2600`), **Swift 5.0**.
-- **Min target**: iOS 18.0 (target-level override; project default 16.2 is irrelevant).
+- **Min target**: iOS 26.0 (target-level override; project default 16.2 is irrelevant).
 - **Device family**: iPhone + iPad (`TARGETED_DEVICE_FAMILY = "1,2"`).
 - **Bundle ID**: `com.jlagunadev.SwiftUI-Things`.
 - **No test targets** exist. Scheme has `shouldAutocreateTestPlan = YES` but no test configuration.
@@ -37,7 +37,7 @@ xcodebuild -project "SwiftUI Things.xcodeproj" -scheme "SwiftUI Things" clean
         static func makeView() -> some View { Self() }
     }
     ```
-- **iOS 26 features**: Use `#available(iOS 26.0, *)` guards. A helper file `AAAAA.swift` provides `ifAvailableiOS26(_:else:)` and `ifNotAvailableiOS26(_:)` view modifiers.
+- **iOS 26 features**: Target deployment is iOS 26.0, so iOS 26-only APIs (Liquid Glass, `Chart3D`, etc.) need no `#available` guards.
 - **StoreKit testing**: The scheme references `SwiftUI Things/Subscription.storekit` (one subscription group "Pro" with weekly/monthly/yearly product IDs, no real products configured).
 
 ## Repository Quirks
