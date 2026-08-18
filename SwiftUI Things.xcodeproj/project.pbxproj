@@ -33,6 +33,7 @@
 		491EF1AA2FDC08E90053B00D /* RenameButtonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF19B2FDC08E90053B00D /* RenameButtonExample.swift */; };
 		491EF1AB2FDC08E90053B00D /* ShareSheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF19C2FDC08E90053B00D /* ShareSheetExample.swift */; };
 		491EF1AD2FDC08F30053B00D /* ViewThatFitsScrollExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1AC2FDC08F30053B00D /* ViewThatFitsScrollExample.swift */; };
+		7096EFCFD469AAFFF44C5658 /* OutlineGroupExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4397AEB08D12DC66015CF1C /* OutlineGroupExample.swift */; };
 		491EF1CD2FDC09070053B00D /* ReserveTextSpaceExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1C62FDC09070053B00D /* ReserveTextSpaceExample.swift */; };
 		491EF1CE2FDC09070053B00D /* MatchedGeometryEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1C02FDC09070053B00D /* MatchedGeometryEffectExample.swift */; };
 		491EF1CF2FDC09070053B00D /* RotateGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EF1C72FDC09070053B00D /* RotateGestureExample.swift */; };
@@ -184,6 +185,7 @@
 		491EF19D2FDC08E90053B00D /* UnevenRoundedRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnevenRoundedRectangleExample.swift; sourceTree = "<group>"; };
 		491EF19E2FDC08E90053B00D /* ViewThatFitsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsExample.swift; sourceTree = "<group>"; };
 		491EF1AC2FDC08F30053B00D /* ViewThatFitsScrollExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsScrollExample.swift; sourceTree = "<group>"; };
+		F4397AEB08D12DC66015CF1C /* OutlineGroupExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupExample.swift; sourceTree = "<group>"; };
 		491EF1AE2FDC09070053B00D /* ActionSheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetExample.swift; sourceTree = "<group>"; };
 		491EF1AF2FDC09070053B00D /* AdvancedMatchedGeometryEffectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMatchedGeometryEffectExample.swift; sourceTree = "<group>"; };
 		491EF1B02FDC09070053B00D /* AnimatedDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedDialogs.swift; sourceTree = "<group>"; };
@@ -703,6 +705,7 @@
 			isa = PBXGroup;
 			children = (
 				491EF1AC2FDC08F30053B00D /* ViewThatFitsScrollExample.swift */,
+				F4397AEB08D12DC66015CF1C /* OutlineGroupExample.swift */,
 				491EF1922FDC08E90053B00D /* DeviceInformationExample.swift */,
 				49C31E012FDC0A010053B001 /* Chart3DExample.swift */,
 				49C31E052FDC0A010053B005 /* ScrollContentBackgroundExample.swift */,
@@ -1015,6 +1018,7 @@
 				491EF1A92FDC08E90053B00D /* NestedMenusExample.swift in Sources */,
 				491EF1AA2FDC08E90053B00D /* RenameButtonExample.swift in Sources */,
 				491EF1AB2FDC08E90053B00D /* ShareSheetExample.swift in Sources */,
+				7096EFCFD469AAFFF44C5658 /* OutlineGroupExample.swift in Sources */,
 				49D2D6712C6A10A100B77478 /* MorphingSymbolView.swift in Sources */,
 				494647E9299FB32B00E47D4E /* FruitHeaderView.swift in Sources */,
 				494647DE299FB32B00E47D4E /* FruitData.swift in Sources */,

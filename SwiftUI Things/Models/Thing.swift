@@ -78,6 +78,7 @@ enum ThingRegistry {
             AnyThing(ImageAndTextExample.self),
             AnyThing(LinkView.self),
             AnyThing(MapExample.self),
+            AnyThing(OutlineGroupExample.self),
             AnyThing(MarkdownExample.self),
             AnyThing(MenuWithSectionsExample.self),
             AnyThing(MeshGradientExample.self),
