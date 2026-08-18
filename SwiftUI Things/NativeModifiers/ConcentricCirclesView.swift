@@ -30,8 +30,8 @@ struct ConcentricCirclesView: View {
                     Color.black
 
                     preview
+                        .padding(.vertical, 16)
                 }
-                .padding(.vertical, 16)
             }
         )
     }
