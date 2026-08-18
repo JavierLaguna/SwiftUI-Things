@@ -123,6 +123,7 @@ enum ThingRegistry {
             AnyThing(ReserveTextSpaceExample.self),
             AnyThing(RotateGestureExample.self),
             AnyThing(SwipeActionsLabelStyleExample.self),
+            AnyThing(SymbolVariantsExample.self),
             AnyThing(TapAnimationExample.self),
             AnyThing(TextSelectionExample.self),
             AnyThing(TimerExample.self),
