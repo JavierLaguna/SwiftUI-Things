@@ -74,6 +74,7 @@ enum ThingRegistry {
             AnyThing(ScrollContentBackgroundExample.self),
             AnyThing(DeviceInformationExample.self),
             AnyThing(GaugeExample.self),
+            AnyThing(GaugeStylesExample.self),
             AnyThing(GroupBoxExample.self),
             AnyThing(ImageAndTextExample.self),
             AnyThing(LinkView.self),

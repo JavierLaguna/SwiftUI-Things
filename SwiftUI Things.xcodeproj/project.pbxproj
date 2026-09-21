@@ -94,6 +94,7 @@
 		494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DA299FB32B00E47D4E /* FruitCardView.swift */; };
 		494647EB299FB32B00E47D4E /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DB299FB32B00E47D4E /* SettingsLabelView.swift */; };
 		494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DD299FB32B00E47D4E /* FruitModel.swift */; };
+		495003C930613D4B006E17C5 /* GaugeStylesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495003C830613D4B006E17C5 /* GaugeStylesExample.swift */; };
 		4956009729D1BA84001DE321 /* CardMovementCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009629D1BA84001DE321 /* CardMovementCellView.swift */; };
 		4956009929D1D2CF001DE321 /* WalletCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009829D1D2CF001DE321 /* WalletCardDetailView.swift */; };
 		4956009C29D1D358001DE321 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009B29D1D358001DE321 /* CreditCard.swift */; };
@@ -247,6 +248,7 @@
 		494647DA299FB32B00E47D4E /* FruitCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		494647DB299FB32B00E47D4E /* SettingsLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		494647DD299FB32B00E47D4E /* FruitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
+		495003C830613D4B006E17C5 /* GaugeStylesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeStylesExample.swift; sourceTree = "<group>"; };
 		4956009629D1BA84001DE321 /* CardMovementCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMovementCellView.swift; sourceTree = "<group>"; };
 		4956009829D1D2CF001DE321 /* WalletCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardDetailView.swift; sourceTree = "<group>"; };
 		4956009B29D1D358001DE321 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
@@ -724,6 +726,7 @@
 				491EF19E2FDC08E90053B00D /* ViewThatFitsExample.swift */,
 				494277922A37596E007049B8 /* LinkView.swift */,
 				49DF2F4A2F584FD100438BF5 /* CountDownExample.swift */,
+				495003C830613D4B006E17C5 /* GaugeStylesExample.swift */,
 			);
 			path = NativeComponents;
 			sourceTree = "<group>";
@@ -1000,6 +1003,7 @@
 				491EF1712FDC07250053B00D /* GlowingBorderAnimatedExample.swift in Sources */,
 				49DF2F472F584A8400438BF5 /* ListLetterIndexExample.swift in Sources */,
 				494647E1299FB32B00E47D4E /* SettingsRowView.swift in Sources */,
+				495003C930613D4B006E17C5 /* GaugeStylesExample.swift in Sources */,
 				4935C3792F488D86002B7781 /* CalendarData.swift in Sources */,
 				492C16442E7DB6C9006342FC /* CustomAnimatedToolBariOS26.swift in Sources */,
 				492C164A2E7FF57C006342FC /* GlassEffectContainerExampleiOS26.swift in Sources */,
