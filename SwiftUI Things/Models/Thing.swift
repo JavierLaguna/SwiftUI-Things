@@ -86,6 +86,7 @@ enum ThingRegistry {
             AnyThing(MinimizedTabBarView.self),
             AnyThing(NestedMenusExample.self),
             AnyThing(PhotosPickerStylesExample.self),
+            AnyThing(PixelateImageExample.self),
             AnyThing(RenameButtonExample.self),
             AnyThing(ShareSheetExample.self),
             AnyThing(UnevenRoundedRectangleExample.self),
