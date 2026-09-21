@@ -83,6 +83,7 @@ enum ThingRegistry {
             AnyThing(MarkdownExample.self),
             AnyThing(MenuWithSectionsExample.self),
             AnyThing(MeshGradientExample.self),
+            AnyThing(MinimizedTabBarView.self),
             AnyThing(NestedMenusExample.self),
             AnyThing(PhotosPickerStylesExample.self),
             AnyThing(RenameButtonExample.self),

@@ -94,6 +94,7 @@
 		494647EA299FB32B00E47D4E /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DA299FB32B00E47D4E /* FruitCardView.swift */; };
 		494647EB299FB32B00E47D4E /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DB299FB32B00E47D4E /* SettingsLabelView.swift */; };
 		494647EC299FB32B00E47D4E /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494647DD299FB32B00E47D4E /* FruitModel.swift */; };
+		494AF094305D5290007DF155 /* MinimizedTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494AF093305D5290007DF155 /* MinimizedTabBarView.swift */; };
 		495003C930613D4B006E17C5 /* GaugeStylesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495003C830613D4B006E17C5 /* GaugeStylesExample.swift */; };
 		4956009729D1BA84001DE321 /* CardMovementCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009629D1BA84001DE321 /* CardMovementCellView.swift */; };
 		4956009929D1D2CF001DE321 /* WalletCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956009829D1D2CF001DE321 /* WalletCardDetailView.swift */; };
@@ -248,6 +249,7 @@
 		494647DA299FB32B00E47D4E /* FruitCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		494647DB299FB32B00E47D4E /* SettingsLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		494647DD299FB32B00E47D4E /* FruitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
+		494AF093305D5290007DF155 /* MinimizedTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizedTabBarView.swift; sourceTree = "<group>"; };
 		495003C830613D4B006E17C5 /* GaugeStylesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeStylesExample.swift; sourceTree = "<group>"; };
 		4956009629D1BA84001DE321 /* CardMovementCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMovementCellView.swift; sourceTree = "<group>"; };
 		4956009829D1D2CF001DE321 /* WalletCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardDetailView.swift; sourceTree = "<group>"; };
@@ -789,6 +791,7 @@
 				49C31E032FDC0A010053B003 /* SymbolVariantsExample.swift */,
 				491EF1C02FDC09070053B00D /* MatchedGeometryEffectExample.swift */,
 				491EF1C12FDC09070053B00D /* MeshGradientExample.swift */,
+				494AF093305D5290007DF155 /* MinimizedTabBarView.swift */,
 				491EF1C22FDC09070053B00D /* MixColorsExample.swift */,
 				491EF1C32FDC09070053B00D /* PopoverExample.swift */,
 				491EF1C42FDC09070053B00D /* PrivacySensitiveExample.swift */,
@@ -927,6 +930,7 @@
 				491EF1D62FDC09070053B00D /* TapAnimationExample.swift in Sources */,
 				491EF1D72FDC09070053B00D /* InspectorExample.swift in Sources */,
 				491EF1D82FDC09070053B00D /* PrivacySensitiveExample.swift in Sources */,
+				494AF094305D5290007DF155 /* MinimizedTabBarView.swift in Sources */,
 				491EF1D92FDC09070053B00D /* ActionSheetExample.swift in Sources */,
 				491EF1DA2FDC09070053B00D /* RedactedPlaceholderExample.swift in Sources */,
 				491EF1DB2FDC09070053B00D /* AdvancedMatchedGeometryEffectExample.swift in Sources */,
